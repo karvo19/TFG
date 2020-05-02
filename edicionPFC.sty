@@ -84,17 +84,20 @@
 		     	{\includegraphics[height=30mm]{figuras/etsi.pdf}}; 
 				
 		\node[anchor=north west, %anchor is upper left corner of the graphic
-		      	xshift=57mm, %shifting around
+		      	xshift=97mm, %shifting around 
+                % originalmente 57
 		      	yshift=-265mm] 
 		     	at (current page.north west) %left upper corner of the page
 		     	{\includegraphics[width=2.5cm]{#1}}; % Logo de la Universidad
-	
-		\node[anchor=north west, %anchor is upper left corner of the graphic
-		      	xshift=141mm, %shifting around
-		      	yshift=-265mm] 
-		     	at (current page.north west) %left upper corner of the page
-			{\includegraphics[height=2.5cm]{#2}}; % Logo del Departamento, si lo hubiera
-		\end{pgfonlayer} 
+       \end{pgfonlayer}
+
+% Para incluir un logo del Departamento descomentar las siguientes líneas (hasta l.100) y comentar la l.92 (\end{pgfon layer})
+% 		\node[anchor=north west, %anchor is upper left corner of the graphic
+% 		      	xshift=141mm, %shifting around
+% 		      	yshift=-265mm] 
+% 		     	at (current page.north west) %left upper corner of the page
+% 			{\includegraphics[height=2.5cm]{#2}}; % Logo del Departamento, si lo hubiera
+% 		\end{pgfonlayer} 
 
 		% Todo el texto 
 		\begin{pgfonlayer}{foreground}

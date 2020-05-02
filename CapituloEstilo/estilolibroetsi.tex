@@ -65,21 +65,21 @@ Finalizamos este bloque definiendo un alias para el tamaño básico de la fuente
 La posibilidad de utilizar nuestra plantilla para escribir textos en inglés (es el único idioma aparte del español que se ha considerado) nos obliga a establecer una posible opción para cargar el paquete \ttcolor{babel}\index{babel} de una u otra manera. Este paquete es el responsable de establecer las reglas de partición silábica, entre otras cosas, por lo que resulta imprescindible su incorporación a una hoja de estilo. Cabe decir que en estos momentos el responsable de su mantenimiento es el español Javier Bezos, lo que nos garantiza una excelente adaptación del paquete a nuestro idioma.
 
 Además de la partición silábica, un determinado conjunto de macros quedan automáticamente traducidos como por ejemplo, la definición de límite, máximos y mínimos que se utilizan en la escritura matemática. Observemos cómo aparecen unos y otros en función del idioma que utilicemos:
-\begin{LTXexample}[pos=r, hsep=15pt,width=0.45\textwidth]
-\begin{align*}
-\lim_{n\to\infty}a_{n}&=10\\
-\max\left[{a,b}\right]&=a
-\end{align*}
-\figurename, \tablename
+% \begin{LTXexample}[pos=r, hsep=15pt,width=0.45\textwidth]
+% \begin{align*}
+% \lim_{n\to\infty}a_{n}&=10\\
+% \max\left[{a,b}\right]&=a
+% \end{align*}
+% \figurename, \tablename
 
-\selectlanguage{english}
-\begin{align*}
-\lim_{n\to\infty}a_{n}&=10\\
-\max\left[{a,b}\right]&=a
-\end{align*}
-\figurename, \tablename
-\selectlanguage{spanish} 
-\end{LTXexample}
+% \selectlanguage{english}
+% \begin{align*}
+% \lim_{n\to\infty}a_{n}&=10\\
+% \max\left[{a,b}\right]&=a
+% \end{align*}
+% \figurename, \tablename
+% \selectlanguage{spanish} 
+% \end{LTXexample}
 
 El grupo de macros que gestionan los nombres que cambian en uno y otro caso, se encuentra a continuación en el fichero de estilo. 
 \subsection{Codificación}
@@ -163,9 +163,9 @@ Por último, un conjunto de comandos facilita la utilización de las fuentes en 
 \end{lstlisting}
 
 Por supuesto, una vez que hemos definido este comando, podemos utilizarlo siempre que deseemos. Así, la utilización y el resultado del comando \ttcolorc{aheadsecc} se muestra a continuación:
-\begin{LTXexample}[pos=r, hsep=15pt,width=0.45\textwidth]
-\aheadsecc{Como si fuera una sección}
-\end{LTXexample}
+% \begin{LTXexample}[pos=r, hsep=15pt,width=0.45\textwidth]
+% \aheadsecc{Como si fuera una sección}
+% \end{LTXexample}
 
 \subsection{Fuentes matemáticas y símbolos}
 En una Escuela de Ingeniería la gestión de las fuentes matemáticas en nuestros documentos juega un papel fundamental. Po ello, si utilizamos \LuaLaTeX\ es necesario cargar los paquetes \ttcolor{lualatex-math}\index{lualatex-math} y \ttcolor{luatextra}\index{luatextra}. Observar además que aparte de estos dos paquetes, orientados básicamente a la utilización de aspectos concretos relacionados con símbolos matemáticos, hemos incluido el comando \ttcolorc{usepackage[no-math]\{fontspec\}}. Aunque \ttcolor{fontspec} se utilizará en la gestión del tipo de fuentes y comandos relacionados con las mismas, es necesario incluirlo aquí por el típico problema que hemos mencionado anteriormente del orden en el que se encargan los paquetes.
@@ -423,14 +423,14 @@ le asignamos el valor de 4, que significa que hasta las  subsecciones deben apar
 La gestión de los subíndices y superíndices en las ecuaciones matemáticas se realiza de forma diferente según estemos compilando con \LaTeX\ o \LuaLaTeX . En este último caso, el control es muy preciso diferenciándose incluso si la ecuación está en línea con el texto o bien no lo está.
 
 Adicionalmente hemos definido el comando \ttcolorc{xb} que permite modificar la posición de los subíndices cuando se utilizan con letras descendientes como la \emph{f} o \emph{g}. En el siguiente ejemplo se muestra su utilización (o no) y el resultado que se obtiene.
-\begin{LTXexample}[pos=r, hsep=15pt,width=0.45\textwidth]
-\begin{align*}
-f_{1}(t)&=\sen(\omega_{0}t)\\
-f\xb{1}(t)&=\sen(\omega_{0}t)\\
-g_{i}(t)&=\sen(\omega_{0}t)\\
-g\xb{i}(t)&=\sen(\omega_{0}t)
-\end{align*}
-\end{LTXexample}
+% \begin{LTXexample}[pos=r, hsep=15pt,width=0.45\textwidth]
+% \begin{align*}
+% f_{1}(t)&=\sen(\omega_{0}t)\\
+% f\xb{1}(t)&=\sen(\omega_{0}t)\\
+% g_{i}(t)&=\sen(\omega_{0}t)\\
+% g\xb{i}(t)&=\sen(\omega_{0}t)
+% \end{align*}
+% \end{LTXexample}
 
 También hemos creado un conjunto de comandos que facilitan la escritura de los subíndices y superíndices en modo texto, \ttcolorc{tsp} y \ttcolorc{tsb}.
 
@@ -482,9 +482,9 @@ Las declaraciones de formatos son diferentes para cada uno de los elementos flot
 
 Un ejemplo de ambos paquetes podemos apreciarlo en la \autoref{fig04-02}. La referencia a las subfiguras de la figura anterior se realiza con el código siguiente, de resultado mostrado a continuación. 
 
-\begin{LTXexample}[pos=b, hsep=15pt,width=\textwidth]
-en la \autoref{fig04-02}\sfx{fig04-02a} se muestra la función de distribución de una variable aleatoria continua y en la \autoref{fig04-02}\sfx{fig04-02b} su función densidad de probabilidad.
-\end{LTXexample}
+% \begin{LTXexample}[pos=b, hsep=15pt,width=\textwidth]
+% en la \autoref{fig04-02}\sfx{fig04-02a} se muestra la función de distribución de una variable aleatoria continua y en la \autoref{fig04-02}\sfx{fig04-02b} su función densidad de probabilidad.
+% \end{LTXexample}
 %
 \begin{figure}[htpb]% 
 \centering 
@@ -588,14 +588,14 @@ La escritura de fórmulas en \LaTeX\ requiere el conocimiento de un conjunto de 
 
 Debido a un bug de  \LuaLaTeX\ es necesario escribir fórmulas demasiado anchas mediante el entorno \comando{begin\{equationw\}}\index{equationw}. Un ejemplo se muestra a continuación y el resultado del mismo posteriormente.
 
-\begin{LTXexample}[pos=b, hsep=15pt,width=\textwidth]
-\begin{equationw}
-\E\left[ {Y} \right]=\E\left[ {\left( {X-m_{X}} \right)^{n}} \right]=\begin{cases}
-1\times 3 \times \cdots \times \left( {2k-1} \right)\sigma_{X}^{2k}=\frac{\left( {2k} \right)!\sigma_{X}^{2k}}{2^{k}k!}&\textrm{ para }n=2k \\
-0 &\textrm{ para }n=2k +1
-\end{cases}
-\end{equationw}
-\end{LTXexample}
+% \begin{LTXexample}[pos=b, hsep=15pt,width=\textwidth]
+% \begin{equationw}
+% \E\left[ {Y} \right]=\E\left[ {\left( {X-m_{X}} \right)^{n}} \right]=\begin{cases}
+% 1\times 3 \times \cdots \times \left( {2k-1} \right)\sigma_{X}^{2k}=\frac{\left( {2k} \right)!\sigma_{X}^{2k}}{2^{k}k!}&\textrm{ para }n=2k \\
+% 0 &\textrm{ para }n=2k +1
+% \end{cases}
+% \end{equationw}
+% \end{LTXexample}
 Podemos observar la posición del número de ecuación que se ha desplazado debajo de la fórmula. Para crear el entorno que ha permitido resolver este error (el número de ecuación se desplazaba a la derecha), ha sido necesario cargar el paquete \ttcolor{environ}.
 
 También para corregir otro bug de \LuaLaTeX\ hemos introducido el comando \ttcolorc{sqrtlua}\index{sqrtlua} que evita el desplazamiento del contenido bajo el signo de la raíz cuando dicho contenido tiene una altura superior a un renglón. Esta definición hay que encontrarla en el bloque de gestión de fuentes.
