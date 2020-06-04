@@ -156,7 +156,10 @@ twoside}
 \pagestyle{especial}
 \tableofcontents
 
-\include{notacion/notacion} %No incluir si no se quiere, comentándolo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% Descomentar la siguiente linea y editar notacion.tex si hiciera falta
+%%%%%%% incluir notación en el TFG.
+%\include{notacion/notacion} %No incluir si no se quiere, comentándolo
 
 %:Empieza el contenido del libro
 \mainmatter
@@ -164,17 +167,29 @@ twoside}
 %:Página por defecto
 \pagestyle{esitscCD}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% Incluir los diferentes capítulos del TFG en carpetas separadas.
 %:Los diferentes capítulos, en carpetas separadas
 %
-\include{cubierta/cubierta}
+\include{Introduccion/Introduccion}
 %
-\include{introduccion/introduccion}%Guia uso
+\include{EstadoDelArte/EstadoDelArte}
 %
-\include{estructura/estructura}
+\include{InyeccionDeFallos/InyeccionDeFallos}
 %
-\include{CapituloEstilo/estilolibroetsi}
+\include{Levenshtein/Levenshtein}
+%
+\include{Cycle/Cycle}
 % 
+\include{TecnicasDeDiagnosticoAuxiliares/TecnicasDeDiagnosticoAuxiliares}
 %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% Esto aún no lo he investigado, tengo que ver como va
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% Apéndices
 %%:Empezamos con los apéndices, que irían en uno o más ficheros. Es necesario incluir estos ficheros entre el entorno \begin{appendices}....\end{appendices} debido a que se ha deseado utilizar un formato diferente para el título de los apéndices, incluyendo la palabra apéndice, para la numeración de los apéndices, alfabético, y para las cabeceras de las páginas.
 %
 \begin{appendices}

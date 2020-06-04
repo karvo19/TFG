@@ -1,0 +1,27 @@
+\gls{Siglas}    para insertar sigla previamente definida
+                tiene mas opciones de insercion con comandos ligeramente distintos
+\ref{}  para insertar referencia
+\textbf{parrafo} para poner parrafo en negrita
+\ttcolor{texto}  para poner texto en rojo
+
+
+Comandos para secciones:
+\chapter{}\label{chp-01}
+\section{}
+\subsection{}
+\subsubsection{}
+
+
+Comandos para referencias:
+https://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing
+    Prefijos:
+        ch: 	chapter
+        sec: 	section
+        subsec: 	subsection
+        fig: 	figure
+        tab: 	table
+        eq: 	equation
+        lst: 	code listing
+        itm: 	enumerated list item
+        alg: 	algorithm
+        app: 	appendix subsection
