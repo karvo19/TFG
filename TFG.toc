@@ -3,189 +3,40 @@
 \contentsline {listasf}{Resumen}{III}{section*.4}% 
 \contentsline {listasf}{Abstract}{V}{section*.6}% 
 \contentsline {listasf}{\IeC {\'I}ndice Abreviado}{VII}{section*.7}% 
-\contentsline {listasf}{Notaci{\'o}n}{XIII}{section*.12}% 
-\contentsline {chapter}{\numberline {1}Instrucciones para la Cubierta y la Portada}{1}{chapter.1}% 
-\contentsline {chapter}{\numberline {2}Gu\IeC {\'\i }a de Uso}{3}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}C\IeC {\'o}mo usar los estilos de documento de la ETSI}{3}{section.2.1}% 
-\contentsline {subsection}{\numberline {2.1.1}Compilaci\IeC {\'o}n}{4}{subsection.2.1.1}% 
-\contentsline {subsubsection}{{Macintosh}\textsuperscript {\textregistered }}{4}{subsubsection*.13}% 
-\contentsline {subsubsection}{Windows\textsuperscript {\textregistered }}{4}{subsubsection*.14}% 
-\contentsline {subsubsection}{Lyx}{5}{subsubsection*.15}% 
-\contentsline {subsection}{\numberline {2.1.2}Texto en ingl\IeC {\'e}s}{5}{subsection.2.1.2}% 
-\contentsline {section}{\numberline {2.2}Elementos b\IeC {\'a}sicos de un libro}{5}{section.2.2}% 
-\contentsline {section}{\numberline {2.3}Clase de documento}{6}{section.2.3}% 
-\contentsline {section}{\numberline {2.4}Fichero de estilo LibroETSI.sty}{6}{section.2.4}% 
-\contentsline {subsection}{\numberline {2.4.1}Paquete Babel}{7}{subsection.2.4.1}% 
-\contentsline {subsection}{\numberline {2.4.2}S\IeC {\'\i }mbolos y f\IeC {\'o}rmulas}{7}{subsection.2.4.2}% 
-\contentsline {subsection}{\numberline {2.4.3}Fuentes}{7}{subsection.2.4.3}% 
-\contentsline {subsection}{\numberline {2.4.4}Ep\IeC {\'\i }grafes}{7}{subsection.2.4.4}% 
-\contentsline {subsection}{\numberline {2.4.5}Figuras y tablas}{8}{subsection.2.4.5}% 
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}% 
+\contentsline {chapter}{\numberline {2}Estado del arte}{3}{chapter.2}% 
+\contentsline {chapter}{\numberline {3}Inyecci\IeC {\'o}n de fallos}{5}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}FT-Unshades2}{5}{section.3.1}% 
+\contentsline {chapter}{\numberline {4}Primera aproximaci\IeC {\'o}n a una m\IeC {\'e}trica apropiada. Distancia de Levenshtein}{7}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Elaboraci\IeC {\'o}n de la base de datos de distancias}{7}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Diagn\IeC {\'o}stico basado en la distancia de Levenshtein}{7}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Resultados experimentales}{7}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Diccionarios exhaustivos}{7}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}Diccionarios no exhaustivos}{7}{subsection.4.3.2}% 
+\contentsline {chapter}{\numberline {5}Inlcusi\IeC {\'o}n de la distancia temporal en el algoritmo de selecci\IeC {\'o}n de candidatos}{9}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Diagn\IeC {\'o}stico basado en la distancia temporal}{9}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Fusi\IeC {\'o}n de las distancias temporal y de Levenshtein}{9}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Resultados experimentales}{9}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Diccionarios exhaustivos}{9}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}Diccionarios no exhaustivos}{9}{subsection.5.3.2}% 
+\contentsline {chapter}{\numberline {6}T\IeC {\'e}cnicas de diagn\IeC {\'o}stico auxiliares}{11}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Diagn\IeC {\'o}stico basado en el an\IeC {\'a}lisis de im\IeC {\'a}genes}{11}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Diagn\IeC {\'o}stico por coincidencias}{11}{section.6.2}% 
+\contentsline {section}{\numberline {6.3}Resultados experimentales}{11}{section.6.3}% 
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Sobre \LaTeX }{13}{Appendix.alph1.Alph1}% 
+\contentsline {section}{\numberline {A.1}Ventajas de \LaTeX }{13}{section.alph1.Alph1.1}% 
+\contentsline {section}{\numberline {A.2}Inconvenientes}{13}{section.alph1.Alph1.2}% 
 \babel@toc {english}{}
 \babel@toc {spanish}{}
 \babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {subsection}{\numberline {2.4.6}Hiperenlaces}{9}{subsection.2.4.6}% 
-\contentsline {subsection}{\numberline {2.4.7}Tabla de contenido}{9}{subsection.2.4.7}% 
-\contentsline {subsection}{\numberline {2.4.8}Formatos de t\IeC {\'\i }tulos, p\IeC {\'a}ginas y cabeceras y pies de p\IeC {\'a}ginas}{10}{subsection.2.4.8}% 
-\contentsline {subsection}{\numberline {2.4.9}Teoremas, propiedades, definiciones y dem\IeC {\'a}s}{10}{subsection.2.4.9}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {subsection}{\numberline {2.4.10}\IeC {\'I}ndices de palabras y glosarios}{11}{subsection.2.4.10}% 
-\contentsline {subsubsection}{\IeC {\'I}ndices de palabras}{11}{subsubsection*.18}% 
-\contentsline {subsubsection}{Glosario}{12}{subsubsection*.19}% 
-\contentsline {subsubsection}{Compilaci\IeC {\'o}n de \IeC {\'\i }ndices de palabras y glosarios}{12}{subsubsection*.20}% 
-\contentsline {section}{\numberline {2.5}Antes del documento}{12}{section.2.5}% 
-\contentsline {subsection}{\numberline {2.5.1}Fichero de notaci\IeC {\'o}n: notacion.sty}{12}{subsection.2.5.1}% 
-\contentsline {subsection}{\numberline {2.5.2}Fuente del texto}{13}{subsection.2.5.2}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {subsection}{\numberline {2.5.3}Cubierta y primeras p\IeC {\'a}ginas}{14}{subsection.2.5.3}% 
-\contentsline {chapter}{\numberline {3}Notas sobre la Redacci\IeC {\'o}n del Texto}{15}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Preliminares}{15}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}Cubierta}{15}{subsection.3.1.1}% 
-\contentsline {subsection}{\numberline {3.1.2}Portada}{15}{subsection.3.1.2}% 
-\contentsline {subsection}{\numberline {3.1.3}Resumen}{15}{subsection.3.1.3}% 
-\contentsline {subsection}{\numberline {3.1.4}Prefacio o Introducci\IeC {\'o}n}{16}{subsection.3.1.4}% 
-\contentsline {subsection}{\numberline {3.1.5}\IeC {\'I}ndice y/o \IeC {\'I}ndice general}{16}{subsection.3.1.5}% 
-\contentsline {subsection}{\numberline {3.1.6}Lista de ilustraciones y tablas}{16}{subsection.3.1.6}% 
-\contentsline {subsection}{\numberline {3.1.7}Lista de abreviaturas y s\IeC {\'\i }mbolos}{16}{subsection.3.1.7}% 
-\contentsline {subsection}{\numberline {3.1.8}Glosario}{16}{subsection.3.1.8}% 
-\contentsline {section}{\numberline {3.2}Texto principal}{16}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Bibliograf\IeC {\'\i }a}{16}{section.3.3}% 
-\contentsline {section}{\numberline {3.4}Anexos}{16}{section.3.4}% 
-\contentsline {chapter}{\numberline {4}Estilo tipogr\IeC {\'a}fico LibroETSI}{19}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Bloque 0}{19}{section.4.1}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {section}{\numberline {4.2}Bloque 1: Aspectos generales}{20}{section.4.2}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {section}{\numberline {4.3}Bloque 2: Idioma, Codificaci\IeC {\'o}n y Fuentes}{21}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}Idioma}{21}{subsection.4.3.1}% 
-\contentsline {subsection}{\numberline {4.3.2}Codificaci\IeC {\'o}n}{21}{subsection.4.3.2}% 
-\contentsline {subsection}{\numberline {4.3.3}Fuentes del texto y comandos asociados}{21}{subsection.4.3.3}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {subsection}{\numberline {4.3.4}Fuentes matem\IeC {\'a}ticas y s\IeC {\'\i }mbolos}{23}{subsection.4.3.4}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {section}{\numberline {4.4}Bloque 3: Tabla de contenidos}{24}{section.4.4}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {section}{\numberline {4.5}Bloque 4: Estilos de P\IeC {\'a}ginas y T\IeC {\'\i }tulos}{25}{section.4.5}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {section}{\numberline {4.6}Bloque 5: Gesti\IeC {\'o}n general del documento}{29}{section.4.6}% 
-\contentsline {subsection}{\numberline {4.6.1}Ap\IeC {\'e}ndices}{29}{subsection.4.6.1}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {subsection}{\numberline {4.6.2}Colores}{30}{subsection.4.6.2}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {subsection}{\numberline {4.6.3}Aspectos gen\IeC {\'e}ricos de tratamiento del texto}{30}{subsection.4.6.3}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {subsection}{\numberline {4.6.4}Elementos flotantes}{31}{subsection.4.6.4}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {subsection}{\numberline {4.6.5}Gesti\IeC {\'o}n de \IeC {\'\i }ndices alfab\IeC {\'e}ticos y glosario}{33}{subsection.4.6.5}% 
-\contentsline {subsection}{\numberline {4.6.6}Ajustes en f\IeC {\'o}rmulas}{33}{subsection.4.6.6}% 
-\contentsline {subsection}{\numberline {4.6.7}Hiperenlaces}{33}{subsection.4.6.7}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {subsection}{\numberline {4.6.8}Listado de c\IeC {\'o}digos}{34}{subsection.4.6.8}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {subsection}{\numberline {4.6.9}Entornos, teoremas y similares}{35}{subsection.4.6.9}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {subsection}{\numberline {4.6.10}Otros comandos}{36}{subsection.4.6.10}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {section}{\numberline {4.7}A modo de conclusi\IeC {\'o}n}{36}{section.4.7}% 
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Sobre \LaTeX }{37}{Appendix.alph1.Alph1}% 
-\contentsline {section}{\numberline {A.1}Ventajas de \LaTeX }{37}{section.alph1.Alph1.1}% 
-\contentsline {section}{\numberline {A.2}Inconvenientes}{37}{section.alph1.Alph1.2}% 
-\babel@toc {english}{}
-\babel@toc {spanish}{}
-\babel@toc {spanish}{}
-\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Sobre Microsoft Word\textsuperscript {\textregistered }}{39}{Appendix.alph1.Alph2}% 
-\contentsline {section}{\numberline {B.1}Ventajas del Word\textsuperscript {\textregistered }}{39}{section.alph1.Alph2.1}% 
-\contentsline {section}{\numberline {B.2}Inconvenientes de Word\textsuperscript {\textregistered }}{39}{section.alph1.Alph2.2}% 
+\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Sobre Microsoft Word\textsuperscript {\textregistered }}{15}{Appendix.alph1.Alph2}% 
+\contentsline {section}{\numberline {B.1}Ventajas del Word\textsuperscript {\textregistered }}{15}{section.alph1.Alph2.1}% 
+\contentsline {section}{\numberline {B.2}Inconvenientes de Word\textsuperscript {\textregistered }}{15}{section.alph1.Alph2.2}% 
 \babel@toc {spanish}{}
 \mbox {}\hspace *{0pt}\par 
-\contentsline {listasb}{{\'I}ndice de Figuras}{41}{section*.23}% 
-\contentsline {listasb}{{\'I}ndice de Tablas}{43}{section*.25}% 
-\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{45}{section*.27}% 
-\contentsline {listasb}{Bibliograf\'{\i }a}{47}{section*.29}% 
-\contentsline {listasb}{\'{I}ndice alfab\'{e}tico}{49}{section*.31}% 
-\contentsline {listasb}{Glosario}{49}{section*.32}% 
+\contentsline {listasb}{{\'I}ndice de Figuras}{17}{section*.11}% 
+\contentsline {listasb}{{\'I}ndice de Tablas}{19}{section*.13}% 
+\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{21}{section*.15}% 
+\contentsline {listasb}{Bibliograf\'{\i }a}{23}{section*.17}% 
+\contentsline {listasb}{\'{I}ndice alfab\'{e}tico}{25}{section*.19}% 
+\contentsline {listasb}{Glosario}{25}{section*.20}% 

@@ -10,6 +10,7 @@ Comandos para secciones:
 \section{}
 \subsection{}
 \subsubsection{}
+\chapter*{}       capitulo no numerado. Mas info en: https://tex.stackexchange.com/questions/110840/how-to-remove-chapter-numbering-without-removing-it-from-table-of-contents
 
 
 Comandos para referencias:
