@@ -11,4 +11,6 @@ pdf:
 
 vim:
 	vi "+setlocal spell" "+setlocal spell spelllang=es" "+setlocal spellfile=~/.vim/dict_es.add" $(tex).tex
-	
+
+idx:
+	zathura Índice\ TFG\ Álvaro.pdf &
