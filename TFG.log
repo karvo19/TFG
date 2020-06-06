@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  5 JUN 2020 13:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  6 JUN 2020 12:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2893,12 +2893,12 @@ File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
  (./Resumen/Resumen.tex
 Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (no accent, loversize=0),
-(lettrine.sty)             Lettrine height = 0.0pt () loversize=0.2;
+(lettrine.sty)             Lettrine height = 22.29866pt (E) loversize=0.2;
 (lettrine.sty)             reported on input line 7.
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
 [3
 
 
@@ -2909,7 +2909,7 @@ LaTeX Info: Redefining \% on input line 11.
 Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 0.0pt () loversize=0.2;
-(lettrine.sty)             reported on input line 17.
+(lettrine.sty)             reported on input line 55.
 )
 LaTeX Info: Redefining \. on input line 143.
 LaTeX Info: Redefining \% on input line 143.
@@ -3264,24 +3264,7 @@ LaTeX Info: Redefining \% on input line 257.
 
 ]
 No file TFG.ind.
-(./TFG.gls
-
-Package glossaries Warning: Glossary entry `DMC' has not been defined on input 
-line 5.
-
-
-Package glossaries Warning: Glossary entry `DMC' has not been defined on input 
-line 5.
-
-
-Package glossaries Warning: Glossary entry `mc' has not been defined on input l
-ine 12.
-
-
-Package glossaries Warning: Glossary entry `mc' has not been defined on input l
-ine 12.
-
-)
+(./TFG.gls)
 No file TFG.acr.
 LaTeX Info: Redefining \. on input line 272.
 LaTeX Info: Redefining \% on input line 272.
@@ -3332,11 +3315,11 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred when \iftrue on line 455 was incomplete) 
 Here is how much of TeX's memory you used:
- 70426 strings out of 492609
- 1556965 string characters out of 6131463
+ 70440 strings out of 492609
+ 1557097 string characters out of 6131463
  2042613 words of memory out of 5000000
  72804 multiletter control sequences out of 15000+600000
- 616788 words of font info for 107 fonts, out of 8000000 for 9000
+ 617530 words of font info for 114 fonts, out of 8000000 for 9000
  1162 hyphenation exceptions out of 8191
  87i,8n,142p,9082b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texm
@@ -3348,7 +3331,7 @@ e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/helvetic/uhvr8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/helvetic/uhvro8a.pfb>
-Output written on TFG.pdf (47 pages, 770210 bytes).
+Output written on TFG.pdf (47 pages, 772441 bytes).
 PDF statistics:
  719 PDF objects out of 1000 (max. 8388607)
  623 compressed objects within 7 object streams
