@@ -1,7 +1,13 @@
-\gls{Siglas}    para insertar sigla previamente definida
-                tiene mas opciones de insercion con comandos ligeramente distintos
+Acronimos
+\gls{Siglas}       para insertar sigla previamente definida
+\acrlong{Siglas}   para poner el significado de las siglas
+\acrshort{Siglas}  para poner las siglas
+
 \ref{}  para insertar referencia
+
+Negrita, Cursiva, Rojo
 \textbf{parrafo} para poner parrafo en negrita
+\textit{texto}   Para poner texto en cursiva
 \ttcolor{texto}  para poner texto en rojo
 
 

@@ -1,13 +1,33 @@
 \chapter{Introducción}
 \label{ch:Introduccion}
 
-\lettrine[lraise=-0.1, lines=2, loversize=0.2]{}{}
 % Introducir la problematica de lo circuitos en el espacio, decir que hay
 % radiación ionizante, la cual produce hard error y soft errors, y explicar que es
 % un SEU.
+\lettrine[lraise=-0.1, lines=2, loversize=0.2]{L}{a} primera vez que se observaron
+los efectos de la radiación en satélites en órbita fue a mediados de la década de
+1970. Desde entonces, los investigadores han estudiado sus efectos sobre
+diferentes circuitos y tecnologías. La radiación puede ser un problema para los
+circuitos destinados a trabajar en su presencia. Si esta es ionizante, puede dar
+lugar a un \textit{\gls{SEE}}, o un efecto de evento único, provocando un error 
+en el circuito. Los daños que provoca la radiación se clasifican en dos grandes 
+grupos: \textit{errores físicos ('hard errors')} y \textit{errores lógicos ('soft
+errors')}. Las \textit{conmutaciones por evento único o \acrlong{SEU}
+(\acrshort{SEU})} son errores lógicos inducidos por radiación en el circuito
+que consisten en el cambio de valor de un biestable del mismo. No son daños
+permanentes, pero si que puedes afectar al correcto funcionamiento del sistema.
+
 % Importante decir que con la miniaturizacion de los circuitos esto también aplica
 % en aviónica y a nivel del mar (referencia "Cosmic radiation comes to ASIC and SOC
 % design" de Santarini y otras que encuentre)
+Con la miniaturización de los circuitos, la dosis de radiación necesaria para 
+provocar un \gls{SEU} es cada vez menor, con la consiguiente aparición de sus 
+efectos cada vez a menor altitud \cite{EDN}. Esto acerca el problema de la 
+radiación a aplicaciones más comunes como puede ser la aviación o las 
+telecomunicaciones. 
+Si la radiacion cambia un bit en tu movil no pasa nada, pero si lo hace en un
+circuito, fiesta
+
 
 % Dar razones de por qué puede ser interesante tener cierta capacidad de
 % diagnístico de SEU
