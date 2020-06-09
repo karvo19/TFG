@@ -4,6 +4,7 @@ tex  = TFG
 
 pdf:
 	pdflatex $(main).tex
+	#bibtex $(main)
 	makeindex -s $(main).ist -t $(main).glg -o $(main).gls $(main).glo
 	pdflatex $(main).tex
 	xdg-open $(main).pdf
