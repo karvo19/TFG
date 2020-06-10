@@ -12,10 +12,11 @@ circuitos destinados a trabajar en su presencia. Si esta es ionizante, puede dar
 lugar a un \textit{\gls{SEE}}, o un efecto de evento único, provocando un error 
 en el circuito. Los daños que provoca la radiación se clasifican en dos grandes 
 grupos: \textit{errores físicos ('hard errors')} y \textit{errores lógicos ('soft
-errors')}. Las \textit{conmutaciones por evento único o \acrlong{SEU}
-(\acrshort{SEU})} son errores lógicos inducidos por radiación en el circuito
-que consisten en el cambio de valor de un biestable del mismo. No son daños
-permanentes, pero si que puedes afectar al correcto funcionamiento del sistema.
+errors')} \cite{TesisPoli}. Las \textit{conmutaciones por evento único o 
+\acrlong{SEU} (\acrshort{SEU})} son errores lógicos inducidos por radiación en el 
+circuito que consisten en el cambio de valor de un biestable del mismo. No son 
+daños permanentes, pero si que pueden afectar al correcto funcionamiento del 
+sistema.
 
 % Importante decir que con la miniaturizacion de los circuitos esto también aplica
 % en aviónica y a nivel del mar (referencia "Cosmic radiation comes to ASIC and SOC
@@ -24,12 +25,28 @@ Con la miniaturización de los circuitos, la dosis de radiación necesaria para
 provocar un \gls{SEU} es cada vez menor, con la consiguiente aparición de sus 
 efectos cada vez a menor altitud \cite{EDN}. Esto acerca el problema de la 
 radiación a aplicaciones más comunes como puede ser la aviación o las 
-telecomunicaciones. 
-Si la radiacion cambia un bit en tu movil no pasa nada, pero si lo hace en un
-circuito, fiesta
-
+telecomunicaciones. A veces no importa, o es asumible, que un bit del circuito 
+conmute a causa de radiación. Blindar un móvil frente a radiación o reforzar sus
+circuitos con técnicas como el triplicado de sistemas puede ser innecesario dado
+que el mayor riesgo al que nos exponemos es mínimo, pero esto no siempre es así.
+Cuando se trata de satélites, aviones, o incluso bases militares armadas, existen
+sistemas críticos cuyas misiones puedes ser el control orbital, la estabilización
+del vuelo o el lanzamiento de misiles, donde no son asumibles los errores que
+pueda provocar un \gls{SEU}.
 
 % Dar razones de por qué puede ser interesante tener cierta capacidad de
 % diagnístico de SEU
+Diseñar circuitos resistentes a radiación puede ser un proceso costoso, complicado
+y lento. Uno de los pasos suele ser irradiar el circuito para verificar el diseño.
+Normalmente, si a la salida del circuito se detectan irregularidades a causa de un
+\gls{SEU} ocurrido durante la prueba de radiación, sería necesario rediseñar el
+circuito para reforzar aquellas zonas donde se hayan producido las conmutaciones.
+Este proceso se vería enormemente beneficiado de una técnica que permita localizar
+los \gls{SEU}, es decir, calcular el ciclo de reloj y biestable en el que ha
+tenido lugar. Determinar la localización espacial y temporal de un \SEU se
+denomina \textit{\gls{SEU} diagnosis} \cite{SEUDiagnosis}.
+
+Las técnicas de diagnóstico de \gls{SEU} existentes hasta el momento requieren de
+diccionarios de fallos completos o exhaustivos. 
 
 \endinput
