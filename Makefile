@@ -4,9 +4,13 @@ tex  = TFG
 
 pdf:
 	pdflatex $(main).tex
+	pdflatex $(main).tex
+	bibtex $(main).aux
+	bibtex $(main).aux
 	makeindex -s $(main).ist -t $(main).glg -o $(main).gls $(main).glo
 	pdflatex $(main).tex
-	xdg-open $(main).pdf
+	pdflatex $(main).tex
+	zathura $(main).pdf &
 
 .PHONY: vim
 

@@ -7,13 +7,8 @@
 \providecommand{\href}[2]{#2}
 \begin{thebibliography}{1}
 
-\bibitem{gratzer}
-George Gr{\"a}tzer, \emph{More math into latex}, 4 ed., Springer, 2007.
-
-\bibitem{koma}
-Markus Kohm, \emph{A bundle of versatile classes and packages}, May 2012.
-
-\bibitem{moser}
-Stefan~M. Moser, \emph{How to typeset equations in latex}, February 2012.
+\bibitem{EDN}
+Michael Santarini, \emph{Cosmic radiation comes to asic and soc design}, May
+  2005.
 
 \end{thebibliography}
