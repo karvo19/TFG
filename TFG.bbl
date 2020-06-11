@@ -7,6 +7,15 @@
 \providecommand{\href}[2]{#2}
 \begin{thebibliography}{1}
 
+\bibitem{TMR}
+Carl Carmichael, \emph{Triple module redundancy design techniques for virtex
+  fpgas}, Xilinx Application Note XAPP197 \textbf{1} (2001).
+
+\bibitem{RBMSEUdetection}
+S.~{Jian}, J.~{Jiang}, K.~{Lu}, and Y.~{Zhang}, \emph{Seu-tolerant restricted
+  boltzmann machine learning on dsp-based fault detection}, 2014 12th
+  International Conference on Signal Processing (ICSP), 2014, pp.~1503--1506.
+
 \bibitem{TesisPoli}
 Hipólito~Guzmán Miranda, \emph{Aportaciones a las técnicas de emulación y
   protección de sistemas microelectrónicos complejos bajo efectos de la
@@ -19,8 +28,29 @@ J.~M. {Mogollón}, J.~{Nápoles}, H.~{Guzmán-Miranda}, and M.~A. {Aguirre},
   Conference on Radiation and Its Effects on Components and Systems, 2011,
   pp.~705--710.
 
+\bibitem{DetectingSEUs}
+R.~{Pettit} and A.~{Pettit}, \emph{Detecting single event upsets in embedded
+  software}, 2018 IEEE 21st International Symposium on Real-Time Distributed
+  Computing (ISORC), 2018, pp.~142--145.
+
 \bibitem{EDN}
 Michael Santarini, \emph{Cosmic radiation comes to asic and soc design}, May
   2005.
+
+\bibitem{SCARA}
+W.~{Tao} and W.~{Xingsong}, \emph{Fault diagnosis of a scara robot}, 2008 15th
+  International Conference on Mechatronics and Machine Vision in Practice,
+  2008, pp.~352--356.
+
+\bibitem{SelectiveHardening}
+M.~G. {Valderas}, M.~P. {García}, C.~{López}, and L.~{Entrena},
+  \emph{Extensive seu impact analysis of a pic microprocessor for selective
+  hardening}, 2009 European Conference on Radiation and Its Effects on
+  Components and Systems, 2009, pp.~333--336.
+
+\bibitem{AFLS}
+{Zhou Jing}, {Liu Zengrong}, {Chen Lei}, {Wang Shuo}, {Wen Zhiping}, {Chen
+  Xun}, and {Qi Chang}, \emph{An accurate fault location method based on
+  configuration bitstream analysis}, NORCHIP 2012, 2012, pp.~1--5.
 
 \end{thebibliography}

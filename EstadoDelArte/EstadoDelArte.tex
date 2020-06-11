@@ -1,17 +1,35 @@
 \chapter{Estado del arte}
 \label{ch:EstadoDelArte}
 
+% FAULT DETECTION
 % Estoy encontrando papers de "fault detection" pero no muchos de "fault location"
 \lettrine[lraise=-0.1, lines=2, loversize=0.2]{D}{a}do que no es posible realizar
 un diagnóstico de \gls{SEU} sin detectarlo primero, numerosos estudios se centran
-en esto. Una vez que el \gls{SEU} ha sido detectado, se aplican diferentes
-técnicas para suprimir sus efectos. Por ejemplo, en 2014, un equipo chino presentó
-una técnica de detección de \gls{SEU} basada en la \textit{Máquina de Boltzman
-Restringida o \gls{RBM}}, bloque fundamental en muchos algoritmos de \textit{Deep
-Learning} \cite{RBMSEUdetection}. En \cite{SCARA} abordan el problema de
-\textit{faul detection} de manera dinámica, comparan las lecturas tomadas de los
-sensores con los valores teóricos que se obtienen del modelo dinámico del robot
-SCARA. De esta forma detectan anomalías debidas a radiación.
+en desarrollar técnicas que permitan detectarlos a tiempo para suprimir sus 
+efectos. Por ejemplo, en 2014, un equipo chino presentó una técnica de detección 
+de \gls{SEU} basada en la \textit{Máquina de Boltzman Restringida o \gls{RBM}}, 
+bloque fundamental en muchos algoritmos de \textit{Deep Learning} 
+\cite{RBMSEUdetection}. En \cite{SCARA} abordan el problema de \textit{faul 
+detection} por el modelo dinámico del sistema. Comparan las lecturas tomadas por
+los sensores con los valores teóricos que se obtienen del modelo dinámico del
+robot SCARA. De esta forma detectan anomalías debidas a radiación. En un estudio
+más reciente, enfocado a sistemas embebidos, emplean programas de detección por
+software. Multitud de hilos se ejecutan simultáneamente y se encargan de examinar
+el circuito con el objetivo de detectar alguna irregularidad causada por
+radiación \cite{DetectingSEUs}.
+
+
+% FAULT LOCATION
+La investigación actual destinada al diagnóstico de \gls{SEU} está menos
+desarrollada que la existente para \textit{fault detection}.
+% Hablar del paper que usa los bits de configuracion y enlazar con la idea de que
+% la mayoria de las veces el CUT es una caja negra donde sólo son accesibles las
+% salidas (solo podemos monitorizar las salidas, tenemos que realizar el
+% diagnóstico solo a partir de la informacion de las salidas)
+
+    % Leer: An Accurate Fault Location Method Based on Configuration Bitstream
+    % Analysis
+    \cite{AFLS}
 
 
 % Bucar en IEEE por "fault location" -> aparecerá diagnostico de fallos de
@@ -19,9 +37,6 @@ SCARA. De esta forma detectan anomalías debidas a radiación.
 
 % Buscar en IEEE por SEU diagnosis
 
-% Leer: An Accurate Fault Location Method Based on Configuration Bitstream
-% Analysis
-\cite{AFLS}
 
 
 % Revisar las referencias del paper de Mogollón cita:SEUDiagnosis y hablar de él
