@@ -7,6 +7,18 @@
 \providecommand{\href}[2]{#2}
 \begin{thebibliography}{1}
 
+\bibitem{TesisPoli}
+Hipólito~Guzmán Miranda, \emph{Aportaciones a las técnicas de emulación y
+  protección de sistemas microelectrónicos complejos bajo efectos de la
+  radiación}, Ph.D. thesis, Universidad de Sevilla, May 2010.
+
+\bibitem{SEUDiagnosis}
+J.~M. {Mogollón}, J.~{Nápoles}, H.~{Guzmán-Miranda}, and M.~A. {Aguirre},
+  \emph{Real time seu detection and diagnosis for safety or mission-critical
+  ics using hash library-based fault dictionaries}, 2011 12th European
+  Conference on Radiation and Its Effects on Components and Systems, 2011,
+  pp.~705--710.
+
 \bibitem{EDN}
 Michael Santarini, \emph{Cosmic radiation comes to asic and soc design}, May
   2005.

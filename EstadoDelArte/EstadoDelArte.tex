@@ -1,7 +1,41 @@
 \chapter{Estado del arte}
 \label{ch:EstadoDelArte}
 
-\lettrine[lraise=-0.1, lines=2, loversize=0.2]{}{}
+% Estoy encontrando papers de "fault detection" pero no muchos de "fault location"
+\lettrine[lraise=-0.1, lines=2, loversize=0.2]{D}{a}do que no es posible realizar
+un diagnóstico de \gls{SEU} sin detectarlo primero, numerosos estudios se centran
+en esto. Una vez que el \gls{SEU} ha sido detectado, se aplican diferentes
+técnicas para suprimir sus efectos. Por ejemplo, en 2014, un equipo chino presentó
+una técnica de detección de \gls{SEU} basada en la \textit{Máquina de Boltzman
+Restringida o \gls{RBM}}, bloque fundamental en muchos algoritmos de \textit{Deep
+Learning} \cite{RBMSEUdetection}. En \cite{SCARA} abordan el problema de
+\textit{faul detection} de manera dinámica, comparan las lecturas tomadas de los
+sensores con los valores teóricos que se obtienen del modelo dinámico del robot
+SCARA. De esta forma detectan anomalías debidas a radiación.
 
+
+% Bucar en IEEE por "fault location" -> aparecerá diagnostico de fallos de
+% fabricacion
+
+% Buscar en IEEE por SEU diagnosis
+
+% Leer: An Accurate Fault Location Method Based on Configuration Bitstream
+% Analysis
+\cite{AFLS}
+
+
+% Revisar las referencias del paper de Mogollón cita:SEUDiagnosis y hablar de él
+
+% En esta seccion contaría que lo que existe principalmente es para fallos de
+% fabricación.
+
+% Que para SEU se ha hecho poquito y basado en el cálculo de códigos hash (papers
+% de Mogollón). Explicar que el problema de la técnica basada en códigos hash es
+% que necesita de diccionarios exhaustivos, y generarlos es inviable para
+% circuitos grandes.
+
+% Dejar claro que el diccionario de una campaña exhaustiva es un diccionario
+% exhaustivo o completo, y uno al que le falten "runs" es uno incompleto o no
+% exhaustivo.
 
 \endinput

@@ -27,26 +27,47 @@ efectos cada vez a menor altitud \cite{EDN}. Esto acerca el problema de la
 radiación a aplicaciones más comunes como puede ser la aviación o las 
 telecomunicaciones. A veces no importa, o es asumible, que un bit del circuito 
 conmute a causa de radiación. Blindar un móvil frente a radiación o reforzar sus
-circuitos con técnicas como el triplicado de sistemas puede ser innecesario dado
-que el mayor riesgo al que nos exponemos es mínimo, pero esto no siempre es así.
-Cuando se trata de satélites, aviones, o incluso bases militares armadas, existen
-sistemas críticos cuyas misiones puedes ser el control orbital, la estabilización
-del vuelo o el lanzamiento de misiles, donde no son asumibles los errores que
-pueda provocar un \gls{SEU}.
+circuitos con técnicas como la \textit{Redundancia Modular Triple o \gls{TMR}}
+\cite{TMR} puede ser innecesario dado que el mayor riesgo al que nos exponemos es 
+mínimo, pero esto no siempre es así. Cuando se trata de satélites, aviones, o 
+incluso bases militares armadas, existen sistemas críticos cuyas misiones pueden 
+ser el control orbital, la estabilización del vuelo o el lanzamiento de misiles, 
+donde no son asumibles los errores que pueda provocar un \gls{SEU}.
 
 % Dar razones de por qué puede ser interesante tener cierta capacidad de
 % diagnístico de SEU
 Diseñar circuitos resistentes a radiación puede ser un proceso costoso, complicado
-y lento. Uno de los pasos suele ser irradiar el circuito para verificar el diseño.
-Normalmente, si a la salida del circuito se detectan irregularidades a causa de un
-\gls{SEU} ocurrido durante la prueba de radiación, sería necesario rediseñar el
-circuito para reforzar aquellas zonas donde se hayan producido las conmutaciones.
+y lento. Además, aplicar técnicas de refuerzo contra radiación a circuitos 
+completos puede ser una pérdida de recursos \cite{SelectiveHardening}. Uno de los
+pasos del diseño suele ser emplear una plataforma de inyección de fallos para
+estudiar qué zonas del circuito son críticas y cuáles no necesitan ser reforzadas 
+\cite{SelectiveHardening}. Si todo ha ido bien, uno de los últimos pasos suele ser
+irradiar el circuito de forma real para verificar el diseño. Si se detectan 
+irregularidades a la salida a causa de un \gls{SEU} ocurrido durante la prueba,
+sería necesario rediseñar el circuito para reforzar aquellas zonas donde se hayan producido las conmutaciones.
 Este proceso se vería enormemente beneficiado de una técnica que permita localizar
 los \gls{SEU}, es decir, calcular el ciclo de reloj y biestable en el que ha
-tenido lugar. Determinar la localización espacial y temporal de un \SEU se
+tenido lugar. Determinar la localización espacial y temporal de un \gls{SEU} se
 denomina \textit{\gls{SEU} diagnosis} \cite{SEUDiagnosis}.
 
-Las técnicas de diagnóstico de \gls{SEU} existentes hasta el momento requieren de
-diccionarios de fallos completos o exhaustivos. 
+El problema al que nos enfrentamos al tratar de localizar un \gls{SEU} a partir de
+la información de salida de un circuito crece exponencialmente con el tamaño del
+circuito. Las escasas técnicas de diagnóstico  existentes hasta el momento 
+requieren de diccionarios de fallos completos o exhaustivos, requisito que no
+siempre es posible cumplir.
+
+En la presente investigación hemos desarrollado una nueva técnica de diagnóstico
+de \gls{SEU} basada en diccionarios de fallos incompletos o no exhaustivos. La
+hipótesis de la que partimos es que \textit{"Dos \gls{SEU} próximos entre sí
+provocarán patrones de error similares a la salida"}. 
+
+La mayor parte de la investigación se ha centrado en obtener métricas para 
+examinar los patrones de salida desde distintas aproximaciones, ya que el parecido
+o no de dos salidas depende mucho de cómo las observemos. En el desarrollo del
+presente documento analizaremos y compararemos las métricas desarrolladas. Veremos
+si alguna de ellas es mejor que otras, cómo podemos combinarlas en un único
+algoritmo que realice el diagnóstico, si este mejora o empeora al prescindir
+de alguna de las métricas fusionadas, y hasta qué punto podemos elevar la calidad
+del diagnóstico empleando esta técnica.
 
 \endinput

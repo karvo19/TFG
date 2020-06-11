@@ -15,44 +15,44 @@ A level-1 auxiliary file: DistanciaFF/DistanciaFF.aux
 A level-1 auxiliary file: Conclusiones/Conclusiones.aux
 The style file: amsplain.bst
 Database file #1: bibliografia.bib
-You've used 1 entry,
+You've used 3 entries,
             2213 wiz_defined-function locations,
-            516 strings with 4367 characters,
-and the built_in function-call counts, 242 in all, are:
-= -- 16
-> -- 7
+            529 strings with 4878 characters,
+and the built_in function-call counts, 934 in all, are:
+= -- 79
+> -- 37
 < -- 0
-+ -- 3
-- -- 2
-* -- 13
-:= -- 41
-add.period$ -- 1
-call.type$ -- 1
-change.case$ -- 4
++ -- 15
+- -- 12
+* -- 59
+:= -- 149
+add.period$ -- 3
+call.type$ -- 3
+change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 11
-empty$ -- 25
-format.name$ -- 2
-if$ -- 46
+cite$ -- 3
+duplicate$ -- 45
+empty$ -- 84
+format.name$ -- 12
+if$ -- 199
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 13
-num.names$ -- 2
-pop$ -- 11
+int.to.str$ -- 3
+missing$ -- 4
+newline$ -- 19
+num.names$ -- 6
+pop$ -- 27
 preamble$ -- 1
-purify$ -- 3
+purify$ -- 12
 quote$ -- 0
-skip$ -- 7
+skip$ -- 35
 stack$ -- 0
-substring$ -- 5
-swap$ -- 1
+substring$ -- 43
+swap$ -- 11
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
+type$ -- 12
 warning$ -- 0
-while$ -- 2
-width$ -- 2
-write$ -- 16
+while$ -- 8
+width$ -- 4
+write$ -- 34
