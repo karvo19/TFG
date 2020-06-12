@@ -5,11 +5,20 @@
   \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
 }
 \providecommand{\href}[2]{#2}
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{LargeComb}
+V.~{Amar} and N.~{Condulmari}, \emph{Diagnosis of large combinational
+  networks}, IEEE Transactions on Electronic Computers \textbf{EC-16} (1967),
+  no.~5, 675--680.
 
 \bibitem{TMR}
 Carl Carmichael, \emph{Triple module redundancy design techniques for virtex
   fpgas}, Xilinx Application Note XAPP197 \textbf{1} (2001).
+
+\bibitem{FDIRC}
+A.~D. {Friedman}, \emph{Fault detection in redundant circuits}, IEEE
+  Transactions on Electronic Computers \textbf{EC-16} (1967), no.~1, 99--100.
 
 \bibitem{RBMSEUdetection}
 S.~{Jian}, J.~{Jiang}, K.~{Lu}, and Y.~{Zhang}, \emph{Seu-tolerant restricted
@@ -28,14 +37,41 @@ J.~M. {Mogollón}, J.~{Nápoles}, H.~{Guzmán-Miranda}, and M.~A. {Aguirre},
   Conference on Radiation and Its Effects on Components and Systems, 2011,
   pp.~705--710.
 
+\bibitem{RTFDandD}
+N.~{Naber}, T.~{Getz}, Y.~{Kim}, and J.~{Petrosky}, \emph{Real-time fault
+  detection and diagnostics using fpga-based architectures}, 2010 International
+  Conference on Field Programmable Logic and Applications, 2010, pp.~346--351.
+
 \bibitem{DetectingSEUs}
 R.~{Pettit} and A.~{Pettit}, \emph{Detecting single event upsets in embedded
   software}, 2018 IEEE 21st International Symposium on Real-Time Distributed
   Computing (ISORC), 2018, pp.~142--145.
 
+\bibitem{FILC}
+J.~P. {Roth}, W.~G. {Bouricius}, and P.~R. {Schneider}, \emph{Programmed
+  algorithms to compute tests to detect and distinguish between failures in
+  logic circuits}, IEEE Transactions on Electronic Computers \textbf{EC-16}
+  (1967), no.~5, 567--580.
+
 \bibitem{EDN}
 Michael Santarini, \emph{Cosmic radiation comes to asic and soc design}, May
   2005.
+
+\bibitem{ANewRep}
+D.~R. {Schertz} and G.~{Metze}, \emph{A new representation for faults in
+  combinational digital circuits}, IEEE Transactions on Computers \textbf{C-21}
+  (1972), no.~8, 858--866.
+
+\bibitem{VLSI}
+B.~K. {Sikdar}, N.~{Ganguly}, and P.~P. {Chaudhuri}, \emph{Fault diagnosis of
+  vlsi circuits with cellular automata based pattern classifier}, IEEE
+  Transactions on Computer-Aided Design of Integrated Circuits and Systems
+  \textbf{24} (2005), no.~7, 1115--1131.
+
+\bibitem{DiagnosisTechniques}
+{Su Wei}, {Fan Tongshun}, and {Du Mingfang}, \emph{Research for digital circuit
+  fault testing and diagnosis techniques}, 2009 International Conference on
+  Test and Measurement, vol.~1, 2009, pp.~330--333.
 
 \bibitem{SCARA}
 W.~{Tao} and W.~{Xingsong}, \emph{Fault diagnosis of a scara robot}, 2008 15th
@@ -48,9 +84,20 @@ M.~G. {Valderas}, M.~P. {García}, C.~{López}, and L.~{Entrena},
   hardening}, 2009 European Conference on Radiation and Its Effects on
   Components and Systems, 2009, pp.~333--336.
 
-\bibitem{AFLS}
-{Zhou Jing}, {Liu Zengrong}, {Chen Lei}, {Wang Shuo}, {Wen Zhiping}, {Chen
-  Xun}, and {Qi Chang}, \emph{An accurate fault location method based on
-  configuration bitstream analysis}, NORCHIP 2012, 2012, pp.~1--5.
+\bibitem{LASAR}
+S.~{Wei}, Z.~{Shide}, and X.~{Lijun}, \emph{Research on digital circuit fault
+  location procedure based on lasar}, 2008 ISECS International Colloquium on
+  Computing, Communication, Control, and Management, vol.~2, 2008,
+  pp.~322--326.
+
+\bibitem{RepairSA0SA1}
+S.~S. {Yau} and M.~{Orsic}, \emph{Fault diagnosis and repair of cutpoint
+  cellular arrays}, IEEE Transactions on Computers \textbf{C-19} (1970), no.~3,
+  259--262.
+
+\bibitem{EfficientSA0SA1}
+S.~S. {Yau} and {Yu-Shan Tang}, \emph{An efficient algorithm for generating
+  complete test sets for combinational logic circuits}, IEEE Transactions on
+  Computers \textbf{C-20} (1971), no.~11, 1245--1251.
 
 \end{thebibliography}

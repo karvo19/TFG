@@ -16,45 +16,45 @@ A level-1 auxiliary file: Conclusiones/Conclusiones.aux
 The style file: amsplain.bst
 Database file #1: bibliografia.bib
 Warning--missing pages in TMR
-You've used 9 entries,
+You've used 18 entries,
             2213 wiz_defined-function locations,
-            570 strings with 6067 characters,
-and the built_in function-call counts, 3505 in all, are:
-= -- 313
-> -- 154
-< -- 0
-+ -- 62
-- -- 52
-* -- 235
-:= -- 525
-add.period$ -- 9
-call.type$ -- 9
-change.case$ -- 53
+            632 strings with 7557 characters,
+and the built_in function-call counts, 6694 in all, are:
+= -- 612
+> -- 270
+< -- 2
++ -- 108
+- -- 88
+* -- 510
+:= -- 1011
+add.period$ -- 18
+call.type$ -- 18
+change.case$ -- 98
 chr.to.int$ -- 0
-cite$ -- 10
-duplicate$ -- 164
-empty$ -- 301
-format.name$ -- 52
-if$ -- 785
+cite$ -- 19
+duplicate$ -- 291
+empty$ -- 586
+format.name$ -- 88
+if$ -- 1486
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 16
-newline$ -- 37
-num.names$ -- 18
-pop$ -- 82
+int.to.str$ -- 18
+missing$ -- 34
+newline$ -- 64
+num.names$ -- 36
+pop$ -- 131
 preamble$ -- 1
-purify$ -- 44
+purify$ -- 80
 quote$ -- 0
-skip$ -- 149
+skip$ -- 235
 stack$ -- 0
-substring$ -- 206
-swap$ -- 56
-text.length$ -- 0
+substring$ -- 480
+swap$ -- 87
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 36
+type$ -- 72
 warning$ -- 1
-while$ -- 30
-width$ -- 10
-write$ -- 86
+while$ -- 59
+width$ -- 20
+write$ -- 169
 (There was 1 warning)

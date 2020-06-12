@@ -19,38 +19,51 @@ el circuito con el objetivo de detectar alguna irregularidad causada por
 radiación \cite{DetectingSEUs}.
 
 
-% FAULT LOCATION
-La investigación actual destinada al diagnóstico de \gls{SEU} está menos
-desarrollada que la existente para \textit{fault detection}.
-% Hablar del paper que usa los bits de configuracion y enlazar con la idea de que
-% la mayoria de las veces el CUT es una caja negra donde sólo son accesibles las
-% salidas (solo podemos monitorizar las salidas, tenemos que realizar el
-% diagnóstico solo a partir de la informacion de las salidas)
-
-    % Leer: An Accurate Fault Location Method Based on Configuration Bitstream
-    % Analysis
-    \cite{AFLS}
-
-
-% Bucar en IEEE por "fault location" -> aparecerá diagnostico de fallos de
-% fabricacion
-
-% Buscar en IEEE por SEU diagnosis
-
-
-
-% Revisar las referencias del paper de Mogollón cita:SEUDiagnosis y hablar de él
-
 % En esta seccion contaría que lo que existe principalmente es para fallos de
 % fabricación.
+% FAULT LOCATION
+Hasta ahora, el diagnóstico de fallos ha sido poco estudiado, siendo los fallos de
+fabricación a los que más esfuerzos de investigación se les ha dedicado
+\cite{VLSI, EfficientSA0SA1, RepairSA0SA1, LargeComb, ANewRep, FILC, FDIRC}.
+Estos no son el tipo de fallos que nos interesa diagnosticar en esta
+investigación, ya que no son causados por radiación, si no que se producen, como
+su nombre indica, en el momento de fabricación del circuito (\textit{stuck-at-0,
+stuck-at-1}).
 
-% Que para SEU se ha hecho poquito y basado en el cálculo de códigos hash (papers
-% de Mogollón). Explicar que el problema de la técnica basada en códigos hash es
-% que necesita de diccionarios exhaustivos, y generarlos es inviable para
-% circuitos grandes.
+Las técnicas existentes para localización de fallos provocados por radiación se
+basan principalmente en el uso de diccionarios de fallos, aunque también se
+emplean vectores de prueba, listas de fallos, tabla de verdad de nodos
+(\textit{"node truth table"}) y tabla de conexiones de pines (\textit{pin
+connection table}) \cite{DiagnosisTechniques, LASAR, RTFDandD}. 
 
-% Dejar claro que el diccionario de una campaña exhaustiva es un diccionario
-% exhaustivo o completo, y uno al que le falten "runs" es uno incompleto o no
-% exhaustivo.
+A excepción de algunos pocos, la mayoría de los estudios revisados tratan al 
+circuito bajo prueba o \textit{\gls{CUT}} como una caja negra, es decir, el diseño
+del circuito no se conoce y solo las salidas pueden ser monitorizadas. Esto limita
+mucho la capacidad de diagnóstico, y por eso se necesita recurrir al uso de 
+diccionarios de fallos.
+
+Un diccionario de fallos se genera mediante técnicas de inyección de fallos
+\cite{}, y
+contiene información de la localización de los \gls{SEU} inyectados y el patrón de
+salidas que produce. Si el diccionario recoge todas las posibilidades, se habla de
+diccionario completo o exhaustivo, tomando el nombre de la campaña de inyección 
+de fallos necesaria para generarlo (\textit{Campaña Exhaustiva}). En el caso 
+contrario, es un diccionario incompleto o no exhaustivo, es decir, no todas las
+posibles combinaciones de (biestable, ciclo) han sido inyectadas y almacenadas en
+el diccionario. 
+
+La localización del \gls{SEU}, una vez detectado, se consigue comparando el patrón
+de salida generado con la información contenida en los diccionarios de fallos.
+
+% Problema de que no se llegue a un único candidato, sino a una lista
+% Problema de las colisiones
+
+% Hablar del paper de mogollon: (creo que es para evitar las colisiones)
+\cite{SEUDiagnosis}
+
+
+% Explicar que el problema de la técnica basada en códigos hash es que necesita 
+% de diccionarios exhaustivos, y generarlos es inviable para circuitos grandes.
+
 
 \endinput
