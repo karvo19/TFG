@@ -13,48 +13,56 @@ A level-1 auxiliary file: CampanasIterativas/CampanasIterativas.aux
 A level-1 auxiliary file: RealDesigns/RealDesigns.aux
 A level-1 auxiliary file: DistanciaFF/DistanciaFF.aux
 A level-1 auxiliary file: Conclusiones/Conclusiones.aux
-The style file: amsplain.bst
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bibliografia.bib
-Warning--missing pages in TMR
-You've used 18 entries,
-            2213 wiz_defined-function locations,
-            632 strings with 7557 characters,
-and the built_in function-call counts, 6694 in all, are:
-= -- 612
-> -- 270
-< -- 2
-+ -- 108
-- -- 88
-* -- 510
-:= -- 1011
-add.period$ -- 18
-call.type$ -- 18
-change.case$ -- 98
-chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 291
-empty$ -- 586
-format.name$ -- 88
-if$ -- 1486
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 22 entries,
+            4087 wiz_defined-function locations,
+            976 strings with 11827 characters,
+and the built_in function-call counts, 18137 in all, are:
+= -- 1438
+> -- 404
+< -- 166
++ -- 239
+- -- 64
+* -- 857
+:= -- 2617
+add.period$ -- 44
+call.type$ -- 22
+change.case$ -- 22
+chr.to.int$ -- 390
+cite$ -- 22
+duplicate$ -- 1273
+empty$ -- 1505
+format.name$ -- 82
+if$ -- 4317
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 34
-newline$ -- 64
-num.names$ -- 36
-pop$ -- 131
+int.to.str$ -- 22
+missing$ -- 215
+newline$ -- 91
+num.names$ -- 22
+pop$ -- 490
 preamble$ -- 1
-purify$ -- 80
-quote$ -- 0
-skip$ -- 235
+purify$ -- 0
+quote$ -- 2
+skip$ -- 1437
 stack$ -- 0
-substring$ -- 480
-swap$ -- 87
-text.length$ -- 2
+substring$ -- 931
+swap$ -- 1061
+text.length$ -- 36
 text.prefix$ -- 0
-top$ -- 0
-type$ -- 72
-warning$ -- 1
-while$ -- 59
-width$ -- 20
-write$ -- 169
-(There was 1 warning)
+top$ -- 5
+type$ -- 22
+warning$ -- 0
+while$ -- 79
+width$ -- 24
+write$ -- 237

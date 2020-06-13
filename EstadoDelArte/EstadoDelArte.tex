@@ -42,18 +42,24 @@ del circuito no se conoce y solo las salidas pueden ser monitorizadas. Esto limi
 mucho la capacidad de diagnóstico, y por eso se necesita recurrir al uso de 
 diccionarios de fallos.
 
-Un diccionario de fallos se genera mediante técnicas de inyección de fallos
-\cite{}, y
-contiene información de la localización de los \gls{SEU} inyectados y el patrón de
-salidas que produce. Si el diccionario recoge todas las posibilidades, se habla de
-diccionario completo o exhaustivo, tomando el nombre de la campaña de inyección 
-de fallos necesaria para generarlo (\textit{Campaña Exhaustiva}). En el caso 
-contrario, es un diccionario incompleto o no exhaustivo, es decir, no todas las
-posibles combinaciones de (biestable, ciclo) han sido inyectadas y almacenadas en
-el diccionario. 
+Un diccionario de fallos se genera mediante inyección de fallos, en alguna
+plataforma que lo permita \cite{FastFI, LeonFI, FTU}, y contiene información de 
+la localización de los \gls{SEU} inyectados y el patrón de salidas que produce. 
+Si el diccionario recoge todas las posibilidades, se habla de diccionario 
+completo o exhaustivo, tomando el nombre de la campaña de inyección de fallos 
+necesaria para generarlo (\textit{Campaña Exhaustiva}). En el caso contrario, es 
+un diccionario incompleto o no exhaustivo, es decir, no todas las posibles 
+combinaciones de (biestable, ciclo) han sido inyectadas y almacenadas en el 
+diccionario. 
 
 La localización del \gls{SEU}, una vez detectado, se consigue comparando el patrón
 de salida generado con la información contenida en los diccionarios de fallos.
+
+% When testing digital electronic circuits usually the numberof test vectors and logic cells (in the following Flip-Flop or FF)is huge in comparison with the number of outputs. This impliesthat  it  is  necessary  to  analyze  the  outputs  for  a  long  enoughtime to have a pattern or signature that can be associated witha specific clock cycle and FF inside the system where the faultappeared. This premise is pretty ambitious since supposes thatthere  is  an  unique  signature  for  a  couple  of  clock  cycle  andFF  and  viceversa,  i.e.  this  relation  is  univocal.  In  general,  itis not true, and several different injected faults can give placeto exactly the same signature at the outputs. In this scenario,it  is  also  obvious  that  the  greater  the  time  we  analyze  theoutputs,  the  greater  the  possibility  to  get  different  signaturesfor different injected faults.
+% Propuesta de parrafo: REVISAR
+El punto débil que tiene este método es que no se puede encontrar en el
+diccionario, mediante comparación, una entrada inexistente. Es decir, necesitamos
+diccionarios exhaustivos para asegurar el funcionamiento de este método.
 
 % Problema de que no se llegue a un único candidato, sino a una lista
 % Problema de las colisiones
