@@ -34,10 +34,10 @@ combinaciones donde inyectar un error lógico.
 Las salidas que se obtienen, ciclo a ciclo, durante una ejecución de la campaña, 
 se registran y almacenan junto con la información de la inyección que las ha 
 causado. Dado que solo nos interesan los errores, no que se traten de ceros cuando
-deberían ser unos o viceversa, la salida del circuito (entendiendo salida como el
-conjunto de las salidas de los ciclos que dura la prueba) es comparada bit a bit
-con la salida que se obtendría si no existiese fallo alguno. Para llevar a cabo
-esta comparación se emplea la operación lógica \textit{XOR}, ya que por
+deberían ser unos o viceversa, la salida del circuito (entendiendo "salida" como 
+el conjunto de las salidas de los ciclos que dura la prueba) es comparada bit a 
+bit con la salida que se obtendría si no existiese fallo alguno. Para llevar a 
+cabo esta comparación se emplea la operación lógica \textit{XOR}, ya que por
 definición, toma el valor 1 únicamente cuándo sus entradas son distintas.
 
 % Imagen 2 -> Postprocesado de la salida de un ejecución de la campaña.
@@ -53,21 +53,53 @@ la salida del circuito durante una ejecución libre de inyecciones la denominare
 % Definir golden run (arriba)
 
 % Definir entrada del diccionario
-% Decir que cada run, junto con la información de la inyección que lo ha causado,
-% constituye una entrada del diccionario. Es decir, cada entrada del diccionario
-% está formado por la localización de la inyección recreada (FF, ciclo) y las
-% discrepancias que ha causado a la salida.
+Cada run, junto con la información de la inyección que lo ha causado, constituye
+una entrada del diccionario. Es decir, cada entrada del diccionario está formado
+por la localización del \gls{SEU} recreado (\gls{FF}, ciclo) y las discrepancias 
+que ha causado a la salida. El diccionario estará constituido por tantas entradas 
+como inyecciones se hayan realizado durante la campaña.
 
+% Diccionario de fallos completo o exhaustivo
+Se dice que el diccionario de fallos es completo o exhaustivo cuando se genera a
+partir de una campaña de inyección de fallos exhaustiva, es decir, se inyectan
+todas las posibles combinaciones de \gls{FF} y ciclo. 
+% Campaña exaustiva --> tiempo necesario para generarla n*m*m
+Como hemos visto, existen \textit{"n·m"} inyecciones posibles. Además, cada una de 
+las ejecuciones tiene una extensión de \textit{"m"} ciclos, lo que hace un total 
+de  \textit{"n·m·m"} ciclos totales de ejecución necesarios para completar una
+campaña exhaustiva.
 
-% Set de bits seleccionados -> exhaustivo
+% Inviabilidad de obtener diccionarios exhasutivos en circuitos grandes
+La extensión de cada una de las ejecuciones de una campaña, en ciclos, debe ser
+tal que el error lógico inyectado tenga el tiempo suficiente para producir un 
+patrón de salidas identificable y diferenciable del resto de inyecciones. Si el
+circuito es pequeño, estas diferencias se harán notables de forma más temprana.
+Cuando el circuito tiene un número de \gls{FF} elevado, el número de ciclos
+necesario para que los patrones de salida se diferencien lo suficiente unos de 
+otros, y por tanto, podamos identificar distintos \gls{SEU}, también lo es. Esto
+hace que ejecutar una campaña de inyección de fallos exhaustiva, y por tanto, 
+obtener un diccionario de fallos exhaustivo sea inviable para circuitos grandes.
 
+% Diccionario de fallos incompleto o no exhaustivo
+Cuando esto sucede, no queda más opción que la de trabajar con diccionarios de
+fallos incompletos. Las campañas de inyección de fallos no exhaustivas pueden
+enfocarse a un subconjunto de biestables del circuito, limitar las inyecciones en 
+tiempo, o realizarse de forma aleatoria. El diccionario de partida con el que
+hemos diagnosticado en circuitos grandes es incompleto y aleatorio, aunque
+plantearemos también el uso de diccionarios específicos para subconjuntos de
+\gls{FF} y ciclos en otras fases del diagnóstico cuándo la primera no es
+suficiente.
 
-% Definir golden run
-
-% Imagen 2
+% El estudio realizado parte de la premisa de que la plataforma de inyección de
+% fallos está bien diseñada y funciona correctamente.
+Es importante destacar que el estudio aquí realizado requiere de una plataforma 
+de inyección de fallos que funcione correctamente. La verificación del correcto 
+funcionamiento de esta plataforma no es ámbito de esta investigación.
 
 \section{FT-Unshades2}
 \label{sec:FT-Unshades2}
-% GOLDEN run
+Esta es la plataforma de inyección de fallos con la que hemos trabajado durante
+toda la investigación. Fué diseñada por un equipo del departamento de Ingeniería
+Electrónica de la Universidad de Sevilla en el año 
 
 \endinput

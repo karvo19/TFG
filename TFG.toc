@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {2.1}Detecci\IeC {\'o}n de fallos (\textit {Fault Detection})}{3}{section.2.1}% 
 \contentsline {section}{\numberline {2.2}Diagn\IeC {\'o}stico de fallos o localizaci\IeC {\'o}n de fallos}{3}{section.2.2}% 
 \contentsline {chapter}{\numberline {3}Inyecci\IeC {\'o}n de fallos}{5}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}FT-Unshades2}{5}{section.3.1}% 
+\contentsline {section}{\numberline {3.1}FT-Unshades2}{6}{section.3.1}% 
 \contentsline {chapter}{\numberline {4}Primera aproximaci\IeC {\'o}n a una m\IeC {\'e}trica apropiada. Distancia de Levenshtein}{7}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Elaboraci\IeC {\'o}n de la base de datos de distancias}{7}{section.4.1}% 
 \contentsline {section}{\numberline {4.2}Diagn\IeC {\'o}stico basado en la distancia de Levenshtein}{7}{section.4.2}% 
