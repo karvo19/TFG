@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  13 JUN 2020 11:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  14 JUN 2020 13:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2925,6 +2925,8 @@ LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9.85492> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 3.
+LaTeX Font Info:    Font shape `T1/phv/mc/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/mc/sl' tried instead on input line 8.
 LaTeX Info: Redefining \. on input line 36.
 LaTeX Info: Redefining \% on input line 36.
 LaTeX Info: Redefining \. on input line 36.
@@ -2999,25 +3001,22 @@ l.178 \include{Introduccion/Introduccion}
 
 (./EstadoDelArte/EstadoDelArte.tex
 chapter 2.
-Package lettrine.sty Info: Targeted height = 18.58224pt
-(lettrine.sty)             (no accent, loversize=0),
-(lettrine.sty)             Lettrine height = 22.29866pt (D) loversize=0.2;
-(lettrine.sty)             reported on input line 6.
-)
-LaTeX Info: Redefining \. on input line 180.
-LaTeX Info: Redefining \% on input line 180.
-LaTeX Info: Redefining \. on input line 180.
-LaTeX Info: Redefining \% on input line 180.
+LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <14.23502> not available
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 6.
+LaTeX Info: Redefining \. on input line 61.
+LaTeX Info: Redefining \% on input line 61.
+LaTeX Info: Redefining \. on input line 61.
+LaTeX Info: Redefining \% on input line 61.
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.180 \include{EstadoDelArte/EstadoDelArte}
-                                            [3
+l.61 
+      [3
 
 
 
-]
+])
 LaTeX Info: Redefining \. on input line 180.
 LaTeX Info: Redefining \% on input line 180.
 LaTeX Info: Redefining \. on input line 180.
@@ -3036,7 +3035,7 @@ chapter 3.
 Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 0.0pt () loversize=0.2;
-(lettrine.sty)             reported on input line 4.
+(lettrine.sty)             reported on input line 6.
 )
 LaTeX Info: Redefining \. on input line 182.
 LaTeX Info: Redefining \% on input line 182.
@@ -3313,11 +3312,11 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred when \iftrue on line 455 was incomplete) 
 Here is how much of TeX's memory you used:
- 70646 strings out of 492609
- 1559701 string characters out of 6131463
- 2042690 words of memory out of 5000000
- 72948 multiletter control sequences out of 15000+600000
- 617793 words of font info for 140 fonts, out of 8000000 for 9000
+ 70662 strings out of 492609
+ 1559937 string characters out of 6131463
+ 2042833 words of memory out of 5000000
+ 72958 multiletter control sequences out of 15000+600000
+ 623644 words of font info for 144 fonts, out of 8000000 for 9000
  1162 hyphenation exceptions out of 8191
  87i,8n,142p,9082b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texm
@@ -3327,12 +3326,14 @@ fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-g
 yre/qtmr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmri.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/helvetic/uhvr8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/helvetic/uhvro8a.pfb>
-Output written on TFG.pdf (45 pages, 795126 bytes).
+nts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/helvetic/uhvr8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helveti
+c/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.
+pfb>
+Output written on TFG.pdf (45 pages, 809863 bytes).
 PDF statistics:
- 749 PDF objects out of 1000 (max. 8388607)
- 655 compressed objects within 7 object streams
- 120 named destinations out of 1000 (max. 500000)
- 24052 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 775 PDF objects out of 1000 (max. 8388607)
+ 679 compressed objects within 7 object streams
+ 122 named destinations out of 1000 (max. 500000)
+ 25092 words of extra memory for PDF output out of 29859 (max. 10000000)
 
