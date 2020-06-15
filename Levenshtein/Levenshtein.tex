@@ -1,11 +1,33 @@
 \chapter{Primera aproximación a una métrica apropiada. Distancia de Levenshtein}
 \label{ch:Levenshtein}
 
-\lettrine[lraise=-0.1, lines=2, loversize=0.2]{}{}
-% Definir la distancia de Levenshtein original (citarlo bien)
-% Explicar la modificación realizada para adaptarlo a nuestro caso
-% Comentar la hipótesis realizada para realizar el diagnóstico en base a esto
+\lettrine[lraise=-0.1, lines=2, loversize=0.2]{L}{a} distancia de Levenshtein
+recibe su nombre del científico ruso Vladimir Levenshtein, quién la creó en 1965.
 
+% Definir la distancia de Levenshtein original (citarlo bien)
+\vspace{0.3cm}
+\textit{"La distancia de Levenshtein, distancia de edición o distancia entre
+palabras es el número mínimo de operaciones requeridas para transformar una cadena
+de caracteres en otra"}.
+\vspace{-0.2cm}
+{\flushleft{\hfill \emph{- Wikipedia, 2020, párrafo 1,} \cite{Wikipedia}}}
+\vspace{0.3cm}
+
+% Explicar la modificación realizada para adaptarlo a nuestro caso
+Aunque este algoritmo esté concebido como métrica de la diferencia entre dos
+cadenas de caracteres, podemos aplicar el concepto básico a dos salidas de la
+campaña de inyección de fallos. Redefiniendo la distancia de Levenshtein para
+nuestro caso en particular:
+
+\vspace{0.3cm}
+\textit{"La distancia de Levenshtein en el número mínimo de bits que hay que
+conmutar de la salida de una campaña de inyección de fallos para transformarla 
+en otra"}.
+\vspace{0.3cm}
+% Comentar la hipótesis realizada para realizar el diagnóstico en base a esto
+    % Si el SEU se encuentra en el diccionario -> levenDist = 0
+    % Si el SEU no se encuentra en el diccionario -> min(levenDist) será el más
+    % cercano
 
 %\section{Distancia de Levenshtein}
 %\label{sec:Levenshtein}

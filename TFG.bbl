@@ -134,6 +134,13 @@ J.~M. {Mogollon}, H.~{Guzmán-Miranda}, J.~{Nápoles}, J.~{Barrientos}, and
   robustness against see,'' in \emph{2011 12th European Conference on Radiation
   and Its Effects on Components and Systems}, 2011, pp. 169--174.
 
+\bibitem{Wikipedia}
+\BIBentryALTinterwordspacing
+Wikipedia, ``Distancia de levenshtein --- wikipedia{,} la enciclopedia libre,''
+  2020, [Internet; descargado 15-junio-2020]. [Online]. Available:
+  \url{https://es.wikipedia.org/w/index.php?title=Distancia_de_Levenshtein&oldid=125248609}
+\BIBentrySTDinterwordspacing
+
 \bibitem{AFLS}
 {Zhou Jing}, {Liu Zengrong}, {Chen Lei}, {Wang Shuo}, {Wen Zhiping}, {Chen
   Xun}, and {Qi Chang}, ``An accurate fault location method based on
