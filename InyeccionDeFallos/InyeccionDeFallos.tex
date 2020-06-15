@@ -30,6 +30,13 @@ ejecutan durante \textit{"m"} ciclos de reloj, existirán \textit{"n·m"} posibl
 combinaciones donde inyectar un error lógico.
 
 % Imagen 1 -> Ejecución de una camapaña de inyección de fallos.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.95\linewidth]
+    {InyeccionDeFallos/figuras/fig_1.png}
+    \caption{Ejecución de una campaña de inyección de fallos}
+    \label{fig:Inyeccion}
+\end{figure}
 
 Las salidas que se obtienen, ciclo a ciclo, durante una ejecución de la campaña, 
 se registran y almacenan junto con la información de la inyección que las ha 
@@ -40,7 +47,14 @@ bit con la salida que se obtendría si no existiese fallo alguno. Para llevar a
 cabo esta comparación se emplea la operación lógica \textit{XOR}, ya que por
 definición, toma el valor 1 únicamente cuándo sus entradas son distintas.
 
-% Imagen 2 -> Postprocesado de la salida de un ejecución de la campaña.
+% Imagen 2 -> Postprocesado de la salida de una ejecución de la campaña.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.95\linewidth]
+    {InyeccionDeFallos/figuras/fig_2.png}
+    \caption{Postprocesado de la salida de una ejecución de la campaña}
+    \label{fig:PostprocesadoSalida}
+\end{figure}
 
 % Definir run -> como XOR de golden run y las salidas -> discrepancias
 Aplicandola para cada correspondiente pareja de bits entre una salida de la 
@@ -103,5 +117,29 @@ toda la investigación. Fué diseñada por un equipo del departamento de Ingenie
 Electrónica de la Universidad de Sevilla en el año 2011 \cite{FTU} y ha sido
 utilizada por multitud de equipos para el desarrollo de sus proyectos, incluidos
 algunos pertenecientes a la Agencia Espacial Europea (\textit{\acrshort{ESA}}).
+
+Está basada en las \acrshort{FPGA} (\textit{\acrlong{FPGA}}) avanzadas de
+\textit{Xilinx}. Concretamente, hace uso de una de sus características, llamada
+\textit{"Capture and ReadBack"}, mediante la cual tienen acceso a partes del
+esquema de configuración. De esta forma pueden realizar cambios de valor en 
+cualquier registro de usuario.
+
+Partiendo de esta funcionalidad de las tarjetas de \textit{Xilinx} consiguen
+controlar todo el proceso de inyección. Manejan la señal de reloj precisamente
+para poder inyectar en el ciclo y biestable deseado de forma que el \gls{CUT} no
+sea capaz de percibir el proceso de inyección.
+
+\vspace{0.3cm}
+\textit{"FTU2 puede ser una de las plataformas de inyección de fallos basada en 
+hardware más poderosas que existe para la evaluación de \gls{SEE}. La flexibilidad
+y recursos disponibles hacen a FTU2 apropiada para diferentes usos, no solo como
+emulador de hardware para técnicas de inyección de fallos."}
+\vspace{-0.2cm}
+{\flushleft{\emph{- J. M. Mogollon, H. Guzmán-Miranda, J. Nápoles, J. Barrientos,
+M. A. Aguirre, 2011, pág. 5, \cite{FTU}}}}
+\vspace{0.3cm}
+
+La plataforma FTU2 tiene potencia y flexibilidad suficiente para llevar a cabo
+todos las labores de inyección de fallos que se han necesitado para este trabajo.
 
 \endinput

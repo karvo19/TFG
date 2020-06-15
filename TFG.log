@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  14 JUN 2020 22:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  15 JUN 2020 12:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2546,11 +2546,11 @@ Writing index file TFG.idx
 \glo@main@file=\write6
 \openout6 = `TFG.glo'.
 
-Package glossaries Info: Writing glossary file TFG.glo on input line 101.
+Package glossaries Info: Writing glossary file TFG.glo on input line 102.
 \glo@acronym@file=\write7
 \openout7 = `TFG.acn'.
 
-Package glossaries Info: Writing glossary file TFG.acn on input line 101.
+Package glossaries Info: Writing glossary file TFG.acn on input line 102.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -2576,29 +2576,29 @@ LaTeX Warning: Label `ch:FFdist' multiply defined.
 ))
 \openout1 = `TFG.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Try loading font information for T1+qtm on input line 106.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Try loading font information for T1+qtm on input line 107.
  (/usr/share/texmf/tex/latex/tex-gyre/t1qtm.fd
 File: t1qtm.fd 2009/09/25 v1.2 font definition file for T1/qtm
 )
-LaTeX Info: Redefining \microtypecontext on input line 106.
+LaTeX Info: Redefining \microtypecontext on input line 107.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2646,8 +2646,8 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 106.
-LaTeX Info: Redefining \% on input line 106.
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count544
@@ -2716,7 +2716,7 @@ Dictionary: translator-months-dictionary, Language: Spanish
 )
 \AtBeginShipoutBox=\box140
 Package atbegshi Info: Package `crop' patched.
-Package hyperref Info: Link coloring ON on input line 106.
+Package hyperref Info: Link coloring ON on input line 107.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -2725,50 +2725,50 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count551
 )
-LaTeX Info: Redefining \ref on input line 106.
-LaTeX Info: Redefining \pageref on input line 106.
-LaTeX Info: Redefining \nameref on input line 106.
+LaTeX Info: Redefining \ref on input line 107.
+LaTeX Info: Redefining \pageref on input line 107.
+LaTeX Info: Redefining \nameref on input line 107.
 \c@lstlisting=\count552
-Package scrhack Info: undefining \float@addtolists on input line 106.
+Package scrhack Info: undefining \float@addtolists on input line 107.
 
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
 
-Package crop Info: requested driver: `' on input line 106.
-Package crop Info: detected driver: `pdftex' on input line 106.
-Package crop Info: using `pdftex' graphics driver on input line 106.
+Package crop Info: requested driver: `' on input line 107.
+Package crop Info: detected driver: `pdftex' on input line 107.
+Package crop Info: using `pdftex' graphics driver on input line 107.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 131.
+(hyperref)                removing `\<def>-command' on input line 132.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\elnombretrabajo' on input line 131.
+(hyperref)                removing `\elnombretrabajo' on input line 132.
 
 \pgf@layerbox@foreground=\box141
 \pgf@layerboxsaved@foreground=\box142
 <figuras/edificio01.pdf, id=31, 310.16478pt x 472.67862pt>
 File: figuras/edificio01.pdf Graphic file (type pdf)
 <use figuras/edificio01.pdf>
-Package pdftex.def Info: figuras/edificio01.pdf  used on input line 133.
+Package pdftex.def Info: figuras/edificio01.pdf  used on input line 134.
 (pdftex.def)             Requested size: 99.58604pt x 159.33101pt.
 <figuras/etsi.pdf, id=32, 65.81078pt x 82.84642pt>
 File: figuras/etsi.pdf Graphic file (type pdf)
 <use figuras/etsi.pdf>
-Package pdftex.def Info: figuras/etsi.pdf  used on input line 133.
+Package pdftex.def Info: figuras/etsi.pdf  used on input line 134.
 (pdftex.def)             Requested size: 67.80794pt x 85.35826pt.
 <figuras/LogoUS.pdf, id=33, 305.02626pt x 269.87737pt>
 File: figuras/LogoUS.pdf Graphic file (type pdf)
 <use figuras/LogoUS.pdf>
-Package pdftex.def Info: figuras/LogoUS.pdf  used on input line 133.
+Package pdftex.def Info: figuras/LogoUS.pdf  used on input line 134.
 (pdftex.def)             Requested size: 71.13188pt x 62.93526pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 \T1/qtm/m/n/20.74 Grado en In-ge-nie-ría Elec-tró-ni-ca, Ro-bó-ti-ca y
  []
 
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 13
-3.
+4.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
@@ -2777,19 +2777,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 13
-3.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 13
-3.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 13
-3.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
@@ -2800,19 +2800,19 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 133.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 134.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 133.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 134.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -2824,37 +2824,37 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 <./figuras/etsi.pdf> <./figuras/LogoUS.pdf>] [2] [3
 
 ] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 
  []
 
@@ -2911,10 +2911,10 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             Lettrine height = 22.29866pt (T) loversize=0.2;
 (lettrine.sty)             reported on input line 56.
 )
-LaTeX Info: Redefining \. on input line 149.
-LaTeX Info: Redefining \% on input line 149.
-LaTeX Info: Redefining \. on input line 149.
-LaTeX Info: Redefining \% on input line 149.
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
  [5] [6
 
 
@@ -2934,13 +2934,13 @@ LaTeX Info: Redefining \% on input line 36.
  [7
 
 ])
-LaTeX Info: Redefining \. on input line 160.
-LaTeX Info: Redefining \% on input line 160.
-LaTeX Info: Redefining \. on input line 160.
-LaTeX Info: Redefining \% on input line 160.
+LaTeX Info: Redefining \. on input line 161.
+LaTeX Info: Redefining \% on input line 161.
+LaTeX Info: Redefining \. on input line 161.
+LaTeX Info: Redefining \% on input line 161.
  [8]
 Package tocbasic Info: character protrusion at toc deactivated on input line 16
-3.
+4.
  (./TFG.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -2957,10 +2957,10 @@ LaTeX Info: Redefining \% on input line 33.
 \tf@toc=\write8
 \openout8 = `TFG.toc'.
 
-LaTeX Info: Redefining \. on input line 171.
-LaTeX Info: Redefining \% on input line 171.
-LaTeX Info: Redefining \. on input line 171.
-LaTeX Info: Redefining \% on input line 171.
+LaTeX Info: Redefining \. on input line 172.
+LaTeX Info: Redefining \% on input line 172.
+LaTeX Info: Redefining \. on input line 172.
+LaTeX Info: Redefining \% on input line 172.
  [10]
 \openout2 = `Introduccion/Introduccion.aux'.
 
@@ -2986,15 +2986,15 @@ l.72
 
 
 ])
-LaTeX Info: Redefining \. on input line 180.
-LaTeX Info: Redefining \% on input line 180.
-LaTeX Info: Redefining \. on input line 180.
-LaTeX Info: Redefining \% on input line 180.
+LaTeX Info: Redefining \. on input line 181.
+LaTeX Info: Redefining \% on input line 181.
+LaTeX Info: Redefining \. on input line 181.
+LaTeX Info: Redefining \% on input line 181.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.180 \include{Introduccion/Introduccion}
+l.181 \include{Introduccion/Introduccion}
                                           [2]
 \openout2 = `EstadoDelArte/EstadoDelArte.aux'.
 
@@ -3017,15 +3017,15 @@ l.61
 
 
 ])
-LaTeX Info: Redefining \. on input line 182.
-LaTeX Info: Redefining \% on input line 182.
-LaTeX Info: Redefining \. on input line 182.
-LaTeX Info: Redefining \% on input line 182.
+LaTeX Info: Redefining \. on input line 183.
+LaTeX Info: Redefining \% on input line 183.
+LaTeX Info: Redefining \. on input line 183.
+LaTeX Info: Redefining \% on input line 183.
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.182 \include{EstadoDelArte/EstadoDelArte}
+l.183 \include{EstadoDelArte/EstadoDelArte}
                                             [4]
 \openout2 = `InyeccionDeFallos/InyeccionDeFallos.aux'.
 
@@ -3036,55 +3036,72 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 22.29866pt (L) loversize=0.2;
 (lettrine.sty)             reported on input line 4.
+<InyeccionDeFallos/figuras/fig_1.png, id=450, 740.7675pt x 335.2525pt>
+File: InyeccionDeFallos/figuras/fig_1.png Graphic file (type png)
+<use InyeccionDeFallos/figuras/fig_1.png>
+Package pdftex.def Info: InyeccionDeFallos/figuras/fig_1.png  used on input lin
+e 36.
+(pdftex.def)             Requested size: 405.45045pt x 183.49933pt.
 
-Underfull \vbox (badness 4927) has occurred while \output is active []
+Underfull \vbox (badness 6575) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 71.
-LaTeX Info: Redefining \% on input line 71.
-LaTeX Info: Redefining \. on input line 71.
-LaTeX Info: Redefining \% on input line 71.
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.71 
+l.49 
       [5
 
 
 
-])
-LaTeX Info: Redefining \. on input line 184.
-LaTeX Info: Redefining \% on input line 184.
-LaTeX Info: Redefining \. on input line 184.
-LaTeX Info: Redefining \% on input line 184.
+ <./InyeccionDeFallos/figuras/fig_1.png>]
+<InyeccionDeFallos/figuras/fig_2.png, id=458, 890.32625pt x 657.45625pt>
+File: InyeccionDeFallos/figuras/fig_2.png Graphic file (type png)
+<use InyeccionDeFallos/figuras/fig_2.png>
+Package pdftex.def Info: InyeccionDeFallos/figuras/fig_2.png  used on input lin
+e 54.
+(pdftex.def)             Requested size: 405.45045pt x 299.4039pt.
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
 pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.184 ...lude{InyeccionDeFallos/InyeccionDeFallos}
-                                                   [6]
+l.96 
+      [6 <./InyeccionDeFallos/figuras/fig_2.png>])
+LaTeX Info: Redefining \. on input line 185.
+LaTeX Info: Redefining \% on input line 185.
+LaTeX Info: Redefining \. on input line 185.
+LaTeX Info: Redefining \% on input line 185.
+ [7]
 \openout2 = `Levenshtein/Levenshtein.aux'.
 
 
-(./Levenshtein/Levenshtein.tex
+(./Levenshtein/Levenshtein.tex [8
+
+
+
+]
 chapter 4.
 Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 0.0pt () loversize=0.2;
 (lettrine.sty)             reported on input line 4.
 )
-LaTeX Info: Redefining \. on input line 186.
-LaTeX Info: Redefining \% on input line 186.
-LaTeX Info: Redefining \. on input line 186.
-LaTeX Info: Redefining \% on input line 186.
- [7
-
-
-
-]
+LaTeX Info: Redefining \. on input line 187.
+LaTeX Info: Redefining \% on input line 187.
+LaTeX Info: Redefining \. on input line 187.
+LaTeX Info: Redefining \% on input line 187.
+ [9]
 \openout2 = `Cycle/Cycle.aux'.
 
- (./Cycle/Cycle.tex [8
+ (./Cycle/Cycle.tex [10
 
 
 
@@ -3095,16 +3112,16 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             Lettrine height = 0.0pt () loversize=0.2;
 (lettrine.sty)             reported on input line 5.
 )
-LaTeX Info: Redefining \. on input line 188.
-LaTeX Info: Redefining \% on input line 188.
-LaTeX Info: Redefining \. on input line 188.
-LaTeX Info: Redefining \% on input line 188.
- [9]
+LaTeX Info: Redefining \. on input line 189.
+LaTeX Info: Redefining \% on input line 189.
+LaTeX Info: Redefining \. on input line 189.
+LaTeX Info: Redefining \% on input line 189.
+ [11]
 \openout2 = `TecnicasDeDiagnosticoAuxiliares/TecnicasDeDiagnosticoAuxiliares.au
 x'.
 
  (./TecnicasDeDiagnosticoAuxiliares/TecnicasDeDiagnosticoAuxiliares.tex
-[10
+[12
 
 
 
@@ -3115,14 +3132,14 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             Lettrine height = 0.0pt () loversize=0.2;
 (lettrine.sty)             reported on input line 4.
 )
-LaTeX Info: Redefining \. on input line 190.
-LaTeX Info: Redefining \% on input line 190.
-LaTeX Info: Redefining \. on input line 190.
-LaTeX Info: Redefining \% on input line 190.
- [11]
+LaTeX Info: Redefining \. on input line 191.
+LaTeX Info: Redefining \% on input line 191.
+LaTeX Info: Redefining \. on input line 191.
+LaTeX Info: Redefining \% on input line 191.
+ [13]
 \openout2 = `CampanasIterativas/CampanasIterativas.aux'.
 
- (./CampanasIterativas/CampanasIterativas.tex [12
+ (./CampanasIterativas/CampanasIterativas.tex [14
 
 
 
@@ -3133,14 +3150,14 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             Lettrine height = 0.0pt () loversize=0.2;
 (lettrine.sty)             reported on input line 4.
 )
-LaTeX Info: Redefining \. on input line 192.
-LaTeX Info: Redefining \% on input line 192.
-LaTeX Info: Redefining \. on input line 192.
-LaTeX Info: Redefining \% on input line 192.
- [13]
+LaTeX Info: Redefining \. on input line 193.
+LaTeX Info: Redefining \% on input line 193.
+LaTeX Info: Redefining \. on input line 193.
+LaTeX Info: Redefining \% on input line 193.
+ [15]
 \openout2 = `RealDesigns/RealDesigns.aux'.
 
- (./RealDesigns/RealDesigns.tex [14
+ (./RealDesigns/RealDesigns.tex [16
 
 
 
@@ -3151,14 +3168,14 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             Lettrine height = 0.0pt () loversize=0.2;
 (lettrine.sty)             reported on input line 4.
 )
-LaTeX Info: Redefining \. on input line 194.
-LaTeX Info: Redefining \% on input line 194.
-LaTeX Info: Redefining \. on input line 194.
-LaTeX Info: Redefining \% on input line 194.
- [15]
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
+ [17]
 \openout2 = `DistanciaFF/DistanciaFF.aux'.
 
- (./DistanciaFF/DistanciaFF.tex [16
+ (./DistanciaFF/DistanciaFF.tex [18
 
 
 
@@ -3169,31 +3186,31 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             Lettrine height = 0.0pt () loversize=0.2;
 (lettrine.sty)             reported on input line 4.
 )
-LaTeX Info: Redefining \. on input line 196.
-LaTeX Info: Redefining \% on input line 196.
-LaTeX Info: Redefining \. on input line 196.
-LaTeX Info: Redefining \% on input line 196.
- [17]
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
+ [19]
 \openout2 = `Conclusiones/Conclusiones.aux'.
 
- (./Conclusiones/Conclusiones.tex [18
+ (./Conclusiones/Conclusiones.tex [20
 
 
 
 ]
 chapter 10.
 )
-LaTeX Info: Redefining \. on input line 198.
-LaTeX Info: Redefining \% on input line 198.
-LaTeX Info: Redefining \. on input line 198.
-LaTeX Info: Redefining \% on input line 198.
- [19] [20
+LaTeX Info: Redefining \. on input line 199.
+LaTeX Info: Redefining \% on input line 199.
+LaTeX Info: Redefining \. on input line 199.
+LaTeX Info: Redefining \% on input line 199.
+ [21] [22
 
 
 
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 23
-0.
+1.
  (./TFG.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -3203,18 +3220,18 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@lof=\write9
 \openout9 = `TFG.lof'.
 
-LaTeX Info: Redefining \. on input line 233.
-LaTeX Info: Redefining \% on input line 233.
-LaTeX Info: Redefining \. on input line 233.
-LaTeX Info: Redefining \% on input line 233.
- [21
+LaTeX Info: Redefining \. on input line 234.
+LaTeX Info: Redefining \% on input line 234.
+LaTeX Info: Redefining \. on input line 234.
+LaTeX Info: Redefining \% on input line 234.
+ [23
 
 
-] [22
+] [24
 
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 23
-7.
+8.
  (./TFG.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -3224,17 +3241,17 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@lot=\write10
 \openout10 = `TFG.lot'.
 
-LaTeX Info: Redefining \. on input line 240.
-LaTeX Info: Redefining \% on input line 240.
-LaTeX Info: Redefining \. on input line 240.
-LaTeX Info: Redefining \% on input line 240.
- [23
+LaTeX Info: Redefining \. on input line 241.
+LaTeX Info: Redefining \% on input line 241.
+LaTeX Info: Redefining \. on input line 241.
+LaTeX Info: Redefining \% on input line 241.
+ [25
 
-] [24
+] [26
 
 ]
 Package tocbasic Info: character protrusion at lol deactivated on input line 24
-4.
+5.
  (./TFG.lol
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -3244,36 +3261,36 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@lol=\write11
 \openout11 = `TFG.lol'.
 
-LaTeX Info: Redefining \. on input line 249.
-LaTeX Info: Redefining \% on input line 249.
-LaTeX Info: Redefining \. on input line 249.
-LaTeX Info: Redefining \% on input line 249.
- [25
+LaTeX Info: Redefining \. on input line 250.
+LaTeX Info: Redefining \% on input line 250.
+LaTeX Info: Redefining \. on input line 250.
+LaTeX Info: Redefining \% on input line 250.
+ [27
 
 ]
-[26
+[28
 
 ] (./TFG.bbl
 LaTeX Info: Redefining \. on input line 94.
 LaTeX Info: Redefining \% on input line 94.
 LaTeX Info: Redefining \. on input line 94.
 LaTeX Info: Redefining \% on input line 94.
- [27
+ [29
 
 ])
-LaTeX Info: Redefining \. on input line 265.
-LaTeX Info: Redefining \% on input line 265.
-LaTeX Info: Redefining \. on input line 265.
-LaTeX Info: Redefining \% on input line 265.
- [28]
+LaTeX Info: Redefining \. on input line 266.
+LaTeX Info: Redefining \% on input line 266.
+LaTeX Info: Redefining \. on input line 266.
+LaTeX Info: Redefining \% on input line 266.
+ [30]
 No file TFG.ind.
 (./TFG.gls)
 No file TFG.acr.
-LaTeX Info: Redefining \. on input line 280.
-LaTeX Info: Redefining \% on input line 280.
-LaTeX Info: Redefining \. on input line 280.
-LaTeX Info: Redefining \% on input line 280.
-[29
+LaTeX Info: Redefining \. on input line 281.
+LaTeX Info: Redefining \% on input line 281.
+LaTeX Info: Redefining \. on input line 281.
+LaTeX Info: Redefining \% on input line 281.
+[31
 
 
 
@@ -3295,8 +3312,8 @@ See the caption package documentation for explanation.
 Package imakeidx Warning: Remember to run (pdf)latex again after calling
 (imakeidx)                `texindy TFG.idx'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 280.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 280.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 281.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 281.
 (./TFG.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
@@ -3309,8 +3326,8 @@ LaTeX Info: Redefining \% on input line 31.
 (./TecnicasDeDiagnosticoAuxiliares/TecnicasDeDiagnosticoAuxiliares.aux)
 (./CampanasIterativas/CampanasIterativas.aux) (./RealDesigns/RealDesigns.aux)
 (./DistanciaFF/DistanciaFF.aux) (./Conclusiones/Conclusiones.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 280.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 280.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 281.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 281.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -3318,11 +3335,11 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred when \iftrue on line 455 was incomplete) 
 Here is how much of TeX's memory you used:
- 70730 strings out of 492609
- 1560880 string characters out of 6131463
- 2043331 words of memory out of 5000000
- 73021 multiletter control sequences out of 15000+600000
- 624314 words of font info for 147 fonts, out of 8000000 for 9000
+ 70785 strings out of 492609
+ 1561895 string characters out of 6131463
+ 2043937 words of memory out of 5000000
+ 73064 multiletter control sequences out of 15000+600000
+ 624572 words of font info for 149 fonts, out of 8000000 for 9000
  1162 hyphenation exceptions out of 8191
  87i,8n,142p,9082b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texm
@@ -3336,10 +3353,10 @@ nts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/helvetic/uhvr8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helveti
 c/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.
 pfb>
-Output written on TFG.pdf (45 pages, 815946 bytes).
+Output written on TFG.pdf (47 pages, 847391 bytes).
 PDF statistics:
- 778 PDF objects out of 1000 (max. 8388607)
- 682 compressed objects within 7 object streams
- 122 named destinations out of 1000 (max. 500000)
- 25604 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 798 PDF objects out of 1000 (max. 8388607)
+ 696 compressed objects within 7 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 25614 words of extra memory for PDF output out of 29859 (max. 10000000)
 
