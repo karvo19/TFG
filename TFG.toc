@@ -11,10 +11,10 @@
 \contentsline {section}{\numberline {3.1}FT-Unshades2}{7}{section.3.1}% 
 \contentsline {chapter}{\numberline {4}Primera aproximaci\IeC {\'o}n a una m\IeC {\'e}trica apropiada. Distancia de Levenshtein}{9}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Elaboraci\IeC {\'o}n de la base de datos de distancias}{9}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Diagn\IeC {\'o}stico basado en la distancia de Levenshtein}{9}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}Resultados experimentales}{9}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}Diccionarios exhaustivos}{9}{subsection.4.3.1}% 
-\contentsline {subsection}{\numberline {4.3.2}Diccionarios no exhaustivos}{9}{subsection.4.3.2}% 
+\contentsline {section}{\numberline {4.2}Diagn\IeC {\'o}stico basado en la distancia de Levenshtein}{10}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Resultados experimentales}{10}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Diccionarios exhaustivos}{10}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}Diccionarios no exhaustivos}{10}{subsection.4.3.2}% 
 \contentsline {chapter}{\numberline {5}Inclusi\IeC {\'o}n de la distancia temporal en el algoritmo de selecci\IeC {\'o}n de candidatos}{11}{chapter.5}% 
 \contentsline {section}{\numberline {5.1}Diagn\IeC {\'o}stico basado en la distancia temporal}{11}{section.5.1}% 
 \contentsline {section}{\numberline {5.2}Fusi\IeC {\'o}n de las distancias temporal y de Levenshtein}{11}{section.5.2}% 
