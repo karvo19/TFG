@@ -94,7 +94,7 @@ en cuestión.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.95\linewidth]
-    {Levenshtein/figuras/fig_1.png}
+    {Levenshtein/figuras/fig41.png}
     \caption{Cálculo de la distancia de Levenshtein}
     \label{fig:LevenDist}
 \end{figure}
@@ -123,16 +123,61 @@ típicas de una distancia:
 Una vez hayamos calculado las distancias de Levenshtein entre el \textit{target
 run} y todas las entradas del dicionario y hayamos elaborado las dos listas
 mencionadas tendremos todo lo necesario para llevar a cabo el diagnóstico con esta
-primera versión de la técnica.
+primera versión de la técnica. 
 
-Inicialmente, la selección de los candidatos %...  ecuacion del porcentaje
-%... la version final... ordenar y coger los n primeros
-% candidato/candidato definitivo
+Tal y como hemos explicado en el último párrafo del apartado \ref{ch:Levenshtein},
+las entradas del diccionario cuyas inyecciones se encuentren más próximas a la
+que habría probocado al \textit{target run} presentarán las menores distancias
+hasta el mismo. Diagnósticar consiste en seleccionar estas entradas, las cuales
+pasarán a llamarse \textit{"Candidatos"}.
 
+Originalmente, el proceso que seguíamos para seleccionar candidatos consistía en
+establecer una distancia de corte en función de las distancias máxima y mínima. El
+corte se establecía según el porcentaje especificado del rango sobre el mínimo. De
+esta forma, eran seleccionados todos runs cuya distancia era menor o igual que el
+valor establecido:
+% Ecuacion del porcentaje
+\begin{equation}
+    \label{eq:SeleccionPorcentaje}
+    D(i) \leq tolerancia \times \frac{(max - min)}{100} + min
+\end{equation}
+Donde tolerancia establecía qué porcentaje del rango de distancias se toma. De 
+esta forma, todos aquellos runs cuyas distancias cumplían la ecuación
+\ref{eq:SeleccionPorcentaje} pasaban a ser candidatos.
+
+% Problemas detectados con este sistema de selección.
+El problema de este sistema es que no controlabamos cuántos candidatos
+seleccionabamos en cada ocasión. Para valores de tolerancia de 1 a 5, se obtenían
+cantidades de candidatos bastante dispares en los diseños de circuitos en que se
+probó. Los causantes son valores de distancias aislados y alejados del resto, es
+decir, un mínimo o un máximo aislado mucho menor o mayor que el resto
+respectivamente. Esto proboca que el rango de distancias se alargue y se
+concentren todas muy próximas al extremo, seleccionando bien muy pocos o bien
+demasiados candidatos respectivamente.
+
+% La version final... ordenar y coger los n primeros
+Este problema puede solucionarse si se identifican y descartan estas distancias
+antes de calcular el valor de corte, pero si analizamos bien, veremos que hay una 
+solución mejor: ordenar la lista de distancias de menor a mayor y seleccionar las 
+entradas correspondientes a las \textit{"n"} primeras distancias, siendo 
+\textit{"n"} el número de candidatos que deseemos seleccionar, especificado como 
+argumento de entrada.
 
 \section{Resultados experimentales}
 \label{sec:LevenResults}
+Aunque se realizaron bastantes experimentos hasta llegar a la solución última de
+seleccionar los \textit{"n"} primeros runs, hablaremos solo de aquellos resultados
+correspondientes a la versión última de este algoritmo.
 
+Para probar la técnica disponíamos de una serie de circuitos con sus respectivos
+diccionarios de fallos. Algunos de estos eran exhaustivos, mientras que de otros,
+debido al tamaño del circuito, solo diaponíamos de uno incompleto fruto de una
+campaña de inyección de fallos aleatoria. Concretamente disponíamos de un
+diccionario del 0'005\% de exhaustividad para el diseño de la \textit{FFT}, 0'87\%
+para la \textit{UART} y 37'78\% para el \textit{FIR\_RI}.
+
+Tanto estos diseños como el resto de circuitos que hemos empleado para las pruebas
+%\cite{Triplelogic}
 
 \subsection{Diccionarios exhaustivos}
 \label{subsec:LevDicExhaust}
