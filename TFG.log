@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  15 JUN 2020 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  16 JUN 2020 10:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -782,7 +782,7 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 416.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 418.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -796,7 +796,7 @@ Class scrbook Warning: Usage of package `titlesec' together
 (scrbook)              the extended optional argument of the section
 (scrbook)              commands.
 (scrbook)              Nevertheless, using requested
-(scrbook)              package `titlesec' on input line 555.
+(scrbook)              package `titlesec' on input line 557.
 
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
@@ -836,7 +836,7 @@ Package titlesec Warning: Non standard sectioning command detected
 )
 
 Class scrbook Warning: Activating an ugly workaround for a missing
-(scrbook)              feature of package `titlesec` on input line 555.
+(scrbook)              feature of package `titlesec` on input line 557.
 
 \plusheadl=\skip75
 \plusheadr=\skip76
@@ -884,7 +884,7 @@ File: x11nam.def 2016/05/11 v2.12 Predefined colors according to Unix/X11 (UK)
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-Package scrhack Info: loading setspace hack on input line 802.
+Package scrhack Info: loading setspace hack on input line 804.
 
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/setspace.hak
 File: setspace.hak 2019/02/01 v3.26b KOMA-Script package (hacking package setsp
@@ -1426,7 +1426,7 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \LTright=\skip103
 \flrow@types=\toks46
 )
-Package scrhack Info: loading floatrow hack on input line 1036.
+Package scrhack Info: loading floatrow hack on input line 1038.
 
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/floatrow.hak
 File: floatrow.hak 2019/02/01 v3.26b KOMA-Script package (hacking package float
@@ -1461,7 +1461,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
 \c@LT@chunks=\count409
 \LT@p@ftn=\toks48
 )
-Class scrbook Info: longtable captions redefined on input line 1040.
+Class scrbook Info: longtable captions redefined on input line 1042.
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
@@ -1690,7 +1690,7 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 1146.
+(scrhack)             need that hack, on input line 1148.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
@@ -1796,27 +1796,27 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 1166.
+(hyperref)                setting the option has no effect on input line 1168.
 
 Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 116
-6.
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 1166.
-Package hyperref Info: Option `unicode' set `true' on input line 1166.
+8.
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 1168.
+Package hyperref Info: Option `unicode' set `true' on input line 1168.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 1166.
+Package hyperref Info: Option `colorlinks' set `true' on input line 1168.
 
 
 Package hyperref Warning: Option `hyperfootnotes' has already been used,
-(hyperref)                setting the option has no effect on input line 1166.
+(hyperref)                setting the option has no effect on input line 1168.
 
-Package hyperref Info: Option `plainpages' set `false' on input line 1166.
-Package hyperref Info: Option `breaklinks' set `true' on input line 1166.
+Package hyperref Info: Option `plainpages' set `false' on input line 1168.
+Package hyperref Info: Option `breaklinks' set `true' on input line 1168.
 Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 116
-6.
+8.
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-lastpage.sty
 Package: zref-lastpage 2018/11/21 v2.27 Module lastpage for zref (HO)
 
@@ -1875,7 +1875,7 @@ File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
-Package scrhack Info: loading listings hack on input line 1200.
+Package scrhack Info: loading listings hack on input line 1202.
 
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/listings.hak
 File: listings.hak 2019/02/01 v3.26b KOMA-Script package (hacking package listi
@@ -2069,32 +2069,35 @@ Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
 \c@currcormctr=\count480
 \c@endcormctr=\count481
 \c@corm=\count482
-\c@currdefnctr=\count483
-\c@enddefnctr=\count484
-\c@defn=\count485
-\c@currdemoctr=\count486
-\c@enddemoctr=\count487
-\c@demo=\count488
-\c@currproofctr=\count489
-\c@endproofctr=\count490
-\c@proof=\count491
-\c@currejmpctr=\count492
-\c@endejmpctr=\count493
-\c@ejmp=\count494
-\c@currejmpnctr=\count495
-\c@endejmpnctr=\count496
-\c@currsolctr=\count497
-\c@endsolctr=\count498
-\c@sol=\count499
-\c@currSolnctr=\count500
-\c@endSolnctr=\count501
-\c@Soln=\count502
-\c@currsolnctr=\count503
-\c@endsolnctr=\count504
-\c@soln=\count505
-\c@currprobctr=\count506
-\c@endprobctr=\count507
-\c@prob=\count508
+\c@currhypothesisctr=\count483
+\c@endhypothesisctr=\count484
+\c@hypothesis=\count485
+\c@currdefnctr=\count486
+\c@enddefnctr=\count487
+\c@defn=\count488
+\c@currdemoctr=\count489
+\c@enddemoctr=\count490
+\c@demo=\count491
+\c@currproofctr=\count492
+\c@endproofctr=\count493
+\c@proof=\count494
+\c@currejmpctr=\count495
+\c@endejmpctr=\count496
+\c@ejmp=\count497
+\c@currejmpnctr=\count498
+\c@endejmpnctr=\count499
+\c@currsolctr=\count500
+\c@endsolctr=\count501
+\c@sol=\count502
+\c@currSolnctr=\count503
+\c@endSolnctr=\count504
+\c@Soln=\count505
+\c@currsolnctr=\count506
+\c@endsolnctr=\count507
+\c@soln=\count508
+\c@currprobctr=\count509
+\c@endprobctr=\count510
+\c@prob=\count511
 ) (./dtsc-creafig.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
@@ -2106,8 +2109,8 @@ Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
 \t@pgfplots@tokb=\toks79
 \t@pgfplots@tokc=\toks80
 \pgfplots@tmpa=\dimen396
-\c@pgfplots@coordindex=\count509
-\c@pgfplots@scanlineindex=\count510
+\c@pgfplots@coordindex=\count512
+\c@pgfplots@scanlineindex=\count513
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
 .tex))
@@ -2123,7 +2126,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 gfsupp_pgflibraryfpu.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
 gfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count511
+\c@pgfmathroundto@lastzeros=\count514
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
@@ -2132,13 +2135,13 @@ tructure.code.tex)
 tructureext.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
 .code.tex
-\c@pgfplotsarray@tmp=\count512
+\c@pgfplotsarray@tmp=\count515
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
 x.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
 d.code.tex
-\c@pgfplotstable@counta=\count513
+\c@pgfplotstable@counta=\count516
 \t@pgfplotstable@a=\toks81
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
@@ -2151,7 +2154,7 @@ de.tex))
 .tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
 fshading.code.tex
-\c@pgfplotslibrarysurf@no=\count514
+\c@pgfplotslibrarysurf@no=\count517
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
 shading.pgfsys-pdftex.def)))
@@ -2183,7 +2186,7 @@ e.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen399
 \pgfdecoratedinputsegmentremainingdistance=\dimen400
 \pgf@decorate@distancetomove=\dimen401
-\pgf@decorate@repeatstate=\count515
+\pgf@decorate@repeatstate=\count518
 \pgfdecorationsegmentamplitude=\dimen402
 \pgfdecorationsegmentlength=\dimen403
 )
@@ -2197,7 +2200,7 @@ decorations.pathmorphing.code.tex))
 zlibrarydecorations.pathreplacing.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count516
+\pgfplots@numplots=\count519
 \pgfplots@xmin@reg=\dimen404
 \pgfplots@xmax@reg=\dimen405
 \pgfplots@ymin@reg=\dimen406
@@ -2326,7 +2329,7 @@ cuits/tikzlibrarycircuits.code.tex
 zlibrarydecorations.markings.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.markings.code.tex))
-\tikz@lib@circ@count=\count517
+\tikz@lib@circ@count=\count520
 \tikzcircuitssizeunit=\dimen411
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/cir
@@ -2350,12 +2353,12 @@ on.code.tex
 File: pgfmoduledatavisualization.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleoo.code.tex
-\pgfoo@objectcount=\count518
-\pgfoothis@count=\count519
+\pgfoo@objectcount=\count521
+\pgfoothis@count=\count522
 \pgfoo@toks=\toks82
 )
-\pgf@lib@dv@cache@count=\count520
-\pgf@lib@dv@cache@count=\count521
+\pgf@lib@dv@cache@count=\count523
+\pgf@lib@dv@cache@count=\count524
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarybackgrounds.code.tex
@@ -2363,7 +2366,7 @@ File: tikzlibrarybackgrounds.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@layerbox@background=\box132
 \pgf@layerboxsaved@background=\box133
 )
-\tikzdvvisualizercounter=\count522
+\tikzdvvisualizercounter=\count525
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/dat
 avisualization/tikzlibrarydatavisualization.formats.functions.code.tex
@@ -2412,17 +2415,17 @@ File: tikzlibrarycalendar.code.tex 2019/05/09 v3.1.3 (3.1.3)
 File: pgfcalendar.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
-\pgfcalendarcurrentjulian=\count523
-\pgf@cal@easter@Y=\count524
-\pgf@cal@easter@G=\count525
-\pgf@cal@easter@C=\count526
-\pgf@cal@easter@X=\count527
-\pgf@cal@easter@Z=\count528
-\pgf@cal@easter@D=\count529
-\pgf@cal@easter@E=\count530
-\pgf@cal@easter@N=\count531
-\pgf@cal@easter@M=\count532
-\pgf@cal@easter@julianday=\count533
+\pgfcalendarcurrentjulian=\count526
+\pgf@cal@easter@Y=\count527
+\pgf@cal@easter@G=\count528
+\pgf@cal@easter@C=\count529
+\pgf@cal@easter@X=\count530
+\pgf@cal@easter@Z=\count531
+\pgf@cal@easter@D=\count532
+\pgf@cal@easter@E=\count533
+\pgf@cal@easter@N=\count534
+\pgf@cal@easter@M=\count535
+\pgf@cal@easter@julianday=\count536
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryfolding.code.tex
@@ -2479,13 +2482,13 @@ zlibrarylindenmayersystems.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarylindenmayers
 ystems.code.tex
 \pgflsystemstep=\dimen413
-\c@pgf@lsystem@iteration=\count534
+\c@pgf@lsystem@iteration=\count537
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryintersections.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersection
 s.code.tex
-\pgf@intersect@solutions=\count535
+\pgf@intersect@solutions=\count538
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryfixedpointarithmetic.code.tex
@@ -2503,14 +2506,14 @@ File: pgflibrarysvg.path.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleparser.code.tex
 File: pgfmoduleparser.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgfparserdef@arg@count=\count536
+\pgfparserdef@arg@count=\count539
 )
 \pgf@lib@svg@last@x=\dimen414
 \pgf@lib@svg@last@y=\dimen415
 \pgf@lib@svg@last@c@x=\dimen416
 \pgf@lib@svg@last@c@y=\dimen417
-\pgf@lib@svg@count=\count537
-\pgf@lib@svg@max@num=\count538
+\pgf@lib@svg@count=\count540
+\pgf@lib@svg@max@num=\count541
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibrar
 yexternal.code.tex
@@ -2518,9 +2521,9 @@ yexternal.code.tex
 zexternalshared.code.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.gr
 oupplots.code.tex
-\pgfplots@group@current@plot=\count539
-\pgfplots@group@current@row=\count540
-\pgfplots@group@current@column=\count541
+\pgfplots@group@current@plot=\count542
+\pgfplots@group@current@row=\count543
+\pgfplots@group@current@column=\count544
 )) (./notacion.sty
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hologo.sty
 Package: hologo 2017/05/01 v1.13 A logo collection with bookmark support (HO)
@@ -2532,8 +2535,8 @@ Package: tgtermes 2009/09/27 v1.2 TeX Gyre Termes as default roman family
 Package: crop 2003/05/20 v1.9 crop marks (mf)
 \stockwidth=\dimen418
 \stockheight=\dimen419
-\CROP@index=\count542
-\CROP@offset=\count543
+\CROP@index=\count545
+\CROP@offset=\count546
 Package crop Info: Local config file crop.cfg used on input line 605.
 
 (/usr/share/texlive/texmf-dist/tex/xelatex/xetexconfig/crop.cfg))
@@ -2650,16 +2653,16 @@ LaTeX Info: Redefining \. on input line 107.
 LaTeX Info: Redefining \% on input line 107.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count544
+\scratchcounter=\count547
 \scratchdimen=\dimen420
 \scratchbox=\box137
-\nofMPsegments=\count545
-\nofMParguments=\count546
+\nofMPsegments=\count548
+\nofMParguments=\count549
 \everyMPshowfont=\toks83
-\MPscratchCnt=\count547
+\MPscratchCnt=\count550
 \MPscratchDim=\dimen421
-\MPnumerator=\count548
-\makeMPintoPDFobject=\count549
+\MPnumerator=\count551
+\makeMPintoPDFobject=\count552
 \everyMPtoPDFconversion=\toks84
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -2704,7 +2707,7 @@ Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 
 \flrow@LT@lasthead=\box138
 \flrow@LT@prelastfoot=\box139
-\c@FBLTpage=\count550
+\c@FBLTpage=\count553
 )
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-months-dictionar
 y-English.dict
@@ -2723,12 +2726,12 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count551
+\c@section@level=\count554
 )
 LaTeX Info: Redefining \ref on input line 107.
 LaTeX Info: Redefining \pageref on input line 107.
 LaTeX Info: Redefining \nameref on input line 107.
-\c@lstlisting=\count552
+\c@lstlisting=\count555
 Package scrhack Info: undefining \float@addtolists on input line 107.
 
 Package pgfplots notification 'compat/show suggested version=true': document ha
@@ -2971,15 +2974,20 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 22.29866pt (L) loversize=0.2;
 (lettrine.sty)             reported on input line 7.
-LaTeX Info: Redefining \. on input line 72.
-LaTeX Info: Redefining \% on input line 72.
-LaTeX Info: Redefining \. on input line 72.
-LaTeX Info: Redefining \% on input line 72.
+
+Package mathptmx Warning: There are no bold math fonts on input line 63.
+
+Package hyperref Info: bookmark level for unknown hypothesis defaults to 0 on i
+nput line 63.
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.72 
+l.76 
       [1
 
 
@@ -3036,7 +3044,7 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 22.29866pt (L) loversize=0.2;
 (lettrine.sty)             reported on input line 4.
-<InyeccionDeFallos/figuras/fig_1.png, id=450, 740.7675pt x 335.2525pt>
+<InyeccionDeFallos/figuras/fig_1.png, id=451, 740.7675pt x 335.2525pt>
 File: InyeccionDeFallos/figuras/fig_1.png Graphic file (type png)
 <use InyeccionDeFallos/figuras/fig_1.png>
 Package pdftex.def Info: InyeccionDeFallos/figuras/fig_1.png  used on input lin
@@ -3059,7 +3067,7 @@ l.49
 
 
  <./InyeccionDeFallos/figuras/fig_1.png>]
-<InyeccionDeFallos/figuras/fig_2.png, id=458, 890.32625pt x 657.45625pt>
+<InyeccionDeFallos/figuras/fig_2.png, id=459, 890.32625pt x 657.45625pt>
 File: InyeccionDeFallos/figuras/fig_2.png Graphic file (type png)
 <use InyeccionDeFallos/figuras/fig_2.png>
 Package pdftex.def Info: InyeccionDeFallos/figuras/fig_2.png  used on input lin
@@ -3298,11 +3306,11 @@ LaTeX Info: Redefining \% on input line 281.
 
 ]
 
-Package caption Warning: Unused \captionsetup[subfigure] on input line 1031.
+Package caption Warning: Unused \captionsetup[subfigure] on input line 1033.
 See the caption package documentation for explanation.
 
 
-Package caption Warning: Unused \captionsetup[lstlisting] on input line 1274.
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 1276.
 See the caption package documentation for explanation.
 
 \tf@thm=\write12
@@ -3333,13 +3341,13 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 281.
 LaTeX Warning: There were multiply-defined labels.
 
  )
-(\end occurred when \iftrue on line 455 was incomplete) 
+(\end occurred when \iftrue on line 457 was incomplete) 
 Here is how much of TeX's memory you used:
- 70791 strings out of 492609
- 1561962 string characters out of 6131463
- 2043969 words of memory out of 5000000
- 73065 multiletter control sequences out of 15000+600000
- 624807 words of font info for 151 fonts, out of 8000000 for 9000
+ 70822 strings out of 492609
+ 1562506 string characters out of 6131463
+ 2045323 words of memory out of 5000000
+ 73097 multiletter control sequences out of 15000+600000
+ 624678 words of font info for 150 fonts, out of 8000000 for 9000
  1162 hyphenation exceptions out of 8191
  87i,8n,142p,9082b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texm
@@ -3353,10 +3361,10 @@ nts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/helvetic/uhvr8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helveti
 c/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.
 pfb>
-Output written on TFG.pdf (47 pages, 849223 bytes).
+Output written on TFG.pdf (47 pages, 850096 bytes).
 PDF statistics:
- 804 PDF objects out of 1000 (max. 8388607)
- 701 compressed objects within 8 object streams
- 127 named destinations out of 1000 (max. 500000)
+ 806 PDF objects out of 1000 (max. 8388607)
+ 703 compressed objects within 8 object streams
+ 128 named destinations out of 1000 (max. 500000)
  25614 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -20,11 +20,23 @@ campaña de inyección de fallos. Redefiniendo la distancia de Levenshtein para
 nuestro caso en particular:
 
 \vspace{0.3cm}
-\textit{"La distancia de Levenshtein en el número mínimo de bits que hay que
+\textit{"La distancia de Levenshtein es el número mínimo de bits que hay que
 conmutar de la salida de una campaña de inyección de fallos para transformarla 
 en otra"}.
 \vspace{0.3cm}
-% Comentar la hipótesis realizada para realizar el diagnóstico en base a esto
+
+Existe una operación lógica ya mencionada anteriormente que permite comparar dos
+salidas obteniendo como resultado ceros para aquellos bits en los que son iguales
+y unos en los diferentes. La operación \textit{XOR} bit a bit permite obtener
+tantos unos como diferencias existen entre las dos salidas. La distancia de
+levenshtein entre dos salidas de una campaña es el sumatorio de todos estos bits 
+con valor lógico alto.
+
+% Comentar la hipótesis realizada para diagnosticar en base a esto
+    % Dos SEU proximos entre sí provocarán patrones de error similares a la salida
+De esta forma, según la hipótesis inicial \ref{hyp:inicial}, dos \gls{SEU}
+que estén próximos entre sí tendrán una distancia de Levenshtein relativamente
+baja entre ellos.
     % Si el SEU se encuentra en el diccionario -> levenDist = 0
     % Si el SEU no se encuentra en el diccionario -> min(levenDist) será el más
     % cercano
@@ -34,11 +46,17 @@ en otra"}.
 
 \section{Elaboración de la base de datos de distancias}
 \label{sec:LevenDist}
-% Explicar como se calculan las distancias de Leven y como se almacenan en mem
-
+% Explicar como se calculan las distancias de Leven y como se almacenan en memoria
+    % Hex -> binario almacenado como enteros -> XOR bit a bit -> sumatorio de 1s
+    % Esto para cada entrada del diccionario -> se obtiene tabla simetrica de
+        % distancias respecto a la diagonal.
 
 \section{Diagnóstico basado en la distancia de Levenshtein}
 \label{sec:LevenCands}
+% Para el diagnóstico no se calcula la tabla de distancias completa, sino que se
+% calculan solo las del target run con el resto de entradas del diccionario para
+% ahorrar memoria.
+
 % Explicar cómo se seleccionan los candidatos en base a las distancias calculadas
 % y por qué se selecciona de esa manera y no de otra. En one note hay apuntes de
 % esto
@@ -50,6 +68,7 @@ en otra"}.
 
 \subsection{Diccionarios exhaustivos}
 \label{subsec:LevDicExhaust}
+% Siempre aparece mínimo el correcto, a veces más debido a colisiones
 
 
 \subsection{Diccionarios no exhaustivos}
