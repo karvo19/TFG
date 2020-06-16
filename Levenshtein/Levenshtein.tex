@@ -91,6 +91,13 @@ suman los bits con valor lógico alto. El resultado de esta suma es la distancia
 en cuestión.
 
 % Imagen 1: De HEX a binario -> XOR con otro run -> sumatorio -> distancia
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.95\linewidth]
+    {Levenshtein/figuras/fig_1.png}
+    \caption{Cálculo de la distancia de Levenshtein}
+    \label{fig:LevenDist}
+\end{figure}
 
 % Esto para cada entrada del diccionario -> se obtiene tabla simetrica de
 % distancias respecto a la diagonal.
@@ -101,7 +108,12 @@ la distancia de Levenshtein entre el \gls{SEU} a diagnosticar y la entrada
 información de las inyecciones. 
 
 Por último, notar que al tratarse de distancias, se cumplen las propiedades
-típicas de una distancia: \textit{D(i,j) == D(j,i)} y \textit{D(i,i) == 0}.
+típicas de una distancia: 
+\begin{center}
+    \textit{D(i,i) == 0}
+
+    \textit{D(i,j) == D(j,i)}
+\end{center}
 
 \section{Diagnóstico basado en la distancia de Levenshtein}
 \label{sec:LevenCands}
