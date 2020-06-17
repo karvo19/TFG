@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  17 JUN 2020 11:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  17 JUN 2020 13:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3120,15 +3120,33 @@ LaTeX Info: Redefining \. on input line 197.
 LaTeX Info: Redefining \% on input line 197.
 LaTeX Info: Redefining \. on input line 197.
 LaTeX Info: Redefining \% on input line 197.
- [11])
+ [11]
+Underfull \hbox (badness 3758) in paragraph at lines 258--258
+\T1/qtm/m/n/10.95 (+20) Dis-tan-cia de Le-vensh-tein.
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 258--258
+\T1/qtm/m/n/10.95 (+20) Dis-tan-cia de Le-vensh-tein.
+ []
+
+LaTeX Info: Redefining \. on input line 274.
+LaTeX Info: Redefining \% on input line 274.
+LaTeX Info: Redefining \. on input line 274.
+LaTeX Info: Redefining \% on input line 274.
+[12])
 LaTeX Info: Redefining \. on input line 191.
 LaTeX Info: Redefining \% on input line 191.
 LaTeX Info: Redefining \. on input line 191.
 LaTeX Info: Redefining \% on input line 191.
- [12]
+ [13]
 \openout2 = `Cycle/Cycle.aux'.
 
- (./Cycle/Cycle.tex
+ (./Cycle/Cycle.tex [14
+
+
+
+]
 chapter 5.
 Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (no accent, loversize=0),
@@ -3139,16 +3157,12 @@ LaTeX Info: Redefining \. on input line 193.
 LaTeX Info: Redefining \% on input line 193.
 LaTeX Info: Redefining \. on input line 193.
 LaTeX Info: Redefining \% on input line 193.
- [13
-
-
-
-]
+ [15]
 \openout2 = `TecnicasDeDiagnosticoAuxiliares/TecnicasDeDiagnosticoAuxiliares.au
 x'.
 
  (./TecnicasDeDiagnosticoAuxiliares/TecnicasDeDiagnosticoAuxiliares.tex
-[14
+[16
 
 
 
@@ -3163,10 +3177,10 @@ LaTeX Info: Redefining \. on input line 195.
 LaTeX Info: Redefining \% on input line 195.
 LaTeX Info: Redefining \. on input line 195.
 LaTeX Info: Redefining \% on input line 195.
- [15]
+ [17]
 \openout2 = `CampanasIterativas/CampanasIterativas.aux'.
 
- (./CampanasIterativas/CampanasIterativas.tex [16
+ (./CampanasIterativas/CampanasIterativas.tex [18
 
 
 
@@ -3181,10 +3195,10 @@ LaTeX Info: Redefining \. on input line 197.
 LaTeX Info: Redefining \% on input line 197.
 LaTeX Info: Redefining \. on input line 197.
 LaTeX Info: Redefining \% on input line 197.
- [17]
+ [19]
 \openout2 = `DistanciaFF/DistanciaFF.aux'.
 
- (./DistanciaFF/DistanciaFF.tex [18
+ (./DistanciaFF/DistanciaFF.tex [20
 
 
 
@@ -3199,10 +3213,10 @@ LaTeX Info: Redefining \. on input line 201.
 LaTeX Info: Redefining \% on input line 201.
 LaTeX Info: Redefining \. on input line 201.
 LaTeX Info: Redefining \% on input line 201.
- [19]
+ [21]
 \openout2 = `Conclusiones/Conclusiones.aux'.
 
- (./Conclusiones/Conclusiones.tex [20
+ (./Conclusiones/Conclusiones.tex [22
 
 
 
@@ -3213,7 +3227,7 @@ LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
 LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
- [21] [22
+ [23] [24
 
 
 
@@ -3233,10 +3247,10 @@ LaTeX Info: Redefining \. on input line 238.
 LaTeX Info: Redefining \% on input line 238.
 LaTeX Info: Redefining \. on input line 238.
 LaTeX Info: Redefining \% on input line 238.
- [23
+ [25
 
 
-] [24
+] [26
 
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 24
@@ -3254,9 +3268,9 @@ LaTeX Info: Redefining \. on input line 245.
 LaTeX Info: Redefining \% on input line 245.
 LaTeX Info: Redefining \. on input line 245.
 LaTeX Info: Redefining \% on input line 245.
- [25
+ [27
 
-] [26
+] [28
 
 ]
 Package tocbasic Info: character protrusion at lol deactivated on input line 24
@@ -3274,29 +3288,29 @@ LaTeX Info: Redefining \. on input line 254.
 LaTeX Info: Redefining \% on input line 254.
 LaTeX Info: Redefining \. on input line 254.
 LaTeX Info: Redefining \% on input line 254.
- [27
+ [29
 
 ]
-[28
+[30
 
 ] (./TFG.bbl
 LaTeX Info: Redefining \. on input line 94.
 LaTeX Info: Redefining \% on input line 94.
 LaTeX Info: Redefining \. on input line 94.
 LaTeX Info: Redefining \% on input line 94.
- [29
+ [31
 
 ]
 LaTeX Info: Redefining \. on input line 173.
 LaTeX Info: Redefining \% on input line 173.
 LaTeX Info: Redefining \. on input line 173.
 LaTeX Info: Redefining \% on input line 173.
- [30])
+ [32])
 LaTeX Info: Redefining \. on input line 270.
 LaTeX Info: Redefining \% on input line 270.
 LaTeX Info: Redefining \. on input line 270.
 LaTeX Info: Redefining \% on input line 270.
- [31] [32
+ [33] [34
 
 ]
 No file TFG.ind.
@@ -3306,7 +3320,7 @@ LaTeX Info: Redefining \. on input line 285.
 LaTeX Info: Redefining \% on input line 285.
 LaTeX Info: Redefining \. on input line 285.
 LaTeX Info: Redefining \% on input line 285.
-[33
+[35
 
 
 
@@ -3350,13 +3364,13 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred when \iftrue on line 457 was incomplete) 
 Here is how much of TeX's memory you used:
- 70980 strings out of 492609
- 1564619 string characters out of 6131463
- 2045213 words of memory out of 5000000
- 73227 multiletter control sequences out of 15000+600000
- 631030 words of font info for 168 fonts, out of 8000000 for 9000
+ 70984 strings out of 492609
+ 1564687 string characters out of 6131463
+ 2045325 words of memory out of 5000000
+ 73230 multiletter control sequences out of 15000+600000
+ 630901 words of font info for 167 fonts, out of 8000000 for 9000
  1162 hyphenation exceptions out of 8191
- 87i,8n,142p,9082b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,11n,142p,9082b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texm
 f-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q
 -ts1.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/share/texliv
@@ -3371,10 +3385,10 @@ uhvr8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TFG.pdf (49 pages, 929670 bytes).
+Output written on TFG.pdf (51 pages, 938676 bytes).
 PDF statistics:
- 837 PDF objects out of 1000 (max. 8388607)
- 726 compressed objects within 8 object streams
- 135 named destinations out of 1000 (max. 500000)
+ 848 PDF objects out of 1000 (max. 8388607)
+ 735 compressed objects within 8 object streams
+ 138 named destinations out of 1000 (max. 500000)
  25595 words of extra memory for PDF output out of 29859 (max. 10000000)
 

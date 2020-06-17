@@ -183,8 +183,8 @@ En total, hemos probado el algoritmo en 10 diseños distintos:
     \item Contador (\textit{counter}): contador de 8 bits.
     \item Doble contador (\textit{dual\_counter}): dos contadores de 8 bits
         conectados formando uno de 16 bits.
-    \item FFT (\textit{fft}): implementa la transformada rápida de Fourier
-        (\gls{FFT}) \cite{FFT}.
+    %\item FFT (\textit{fft}): implementa la transformada rápida de Fourier
+    %    (\gls{FFT}) \cite{FFT}.
     \item FIFO (\textit{fifo}): memoria de 32 bits del tipo "Primero que entra,
         Primero que sale" (\gls{FIFO}) \cite{FIFO}.
     \item Filtro de respuesta de impulso finito (\textit{FIR\_RI}) \cite{FIR}
@@ -192,7 +192,7 @@ En total, hemos probado el algoritmo en 10 diseños distintos:
         \cite{PCM}
     \item Registro de desplazamiento (\textit{shiftreg}): registro de
         desplazamiento de 8 bits.
-    \item Maquina de estados finita (\textit{simple\_FSM}): maquina de estados
+    \item Maquina de estados finita (\textit{simple\_fsm}): maquina de estados
         (\gls{FSM}) con 4 estados.
     \item UART (\textit{uart}): Transmisor y receptor asíncrono universal
         (\gls{UART}), dispositivo para comunicaciones serie \cite{UART}
@@ -233,13 +233,61 @@ obteniendo uno nuevo con 100 entradas menos. Para estos circuitos, el target run
 no se encontraba en el diccionario.
 
 % Tabla de resultados solo con leven. 5 cands, 5% o menos, reg
+\begin{table}[htbp]
+    \ttabbox
+    {\caption{Resultados experimentales. Distancia de Levenshtein. Dic.
+    incompletos ($\leq5\%$)}
+    \label{tab:LevenRes}}
+    {
+        \begin{tabular}{c|c c}
+            \hline
+            \rule[-8pt]{0pt}{22pt}{\bfseries{Diseños}}&{\bfseries{Registro}}
+            &{\bfseries{\gls{FF}}} \\
+            \hline
+            \rule{0pt}{14pt}adder\_acum & 100 & 98\\
+            counter & 100 & 96\\
+            dual\_counter & 99 & 99\\
+            fifo & 98 & 1\\
+            fir\_ri (37'78\%) & 29 & 3\\
+            pcm & 82 & 69\\
+            shiftreg & 100 & 82\\
+            simple\_fsm & 100 & 88\\
+            uart (0'87\%) & 97 & 93\\
+            \hline
+        \end{tabular}
+    }
+\end{table}
 
 % Explicar el contenido de la tabla: registros correctos de cada 100, FF correctos
 % de cada 100, y que se considera registro y FF
+En la tabla \ref{tab:LevenRes} se muestran los resultados de las 100 simulaciones
+para cada circuito. La columna \textit{Registro} indica cuántas de las 100 veces
+se encontraba el registro correcto entre los \textit{"n"} candidatos
+seleccionados, en este caso 5 candidatos. Análogamente, la columna
+\textit{\gls{FF}} es cuántas de las 100 veces se encontraba el FF correcto entre
+los candidatos. Cuando entre los 5 candidatos de una ejecución estaban más de una
+vez, se contaba como uno solo para el total de las 100 ejecuciones. La tabla es
+una medida de la efectividad de esta distancia como método de diagnóstico aislado
+(aunque no se ha tenido en cuenta el ciclo de inyección para realizar el recuento
+de aciertos).
 
+Cabe mencionar que \textit{\gls{FF}} es el biestable de inyección y 
+\textit{Registro} el resto de la dirección de inyección en caso de existir. En el
+caso del \textit{simple\_fsm}, no existen registros, y tanto \textit{adder\_acum}
+como \textit{counter} y \textit{shiftreg} tienen un único registro. El 100\% de 
+aciertos en estos tres casos no es significativo.
 
 % Decir que se observaba relacion entre distancia de levenshtein y los ciclos o FF
 % de inyeccion. Cuando estos aumentaban, la primera lo hacía en sintonía, por eso
 % se decidió implementar la distancia en ciclo
+Observando los candidatos que seleccionaba el algoritmo y comparando sus
+distancias de Levenshtein y la información de sus inyecciones con la inyección 
+del target run, la cual conocíamos (por supuesto el algoritmo no tenía acceso a 
+ella) se observaba relación directa entre la diferencia de los ciclos de las
+inyecciones y la distancia de Levenshtein. Mostrando un número mayor de candidatos
+pudimos comprobar como efectivamente, cuando la distancia de Levenshtein
+aumentaba o disminuía, también lo hacía la diferencia entre los ciclos de 
+inyección. Tras esta observación decidimos implementar una nueva métrica con el
+objetivo de mejorar los resultados del diagnóstico.
 
 \endinput

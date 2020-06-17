@@ -141,10 +141,6 @@ Wikipedia, ``Distancia de levenshtein --- wikipedia{,} la enciclopedia libre,''
   \url{https://es.wikipedia.org/w/index.php?title=Distancia_de_Levenshtein&oldid=125248609}
 \BIBentrySTDinterwordspacing
 
-\bibitem{FFT}
-``Vhdl implementation of fft algorithm(s),'' Available online:
-  \url{https://github.com/thasti/fft}, accessed on 17 June 2020.
-
 \bibitem{FIFO}
 ``Vhdl standard fifo,'' Available online:
   \url{http://www.deathbylogic.com/2013/07/vhdl-standard-fifo/}, accessed on 17
@@ -174,5 +170,9 @@ Wikipedia, ``Distancia de levenshtein --- wikipedia{,} la enciclopedia libre,''
 M.~Mu{\~n}oz-Quijada, S.~Sanchez-Barea, D.~Vela-Calderon, and
   H.~Guzman-Miranda, ``Fine-grain circuit hardening through vhdl datatype
   substitution,'' \emph{Electronics}, vol.~8, no.~1, p.~24, 2019.
+
+\bibitem{FFT}
+``Vhdl implementation of fft algorithm(s),'' Available online:
+  \url{https://github.com/thasti/fft}, accessed on 17 June 2020.
 
 \end{thebibliography}
