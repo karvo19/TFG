@@ -2,12 +2,34 @@
 candidatos}
 \label{ch:Cycle}
 
-% Ver apuntes de one note porque hay bastante desarrollo
-
-\lettrine[lraise=-0.1, lines=2, loversize=0.2]{}{}
 % Explicar el concepto de la distancia temporal con algún ejemplo.
+\lettrine[lraise=-0.1, lines=2, loversize=0.2]{L}{a} idea de implementar una
+distancia basada en ciclos surge de la observación realizada en los resultados de
+la distancia de Levenshtein (ver subsección \ref{subsec:LevDicNoExhaust}). La
+también llamada \textit{"distancia de ciclos"} se calcula a partir del primer 
+ciclo en que la inyección se manifiesta a la salida, a partir de ahora 
+\textit{"first cycle"}. La distancia de ciclos se calcula como la diferencia 
+entre el \textit{first cycle} del target run y el \textit{first cycle} de cada 
+entrada del diccionario, pudiendo ser positiva, negativa o cero si se los fallos 
+si el fallo del target run se manifiesta antes, despues o en el mismo ciclo que 
+las entradas del diccionario.
+
 % Decir las hipótesis realizadas para diagnosticar en base a la distancia de Cycle
+    % Esta distancia no es nada sin la de levenshtein. Lev = 0 es que hemos i
+    % terminado, cycle = 0 no implica Lev = 0
+La hipótesis que realizamos basándonos en las observaciones y la cual aplicamos
+para mejorar el diangóstico sería la siguiente:
+\begin{hypothesis}\label{hyp:cycle}
+    "La distancia temporal, definida como la diferencia entre los primeros ciclos
+    en que se manifiestan dos inyecciones, guarda relación directa con la
+    diferencia entre los ciclos de inyección de dichas inyecciones".
+\end{hypothesis}
+
+
+
 % Explicar que la base de datos de distancias se genera de forma similar
+
+% Decisiones tomada cuando el run es vacío y por qué
 
 
 \section{Diagnóstico basado en la distancia temporal}
