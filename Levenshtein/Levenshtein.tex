@@ -176,16 +176,70 @@ campaña de inyección de fallos aleatoria. Concretamente disponíamos de un
 diccionario del 0'005\% de exhaustividad para el diseño de la \textit{FFT}, 0'87\%
 para la \textit{UART} y 37'78\% para el \textit{FIR\_RI}.
 
-Tanto estos diseños como el resto de circuitos que hemos empleado para las pruebas
-%\cite{Triplelogic}
+En total, hemos probado el algoritmo en 10 diseños distintos:
+\begin{itemize}
+    \item Sumador (\textit{adder\_acum}): suma acumuladamente los 8 bits de 
+        entrada en un registro de 20 bits.
+    \item Contador (\textit{counter}): contador de 8 bits.
+    \item Doble contador (\textit{dual\_counter}): dos contadores de 8 bits
+        conectados formando uno de 16 bits.
+    \item FFT (\textit{fft}): implementa la transformada rápida de Fourier
+        (\gls{FFT}) \cite{FFT}.
+    \item FIFO (\textit{fifo}): memoria de 32 bits del tipo "Primero que entra,
+        Primero que sale" (\gls{FIFO}) \cite{FIFO}.
+    \item Filtro de respuesta de impulso finito (\textit{FIR\_RI}) \cite{FIR}
+    \item PCM (\textit{pcm}): implementa una interfaz I²C para el códec PCM3168
+        \cite{PCM}
+    \item Registro de desplazamiento (\textit{shiftreg}): registro de
+        desplazamiento de 8 bits.
+    \item Maquina de estados finita (\textit{simple\_FSM}): maquina de estados
+        (\gls{FSM}) con 4 estados.
+    \item UART (\textit{uart}): Transmisor y receptor asíncrono universal
+        (\gls{UART}), dispositivo para comunicaciones serie \cite{UART}
+\end{itemize}
 
 \subsection{Diccionarios exhaustivos}
 \label{subsec:LevDicExhaust}
 % Siempre aparece mínimo el correcto, a veces más debido a colisiones
+Con el uso de diccionarios completos para el diagnóstico se obtiene siempre al 
+menos un candidato con el que los patrones de error a la salida coinciden al
+completo, ya que todas las combinaciones posibles de \textit{(\gls{FF}, ciclo)}
+han sido inyectadas, y por tanto, el target run también.
 
+Como el algoritmo de selección obtiene \textit{"n"} candidatos, también es posible
+que obtengamos candidatos a distancia mayor que cero. Como el algoritmo nos
+muestra a la salida la distancia de Levenshtein que tiene cada candidato al target
+run, podemos descartar manualmente los candidatos que no esten a distancia cero
+cuando existan otros que si lo estén como es el caso.
+
+En algunos circuitos obtenemos de hecho varios candidatos a distancia nula. Esto
+es debido a colisiones, y es indistinguible de cuál de ellas se trata el target
+run realmente.
 
 \subsection{Diccionarios no exhaustivos}
 \label{subsec:LevDicNoExhaust}
+Para simular diccionarios no exhaustivos en todos los circuitos, realizamos un
+pequeño script que eliminaba aleatoriamente entradas del diccionario con una
+probabilidad concreta en función del porcentaje de exhaustividad que deseasemos.
+La mayor parte de los experimentos se ha realizado con diccionarios del 5\% de
+exhaustividad, siendo inferior en aquellos diccionarios que ya lo eran.
 
+Para diccionarios originalmente exhaustivos, seleccionamos aleatoriamente 100
+entradas del diccionario original a modo de objetivos a diagnosticar. Como el
+nuevo diccionario reducido es también aleatorio, podían estar contenidos o no en
+el diccionario. Por el contrario, en diccionarios ya muy incompletos, el
+procedimiento que seguimos fue extraer 100 targets del diccionario original,
+obteniendo uno nuevo con 100 entradas menos. Para estos circuitos, el target run
+no se encontraba en el diccionario.
+
+% Tabla de resultados solo con leven. 5 cands, 5% o menos, reg
+
+% Explicar el contenido de la tabla: registros correctos de cada 100, FF correctos
+% de cada 100, y que se considera registro y FF
+
+
+% Decir que se observaba relacion entre distancia de levenshtein y los ciclos o FF
+% de inyeccion. Cuando estos aumentaban, la primera lo hacía en sintonía, por eso
+% se decidió implementar la distancia en ciclo
 
 \endinput

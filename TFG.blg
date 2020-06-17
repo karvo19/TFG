@@ -10,7 +10,6 @@ A level-1 auxiliary file: Levenshtein/Levenshtein.aux
 A level-1 auxiliary file: Cycle/Cycle.aux
 A level-1 auxiliary file: TecnicasDeDiagnosticoAuxiliares/TecnicasDeDiagnosticoAuxiliares.aux
 A level-1 auxiliary file: CampanasIterativas/CampanasIterativas.aux
-A level-1 auxiliary file: RealDesigns/RealDesigns.aux
 A level-1 auxiliary file: DistanciaFF/DistanciaFF.aux
 A level-1 auxiliary file: Conclusiones/Conclusiones.aux
 The style file: IEEEtran.bst
@@ -25,44 +24,44 @@ Database file #1: bibliografia.bib
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 23 entries,
+You've used 29 entries,
             4087 wiz_defined-function locations,
-            982 strings with 12031 characters,
-and the built_in function-call counts, 18547 in all, are:
-= -- 1474
-> -- 408
-< -- 166
-+ -- 241
-- -- 65
-* -- 873
-:= -- 2697
-add.period$ -- 46
-call.type$ -- 23
-change.case$ -- 24
+            1010 strings with 12936 characters,
+and the built_in function-call counts, 20754 in all, are:
+= -- 1647
+> -- 430
+< -- 169
++ -- 254
+- -- 69
+* -- 951
+:= -- 3051
+add.period$ -- 58
+call.type$ -- 29
+change.case$ -- 35
 chr.to.int$ -- 390
-cite$ -- 23
-duplicate$ -- 1306
-empty$ -- 1542
-format.name$ -- 83
-if$ -- 4406
+cite$ -- 29
+duplicate$ -- 1515
+empty$ -- 1764
+format.name$ -- 88
+if$ -- 4915
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 223
-newline$ -- 96
-num.names$ -- 23
-pop$ -- 512
+int.to.str$ -- 29
+missing$ -- 269
+newline$ -- 114
+num.names$ -- 24
+pop$ -- 644
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1469
+skip$ -- 1646
 stack$ -- 0
-substring$ -- 934
-swap$ -- 1080
-text.length$ -- 36
+substring$ -- 954
+swap$ -- 1197
+text.length$ -- 39
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 23
+type$ -- 29
 warning$ -- 0
-while$ -- 80
-width$ -- 25
-write$ -- 248
+while$ -- 82
+width$ -- 31
+write$ -- 294

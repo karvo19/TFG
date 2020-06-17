@@ -141,9 +141,38 @@ Wikipedia, ``Distancia de levenshtein --- wikipedia{,} la enciclopedia libre,''
   \url{https://es.wikipedia.org/w/index.php?title=Distancia_de_Levenshtein&oldid=125248609}
 \BIBentrySTDinterwordspacing
 
+\bibitem{FFT}
+``Vhdl implementation of fft algorithm(s),'' Available online:
+  \url{https://github.com/thasti/fft}, accessed on 17 June 2020.
+
+\bibitem{FIFO}
+``Vhdl standard fifo,'' Available online:
+  \url{http://www.deathbylogic.com/2013/07/vhdl-standard-fifo/}, accessed on 17
+  June 2020.
+
+\bibitem{FIR}
+``Fpga4student. a low pass fir filter for ecg denoising in vhdl,'' Available
+  online:
+  \url{https://www.fpga4student.com/2017/01/a-low-pass-fir-filter-in-vhdl.html},
+  accessed on 17 June 2020.
+
+\bibitem{PCM}
+``I$^{2}$s interface designed for the pcm3168 audio interface from texas
+  instruments,'' Available online: \url{https://github.com/wklimann/PCM3168},
+  accessed on 17 June 2020.
+
+\bibitem{UART}
+``Simple uart controller for fpga written in vhdl,'' Available online:
+  \url{https://github.com/jakubcabal/uart-for-fpga}, acceded on 17 June 2020.
+
 \bibitem{AFLS}
 {Zhou Jing}, {Liu Zengrong}, {Chen Lei}, {Wang Shuo}, {Wen Zhiping}, {Chen
   Xun}, and {Qi Chang}, ``An accurate fault location method based on
   configuration bitstream analysis,'' in \emph{NORCHIP 2012}, 2012, pp. 1--5.
+
+\bibitem{Triplelogic}
+M.~Mu{\~n}oz-Quijada, S.~Sanchez-Barea, D.~Vela-Calderon, and
+  H.~Guzman-Miranda, ``Fine-grain circuit hardening through vhdl datatype
+  substitution,'' \emph{Electronics}, vol.~8, no.~1, p.~24, 2019.
 
 \end{thebibliography}
