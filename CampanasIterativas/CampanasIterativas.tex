@@ -4,26 +4,57 @@
 % Explicar en qué consiste una campaña iterativa. Comentar que puede ser una buena
 % solucion para cuando el diccionrio es extremadamente pequeño. -> Random sampling
 % y a partir de ahi acotar
-\lettrine[lraise=-0.1, lines=2, loversize=0.2]{}{}
+\lettrine[lraise=-0.1, lines=2, loversize=0.2]{L}{as} campañas iterativas serían
+el recurso propuesto para diagnósticos que no encuentran candidatos a distancias
+cero, es decir, cuando el diccionario no contiene al \gls{SEU} que queremos
+diagnósticar. Esta tećnica aplica para diccionarios incompletos, ya que un
+diccionario completo siempre contendrá por definición al target run.
+
+Esta técnica se emplea en situaciones en las que el diccionario es extremadamente 
+pequeño pero sin llegar a perder completamente la capacidad de diagnóstico. El
+concepto es sencillo. Se obtiene un diccionario incompleto del circuito mediante
+inyecciones aleatorias (\textit{"Random Samplig"}), a partir de él, realizamos el
+primer diagnóstico. Obtenemos una lista preliminar de candidatos a partir de la
+cual extraemos la información necesaria para una siguiente inyección, que ya no 
+será aleatoria, al menos en su mayoría. El proceso de obtención de diccionario,
+diagnóstico, y obtención de un nuevo diccionario a partir del el cual volver a
+diagnosticar puede repetirse tantas veces como sea necesario, finalizando con la
+detección de al menos una inyección que colisione con el target run.
 
 % Reducir enormemente el espacio de inyeccion restringiendo a un rango de ciclos,
 % registros, todos los regs pero en un único ciclo, un solo FF pero un rango de
 % ciclos, etc
+Según la información de salida del algoritmo que selecciona los candidatos,
+podemos realizar nuevas campañas desde distintos enfoques.
+% LISTA POSIBLES TIPOS DE CAMPAÑA
+    % Campaña enfocada en ciclos
+    % Campaña enfocada en registros
+    % Campaña enfocada en FF concretos
+    % Combinación de las anteriores.
+\begin{itemize}
+    \item Campaña enfocada en ciclos: si la información de salida no deja duda
+        sobre en qué ciclo se localiza el \gls{SEU}, podemos realizar una campaña
+        de inyección de fallos en la que sólo inyectemos durante ese ciclo en
+        concreto. El espacio total a inyectar se reduce al número de biestables, y
+        la longitud de la simulación se divide por la cantidad de ciclos que
+        componían cada ejecución.
+    \item Campaña enfocada en registros: cuando la información de la salida apunta
+        claramente a un registro o un conjunto de ellos, la campaña de inyección
+        de fallos a realizar podría centrarse en inyectar esas zonas del circuito,
+        reduciendo el espacio de inyección al descartar de la campaña el resto de
+        registros del \gls{CUT}.
+    \item Campaña enfocada en biestables: del mismo modo, 
+    \item Combinación de las restricciones anteriores:
+\end{itemize}
+
+% Comentar con qué formato sale la información para la siguiente campaña, siendo
+% el usuario el que decide qué tipo de campaña realizar.
 
 % MINIMOS LOCALES
 % Explicar la posibilidad de llegar a un minimo local -> soluciones planteadas
     % El uso de los 4 algoritmos simultaneamente -> 4*n candidatos
     % Posibilidad de incluir además un set de inyecciones aleatorias en la
         % siguiente campaña
-
-% LISTA POSIBLES TIPOS DE CAMPAÑA
-    % Campaña enfocada en ciclos
-    % Campaña enfocada en registros
-    % Campaña enfocada en FF concretos
-    % Combinación de las anteriores.
-
-% Comentar con qué formato sale la información para la siguiente campaña, siendo
-% el usuario el que decide qué tipo de campaña realizar.
 
 \section{Obtención de la lista de candidatos}
 \label{sec:Candidatos}

@@ -25,10 +25,9 @@
 \contentsline {section}{\numberline {6.2}Diagn\IeC {\'o}stico por coincidencias}{21}{section.6.2}% 
 \contentsline {section}{\numberline {6.3}Resultados experimentales}{21}{section.6.3}% 
 \contentsline {chapter}{\numberline {7}Campa\IeC {\~n}as iterativas a partir de los candidatos seleccionados}{25}{chapter.7}% 
-\contentsline {section}{\numberline {7.1}Estudio preliminar sobre el porcentaje de acierto de los algotirmos}{25}{section.7.1}% 
-\contentsline {section}{\numberline {7.2}Obtenci\IeC {\'o}n de la lista de candidatos}{25}{section.7.2}% 
-\contentsline {section}{\numberline {7.3}Extracci\IeC {\'o}n de la informaci\IeC {\'o}n para la siguiente campa\IeC {\~n}a de inyecci\IeC {\'o}n de fallos}{25}{section.7.3}% 
-\contentsline {section}{\numberline {7.4}Resultados experimentales}{25}{section.7.4}% 
+\contentsline {section}{\numberline {7.1}Obtenci\IeC {\'o}n de la lista de candidatos}{25}{section.7.1}% 
+\contentsline {section}{\numberline {7.2}Extracci\IeC {\'o}n de la informaci\IeC {\'o}n para la siguiente campa\IeC {\~n}a de inyecci\IeC {\'o}n de fallos}{25}{section.7.2}% 
+\contentsline {section}{\numberline {7.3}Resultados experimentales}{25}{section.7.3}% 
 \contentsline {chapter}{\numberline {8}Distancia en flip-flops. Mejora de la distancia temporal}{27}{chapter.8}% 
 \contentsline {section}{\numberline {8.1}Inclusi\IeC {\'o}n de la distancia en flip-flops en el algoritmo}{27}{section.8.1}% 
 \contentsline {section}{\numberline {8.2}Resultados experimentales}{27}{section.8.2}% 
