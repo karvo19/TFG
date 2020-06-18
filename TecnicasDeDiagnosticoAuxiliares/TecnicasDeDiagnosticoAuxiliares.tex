@@ -189,6 +189,8 @@ las distancias de menor a mayor y seleccionamos los \textit{"n"} primeros.
 
 \section{Resultados experimentales}
 \label{sec:4Results}
+% Explicar, en lineas generales, los resultados que se obtienen al realizar una
+% selección de candidatos ejecutando estos algoritmos por separado
 Con la finalidad de comprobar si podemos prescindir de algunos de los cuatro
 algoritmos como técnica de diagnóstico debido a que alguno de los demás siempre lo
 supere, hemos realizado un estudio en el que, para cada circuito, seleccionábamos
@@ -273,22 +275,75 @@ muchísimos candidatos.
     }
 \end{table}
 
-% Explicar, en lineas generales, los resultados que se obtienen al realizar una
-% selección de candidatos ejecutando estos algoritmos por separado
-
-% Son especialmente interesante las filas de la tabla cuya casilla "Todos" es
-% mayor que las demás -> explicar por qué
-
 % Estamos seleccionando un número muy bajo de candidatos, 5, es decir, 20
 % candidatos en condiciones normales, muchos de los cuales serán el mismo
 % seleccionado por diferentes alforitmos.
+El primer detalle a destacar de ambas tablas (\ref{tab:ResReg} y \ref{tab:ResFF}) 
+es el elevado números de veces que se aciertan tanto el registro como el \gls{FF} 
+de inyección agrupando los candidatos de los cuatro algoritmos y seleccionando 
+únicamente 5 candidatos con cada uno. Cabe resaltar que en las situaciones 
+concretas mencionadas, pueden ser más o menos de 5 candidatos por algoritmo. 
+También es muy posible que los candidatos estén repetidos, ya que un buen 
+candidato tendrá simultáneamente distancias pequeñas en todos los algoritmos, 
+con el límite de 0 para las colisiones (excepto la distancia de coincidencia, 
+que funciona de forma diferente).
+
+% Comparar si unos son  mejores que otros
+Como habíamos comentado anteriormente, los datos parecen indicar que la distancia
+de Levenshtein siempre tiene más acierto que la distancia en ciclos. Sin embargo,
+esto no siempre se cumple con el resto. El primer ejemplo de ello es el
+\textit{dual\_counter} de la tabla \ref{tab:ResReg}, donde por primera vez el
+algoritmo de Levenshtein es superado por el de coincidencias. Esto mismo vuelve a
+suceder de forma más acusada en la tabla \ref{tab:ResFF} con los algoritmos de Hu
+y Coincidencia.
+
+% Son especialmente interesante las filas de la tabla cuya casilla "Todos" es
+% mayor que las demás -> explicar por qué
+Son especialmente interesante las filas donde la columna \textit{"Todos"} es
+mayor estricto al resto. El número contenido en la columna \textit{"Todos"}
+representa el número de veces que obtenemos el registro y \gls{FF} correcto con
+los cuatro algoritmos conjuntamente. El hecho de que esta columna a veces sea 
+mayor que las anteriores demuestra que no hay algoritmo mejor, sino que
+dependiendo del caso concreto, funcionará mejor un algoritmo u otro. Los casos más
+claros son el \textit{fir\_ri} de la tabla \ref{tab:ResReg} y los casos
+\textit{fir\_ri} y \textit{shiftreg}  de la tabla \ref{tab:ResFF}.
+
+Cabe mencionar que los resultados obtenidos con el \textit{simple\_fsm} no son
+válidos, ya que el diccionario exhaustivo tiene 64 entradas y este fue reducido
+hasta un diccionario del 5\% de exhaustividad, haciendo un total de 5 entradas de
+las cuales 1 además es vacía. Dado que la \textit{"n"} se fijó a 5, los algoritmos
+estaban seleccionando siempre los únicos 4 candidatos disponibles. Esto lo supimos
+posteriormente a obtener los resultados de los experimentos.
+
+Así mismo, comprobamos que los malos resultados obtenidos tanto en \textit{fifo}, 
+como en \textit{fir\_ri}, como en \textit{pcm}, únicos circuitos en los que el
+diagnóstico se aleja del 90\% de aciertos espaciales, se deben a la presencia de
+un alto número de colisiones. Dada la limitación de $2 \times n$ candidatos
+impuesta para runs equidistantes, los candidatos correctos están permaneciendo
+fuera de la selección.
 
 % Explicar que se probaron otras distancias y que, como a veces seleccionan buenos
 % candidatos que a Lev se le escapan, los algoritmos se han mantenido a modo de
 % respaldo.
+En el siguiente capítulo explicaremos en que consiste una \textit{Campaña
+Iterativa}. Para realizar la primera iteración, es necesario realizar también un
+primer diagnóstico. Basándonos en  los resultados presentes en las tablas 
+\ref{tab:ResReg} y \ref{tab:ResFF}, hemos decidido seleccionar $4 \times n$
+candidatos, es decir, \textit{"n"} candidatos con cada algoritmo (cantidad
+variable en función de las situaciones especiales comentadas). Es de esperar que
+ciertos candidatos aparezcan repetidos, cada vez que esto ocurra se contabilizará,
+siendo una medida extra de la calidad de cada uno de los candidatos, ya que habrá
+sido seleccionado por más de un algoritmo.
 
 % Comentar que más adelante, cuando hablemos de las campañas iterativas, su fucion
 % además es la de evitar posibles mínimos locales.
+Como valor añadido, la selección simultánea de candidatos con varias distancias
+puede ser una posible medida para evitar mínimos locales. El algoritmo que mejor
+encaja como forma de abordar los mínimos locales es el de la distancia temporal,
+ya que, como concluimos anteriormente, selecciona inyecciones que desde el punto
+de vista de los biestables, con excepciones, son más aleatorias. Abordaremos con 
+más detalle el problema de los mínimos locales en el capítulo 
+\ref{ch:CampanasIterativas}.
 
 % La selección de candidatos por distancia de ciclo, aunque en principio no tengan
 % capacidad de diagnóstico por si solo (con excepciones), es una forma de
