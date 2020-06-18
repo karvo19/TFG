@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  18 JUN 2020 11:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  18 JUN 2020 13:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2570,14 +2570,8 @@ LaTeX Info: Redefining \% on input line 31.
 
 LaTeX Warning: Label `tab:LevenRes' multiply defined.
 
-) (./TecnicasDeDiagnosticoAuxiliares/TecnicasDeDiagnosticoAuxiliares.aux
-
-LaTeX Warning: Label `sec:CycleResults' multiply defined.
-
-
-LaTeX Warning: Label `fig:AcumRunImagenes' multiply defined.
-
-) (./CampanasIterativas/CampanasIterativas.aux) (./DistanciaFF/DistanciaFF.aux)
+) (./TecnicasDeDiagnosticoAuxiliares/TecnicasDeDiagnosticoAuxiliares.aux)
+(./CampanasIterativas/CampanasIterativas.aux) (./DistanciaFF/DistanciaFF.aux)
 (./Conclusiones/Conclusiones.aux
 
 LaTeX Warning: Label `ch:FFdist' multiply defined.
@@ -3473,20 +3467,21 @@ Overfull \hbox (24.6135pt too wide) in paragraph at lines 101--101
 \T1/qtm/m/n/9 (-20) 1367.| 
  []
 
-)
-LaTeX Info: Redefining \. on input line 195.
-LaTeX Info: Redefining \% on input line 195.
-LaTeX Info: Redefining \. on input line 195.
-LaTeX Info: Redefining \% on input line 195.
- [19
+LaTeX Info: Redefining \. on input line 149.
+LaTeX Info: Redefining \% on input line 149.
+LaTeX Info: Redefining \. on input line 149.
+LaTeX Info: Redefining \% on input line 149.
+[19
 
 
 
 ]
-LaTeX Info: Redefining \. on input line 195.
-LaTeX Info: Redefining \% on input line 195.
-LaTeX Info: Redefining \. on input line 195.
-LaTeX Info: Redefining \% on input line 195.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 168.
+LaTeX Info: Redefining \% on input line 168.
+LaTeX Info: Redefining \. on input line 168.
+LaTeX Info: Redefining \% on input line 168.
  [20 <./TecnicasDeDiagnosticoAuxiliares/figuras/acum40.png (PNG copy)> <./Tecni
 casDeDiagnosticoAuxiliares/figuras/acum42.png (PNG copy)> <./TecnicasDeDiagnost
 icoAuxiliares/figuras/acum949.png (PNG copy)> <./TecnicasDeDiagnosticoAuxiliare
@@ -3496,10 +3491,28 @@ ng (PNG copy)> <./TecnicasDeDiagnosticoAuxiliares/figuras/counter116.png (PNG c
 opy)> <./TecnicasDeDiagnosticoAuxiliares/figuras/counter401.png (PNG copy)> <./
 TecnicasDeDiagnosticoAuxiliares/figuras/counter1185.png (PNG copy)> <./Tecnicas
 DeDiagnosticoAuxiliares/figuras/counter1367.png (PNG copy)>]
+<TecnicasDeDiagnosticoAuxiliares/figuras/fig63.pdf, id=613, 1463.4675pt x 592.2
+125pt>
+File: TecnicasDeDiagnosticoAuxiliares/figuras/fig63.pdf Graphic file (type pdf)
+
+<use TecnicasDeDiagnosticoAuxiliares/figuras/fig63.pdf>
+Package pdftex.def Info: TecnicasDeDiagnosticoAuxiliares/figuras/fig63.pdf  use
+d on input line 180.
+(pdftex.def)             Requested size: 405.45045pt x 164.06529pt.
+)
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
+ [21 <./TecnicasDeDiagnosticoAuxiliares/figuras/fig63.pdf>]
 \openout2 = `CampanasIterativas/CampanasIterativas.aux'.
 
+ (./CampanasIterativas/CampanasIterativas.tex
+[22
 
-(./CampanasIterativas/CampanasIterativas.tex
+
+
+]
 chapter 7.
 Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (no accent, loversize=0),
@@ -3510,14 +3523,10 @@ LaTeX Info: Redefining \. on input line 197.
 LaTeX Info: Redefining \% on input line 197.
 LaTeX Info: Redefining \. on input line 197.
 LaTeX Info: Redefining \% on input line 197.
- [21
-
-
-
-]
+ [23]
 \openout2 = `DistanciaFF/DistanciaFF.aux'.
 
- (./DistanciaFF/DistanciaFF.tex [22
+ (./DistanciaFF/DistanciaFF.tex [24
 
 
 
@@ -3532,10 +3541,10 @@ LaTeX Info: Redefining \. on input line 201.
 LaTeX Info: Redefining \% on input line 201.
 LaTeX Info: Redefining \. on input line 201.
 LaTeX Info: Redefining \% on input line 201.
- [23]
+ [25]
 \openout2 = `Conclusiones/Conclusiones.aux'.
 
- (./Conclusiones/Conclusiones.tex [24
+ (./Conclusiones/Conclusiones.tex [26
 
 
 
@@ -3546,7 +3555,7 @@ LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
 LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
- [25] [26
+ [27] [28
 
 
 
@@ -3566,10 +3575,10 @@ LaTeX Info: Redefining \. on input line 238.
 LaTeX Info: Redefining \% on input line 238.
 LaTeX Info: Redefining \. on input line 238.
 LaTeX Info: Redefining \% on input line 238.
- [27
+ [29
 
 
-] [28
+] [30
 
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 24
@@ -3587,9 +3596,9 @@ LaTeX Info: Redefining \. on input line 245.
 LaTeX Info: Redefining \% on input line 245.
 LaTeX Info: Redefining \. on input line 245.
 LaTeX Info: Redefining \% on input line 245.
- [29
+ [31
 
-] [30
+] [32
 
 ]
 Package tocbasic Info: character protrusion at lol deactivated on input line 24
@@ -3607,29 +3616,29 @@ LaTeX Info: Redefining \. on input line 254.
 LaTeX Info: Redefining \% on input line 254.
 LaTeX Info: Redefining \. on input line 254.
 LaTeX Info: Redefining \% on input line 254.
- [31
+ [33
 
 ]
-[32
+[34
 
 ] (./TFG.bbl
 LaTeX Info: Redefining \. on input line 94.
 LaTeX Info: Redefining \% on input line 94.
 LaTeX Info: Redefining \. on input line 94.
 LaTeX Info: Redefining \% on input line 94.
- [33
+ [35
 
 ]
-LaTeX Info: Redefining \. on input line 173.
-LaTeX Info: Redefining \% on input line 173.
-LaTeX Info: Redefining \. on input line 173.
-LaTeX Info: Redefining \% on input line 173.
- [34])
+LaTeX Info: Redefining \. on input line 175.
+LaTeX Info: Redefining \% on input line 175.
+LaTeX Info: Redefining \. on input line 175.
+LaTeX Info: Redefining \% on input line 175.
+ [36])
 LaTeX Info: Redefining \. on input line 270.
 LaTeX Info: Redefining \% on input line 270.
 LaTeX Info: Redefining \. on input line 270.
 LaTeX Info: Redefining \% on input line 270.
- [35] [36
+ [37] [38
 
 ]
 No file TFG.ind.
@@ -3639,7 +3648,7 @@ LaTeX Info: Redefining \. on input line 285.
 LaTeX Info: Redefining \% on input line 285.
 LaTeX Info: Redefining \. on input line 285.
 LaTeX Info: Redefining \% on input line 285.
-[37
+[39
 
 
 
@@ -3679,31 +3688,32 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred when \iftrue on line 457 was incomplete) 
 Here is how much of TeX's memory you used:
- 71104 strings out of 492609
- 1568377 string characters out of 6131463
- 2047583 words of memory out of 5000000
- 73301 multiletter control sequences out of 15000+600000
- 636451 words of font info for 178 fonts, out of 8000000 for 9000
+ 71125 strings out of 492609
+ 1568838 string characters out of 6131463
+ 2048994 words of memory out of 5000000
+ 73315 multiletter control sequences out of 15000+600000
+ 642155 words of font info for 180 fonts, out of 8000000 for 9000
  1162 hyphenation exceptions out of 8191
- 87i,11n,142p,9082b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,13n,142p,9082b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texm
 f-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q
 -ts1.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/p
-ublic/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb>
-</usr/share/texmf/fonts/type1/public/tex-gyre/qtmri.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
-/helvetic/uhvbo8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/
-uhvr8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TFG.pdf (53 pages, 969926 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/
+tex-gyre/qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/
+share/texmf/fonts/type1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helve
+tic/uhvbo8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a
+c.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/times/utmri8a.pfb>
+Output written on TFG.pdf (55 pages, 1002002 bytes).
 PDF statistics:
- 938 PDF objects out of 1000 (max. 8388607)
- 806 compressed objects within 9 object streams
- 157 named destinations out of 1000 (max. 500000)
- 27690 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 974 PDF objects out of 1000 (max. 8388607)
+ 836 compressed objects within 9 object streams
+ 163 named destinations out of 1000 (max. 500000)
+ 28719 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -161,6 +161,13 @@ Wikipedia, ``Distancia de levenshtein --- wikipedia{,} la enciclopedia libre,''
 ``Simple uart controller for fpga written in vhdl,'' Available online:
   \url{https://github.com/jakubcabal/uart-for-fpga}, acceded on 17 June 2020.
 
+\bibitem{Hu}
+\BIBentryALTinterwordspacing
+Wikipedia, ``Momentos de imagen --- wikipedia{,} la enciclopedia libre,'' 2020,
+  [Internet; descargado 18-junio-2020]. [Online]. Available:
+  \url{https://es.wikipedia.org/w/index.php?title=Momentos_de_imagen&oldid=124767713}
+\BIBentrySTDinterwordspacing
+
 \bibitem{AFLS}
 {Zhou Jing}, {Liu Zengrong}, {Chen Lei}, {Wang Shuo}, {Wen Zhiping}, {Chen
   Xun}, and {Qi Chang}, ``An accurate fault location method based on

@@ -112,22 +112,109 @@ naturaleza de los patrones que queremos identificar en imágenes, ya que no rota
 aunque si nos fijamos por ejemplo en la imagen \ref{fig:CounterRunImagenes}
 podemos observar cierto cambio de escala.
 
-Los momentos de Hu se calculan a partir de los momentos normales
+Los 7 momentos de Hu se calculan a partir de los momentos normales. Sus
+expresiones pueden consultarse en \cite{Hu}.
+% \begin{equation}
+%     \label{eq:Hu1}
+%     I_1 = \eta_{20} + \eta_{02}
+% \end{equation}
+% \begin{equation}
+%     \label{eq:Hu2}
+%     I_2 = (\eta_{20} - \eta_{02})² + 4 \times \eta²_{11}
+% \end{equation}
+% \begin{equation}
+%     \label{eq:Hu3}
+%     I_3 = (\eta_{30} - 3 \times \eta_{12})² + (3 \times \eta_{21} - \eta_{03})²
+% \end{equation}
+% \begin{equation}
+%     \label{eq:Hu4}
+%     I_4 = (\eta_{30} + \eta_{12})² + (\eta_{21} + \eta_{03})²
+% \end{equation}
+% \begin{equation}
+%     \label{eq:Hu5}
+%     I_5 = (\eta_{30} - 3 \times \eta_{12})(\eta_{30} + \eta_{12})[(\eta_{30} +
+%     \eta_{12})² - 3 \times (\eta_{21} + \eta_{03})²] + (3 \times \eta_{21} -
+%     \eta_{03})(\eta_{21} + \eta_{03})[3 \times (\eta_{30} + \eta_{12})² -
+%     (\eta_{21} + \eta_{03})²]
+% \end{equation}
 
 % Calculo de distancias en base a los momentos de Hu. Modulo del vector.
+Las distancias basadas en estas expresiones se calculan de forma vectorial. Se
+construye un vector de 7 componentes para cada run con sus momentos de Hu; lo
+mismo para el target run. La distancia será el módulo de la diferencia entre ambos
+vectores.
+\begin{equation}
+    \label{eq:VectorHu}
+    \overrightarrow{Hu_{run}} = (I_1, I_2, I_3, I_4, I_5, I_6, I_7)
+\end{equation}
+\begin{equation}
+    \label{eq:HuDist}
+    D_{Hu} = |\overrightarrow{Hu_{run}} - \overrightarrow{Hu_{taget\_run}}|
+\end{equation}
 
 % Explicar cómo se seleccionan los candidatos en base a las distancias calculadas
-
+La selección de candidatos en su versión final se realiza como hemos explicado
+anteriormente: ordenamos las distancias de Hu de menos a mayor y seleccionamos
+como candidatos los \textit{"n"} primeros.
 
 \section{Diagnóstico por coincidencias}
 \label{sec:CoincDist}
 % Explicar en que consiste
+La última de las distancias que probamos fué la que hemos llamado
+\textit{"distancia de coincidencia"}. Esta consiste en contabilizar los fallos a
+la salida que tienen en común dos inyeciones distintas, ignorando cuántos no. En
+la distancia de Levenshtein sucedía todo lo contrario: contabilizábamos las
+diferencias ignorando cuánto tenían en común. 
+
 % Explicar cómo se calculan las distancias de coincidencia
+Para calcuar las coincidencias sólo hay que realizar una pequeña modificación en
+el algoritmo encargado de calcular la distancia de Levenshtein. La única
+diferencia es que se emplea la operación lógica \textit{"AND"} en lugar de la
+\textit{"XOR"}. La distancia de coincidencia será la inversa del resultado
+obtenido tras la suma de todos los bits altos.
+
+% Imagen explicativa del algoritmo:
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.95\linewidth]
+    {TecnicasDeDiagnosticoAuxiliares/figuras/fig63.pdf}
+    \caption{Cálculo de la distancia de coincidencia}
+    \label{fig:CoincDist}
+\end{figure}
+
 % Explicar cómo se seleccionan los candidatos en base a las distancias calculadas
+La selección de candidatos se realiza del mismo modo que anteriormente: ordenamos
+las distancias de menor a mayor y seleccionamos los \textit{"n"} primeros.
 
 
 \section{Resultados experimentales}
-\label{sec:CycleResults}
+\label{sec:4Results}
+Con la finalidad de comprobar si podemos prescindir de algunos de los cuatro
+algoritmos como técnica de diagnóstico debido a que alguno de los demás siempre lo
+supere, hemos realizado un estudio en el que, para cada circuito, seleccionábamos
+100 inyecciones a diagnósticar y calculábamos candidatos independientemente con
+las cuatro distancias.
+
+Respecto al método de selección de candidatos explicado hasta ahora, de este
+estudio en adelante realizamos modificaciones, de forma que no tienen por qué
+seleccionarse \textit{"n"} candidatos exactamete si se dan ciertas situaciones.
+\begin{itemize}
+    \item Si el diccionario contiene menos de \textit{"n"} runs no vacíos, la
+        cantidad de candidatos seleccionados será menor que \textit{"n"} e igual
+        a la cantidad de runs no vacíos.
+    \item Si, tras ordenar las distancias, al candidato número \textit{"n"} le
+        siguen inyecciones equidistantes a él, estas serán también seleccionadas
+        cómo candidatos (con un máximo de $2 \times n$ candidatos).
+\end{itemize}
+
+El primer caso se explica solo. Respecto al segundo, decidimos ampliar la
+selección de esta manera para no descartar candidatos que según la distancia son
+tan válidos como el número \textit{"n"}. El tope de $2 \times n$ va en contra de
+este razonamiento, pero ocurría que circuitos con muchas colisiones seleccionaban
+muchísimos candidatos.
+
+% Tabla
+
 % Explicar, en lineas generales, los resultados que se obtienen al realizar una
 % selección de candidatos ejecutando estos algoritmos por separado
 
