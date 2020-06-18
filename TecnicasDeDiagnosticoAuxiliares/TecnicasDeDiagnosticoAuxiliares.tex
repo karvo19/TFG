@@ -1,21 +1,121 @@
 \chapter{Técnicas de diagnóstico auxiliares}
 \label{ch:TecnicasAuxiliares}
 
-\lettrine[lraise=-0.1, lines=2, loversize=0.2]{}{}
-% Explicar que se probaron otras distancias y que, como a veces seleccionan buenos
-% candidatos que a Lev se le escapan, los algoritmos se han mantenido a modo de
-% respaldo.
-% Comentar que más adelante, cuando hablemos de las campañas iterativas, su fucion
-% además es la de evitar posibles mínimos locales.
+\lettrine[lraise=-0.1, lines=2, loversize=0.2]{A}{unque} la distancia de
+Levenshtein funciona muy bien una vez llegamos a las soluciones de descartar los 
+runs vacíos del diccionario y controlar el número de candidatos seleccionados 
+mediante la ordenación y selección de las \textit{"n"} menores distancias en lugar
+de establecer un corte según el rango; podemos pensar que si el primer intento ha
+dado tan buenos resultados, existirán otras métricas incluso mejores aún por
+explorar.
 
+Con este pensamiento en mente, tras convertir las entradas del diccionario en
+imágenes binarias, observamos patrones característicos para cada circuito. Cómo
+además las inyecciones de los diccionarios exhaustivos estaban ordenadas en la
+medida de lo posible, ocurría que a simple vista se podía observar relación entre
+una inyección y las que la rodeaban. Podemos observar incluso un efecto tipo
+\textit{gif} si pasamos las imágenes ordenadamente con cierta velocidad.
+
+Esta observación corroboraba la hipótesis de partida (hipótesis
+\ref{hyp:inicial}), pero además nos llevó a pensar que quizás se podrían aplicar
+algoritmos del campo de la percepción al diagnóstico de \gls{SEU}.
+
+En total probamos cuatro distancias diferentes con las que seleccionar candidatos.
 
 \section{Diagnóstico basado en el análisis de imágenes}
 \label{sec:HuDist}
 % Explicar el concepto. Diagnostico basado en la identificación de patrones con
 % técnicas de reconocimientos de objetos en imágenes.
+En percepción, el procedimiento estudiado para identificar objetos en
+imágenes consistía en binarizar la imagen RGB, aplicar técnicas para que cada
+objeto quede separado del resto (los pixeles blancos de cada objeto estén
+separados del resto de objetos) y luego caracterizar las imágenes binarias de cada
+objeto de forma que puedan ser posteriormente identificados o que incluso se pueda
+entrenar un clasificador de objetos en base a ello.
+
+El diagnóstico basado en imágenes consiste en tratar cada run como una imagen, 
+y todo lo contenido en una imagen como un único objeto, sin importar que los
+fallos produzcan un patrón completamente unido en la imagen o no.
+
 % Conversión de las entradas del diccionario en imágenes
+Para realizar la conversión de las entradas del diccionario en imágenes escribimos
+un pequeño programa en Python que se encargaba de leer la información del fichero
+\textit{"damages.csv"} y generar un \textit{.png} con ella.
+
+% Imágenes de ejemplo
+\begin{figure}[htbp]
+    \centering
+    \subfloat[run 40]{
+        \label{subfig:run40}
+        \includegraphics
+        {TecnicasDeDiagnosticoAuxiliares/figuras/acum40.png}}
+    \hfill
+    \subfloat[run 42]{
+        \label{subfig:run42}
+        \includegraphics
+        {TecnicasDeDiagnosticoAuxiliares/figuras/acum42.png}}
+    \hfill
+    \subfloat[run 949]{
+        \label{subfig:run949}
+        \includegraphics
+        {TecnicasDeDiagnosticoAuxiliares/figuras/acum949.png}}
+    \hfill
+    \subfloat[run 1842]{
+        \label{subfig:run1842}
+        \includegraphics
+        {TecnicasDeDiagnosticoAuxiliares/figuras/acum1842.png}}
+    \caption{Visualización de algunas inyecciones del adder\_acum como imágenes}
+    \label{fig:AcumRunImagenes}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \subfloat[run 32]{
+        \label{subfig:run32}
+        \includegraphics
+        {TecnicasDeDiagnosticoAuxiliares/figuras/counter32.png}}
+    \hfill
+    \subfloat[run 35]{
+        \label{subfig:run35}
+        \includegraphics
+        {TecnicasDeDiagnosticoAuxiliares/figuras/counter35.png}}
+    \hfill
+    \subfloat[run 116]{
+        \label{subfig:run116}
+        \includegraphics
+        {TecnicasDeDiagnosticoAuxiliares/figuras/counter116.png}}
+    \hfill
+    \subfloat[run 401]{
+        \label{subfig:run401}
+        \includegraphics
+        {TecnicasDeDiagnosticoAuxiliares/figuras/counter401.png}}
+    \hfill
+    \subfloat[run 1185]{
+        \label{subfig:run1185}
+        \includegraphics
+        {TecnicasDeDiagnosticoAuxiliares/figuras/counter1185.png}}
+    \hfill
+    \subfloat[run 1367]{
+        \label{subfig:run1367}
+        \includegraphics
+        {TecnicasDeDiagnosticoAuxiliares/figuras/counter1367.png}}
+    \caption{Visualización de algunas inyecciones del counter como imágenes}
+    \label{fig:CounterRunImagenes}
+\end{figure}
+
+
 % Explicar que son los momentos invariantes de Hu
+La caracterización escogida para posteriormente identificar a los objetos son los
+Momentos invariantes de Hu. Estos presentan la propiedad de ser invariantes a
+rotación, traslación y cambios de escala. Esta medida quizás es excesiva dada la 
+naturaleza de los patrones que queremos identificar en imágenes, ya que no rotan,
+aunque si nos fijamos por ejemplo en la imagen \ref{fig:CounterRunImagenes}
+podemos observar cierto cambio de escala.
+
+Los momentos de Hu se calculan a partir de los momentos normales
+
 % Calculo de distancias en base a los momentos de Hu. Modulo del vector.
+
 % Explicar cómo se seleccionan los candidatos en base a las distancias calculadas
 
 
@@ -30,7 +130,21 @@
 \label{sec:CycleResults}
 % Explicar, en lineas generales, los resultados que se obtienen al realizar una
 % selección de candidatos ejecutando estos algoritmos por separado
-% Decir que analizarán resultados más adelante.
 
+% Explicar que se probaron otras distancias y que, como a veces seleccionan buenos
+% candidatos que a Lev se le escapan, los algoritmos se han mantenido a modo de
+% respaldo.
+
+% Comentar que más adelante, cuando hablemos de las campañas iterativas, su fucion
+% además es la de evitar posibles mínimos locales.
+
+% La selección de candidatos por distancia de ciclo, aunque en principio no tengan
+% capacidad de diagnóstico por si solo (con excepciones), es una forma de
+% seleccionar circuitos de localizacion espacial aleatorio cuando no nos
+% encontramos en una de las excepciones. (Justificación extra para la distancia
+% temporal)
+
+% Decir que los resultados de los 4 algoritmos se convinarán más adelante en las
+% campañas interativas.
 
 \endinput

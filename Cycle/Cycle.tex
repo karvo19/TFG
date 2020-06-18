@@ -50,7 +50,7 @@ distancias temporales junto con las respectivas distancias de Levenshtein.
     \includegraphics[width=0.95\linewidth]
     {Cycle/figuras/fig51.pdf}
     \caption{Cálculo de la distancia temporal}
-    \label{fig:LevenDist}
+    \label{fig:CycDist}
 \end{figure}
 
 % Decisiones tomada cuando el run es vacío y por qué
@@ -63,9 +63,9 @@ existencia de runs vacíos en el archivo \textit{"damages.csv"} y por tanto, en
 entradas del diccionario a las cuales no se le puede asignar un \textit{first
 cycle} de forma inmediata.
 
-% Solucion adoptada para esto
 Cuando una inyección no se manifiesta a la salida puede deberse a tres razones
 básicas:
+% Solucion adoptada para esto
 \begin{enumerate}
     \item El \gls{SEU} se produjo durante el reset, por lo que automáticamente se
         restaura el sistema.
@@ -188,6 +188,25 @@ han realizado de la misma forma que la explicada en el capítulo anterior
 veces de las 100 simuladas que se encuentra el Registro/FF correcto entre los
 candidatos.
 
-Observamos cómo efectivamente ....
+Observamos cómo efectivamente se tiene menos capacidad de diagnóstico para 
+\gls{FF} con la distancia de ciclo. Parece que además el porcentaje de acierto
+ronda en torno al 50\%, lo cual encaja con la hipótesis de que la ditancia
+temporal no sirve más que para localizar el \gls{SEU} temporalmente, obteniendo
+este nivel de acierto fruto del azar, aunque con excepciones.
+
+Para el \textit{fifo} y el \textit{fir\_ri} el bajo nivel de acieto se explica
+debido a una cantidad muy alta de colisiones. Además de los \textit{"n"} 
+candidatos seleccionados hay muchos otros que son equidistantes a ellos y que no
+se seleccionan, quedando atrás las inyecciones correctas a causa de las
+colisiones.
+
+Por el contrario, si que observamos circuitos donde se supera claramente la mitad
+de aciertos. El caso de la máquina finita de estados se explica porque existen muy
+pocos \gls{FF} donde seleccionar, por lo que es muy probable que uno de los
+correctos se encuentre entre los candidatos. La \gls{UART} no tiene una
+explicación tán sencilla. Puede deberse a la propia ejecución que está ejecutando.
+Las zonas del circuito podrían estar activandose alternadamente por periodos, con
+lo que al detectar los más próximos temporalmente, estaríamos seleccionando además
+inyecciones a los mismos registros o incluso biestables.
 
 \endinput
