@@ -213,10 +213,75 @@ tan válidos como el número \textit{"n"}. El tope de $2 \times n$ va en contra 
 este razonamiento, pero ocurría que circuitos con muchas colisiones seleccionaban
 muchísimos candidatos.
 
-% Tabla
+% Tablas
+\begin{table}[htbp]
+    \ttabbox
+    {\caption{Resultados experimentales. Diagnóstico del registro de inyección con
+    los 4 algoritmos. Dicccionarios incompletos ($\leq5\%$)}
+    \label{tab:ResReg}}
+    {
+        \begin{tabular}{c|c c c c|c}
+            \hline
+            \rule[-8pt]{0pt}{22pt}{\bfseries{Diseños\textbackslash{}Algoritmos}}
+            &{\bfseries{Levenshtein}}
+            &{\bfseries{Ciclos}}
+            &{\bfseries{Hu}}
+            &{\bfseries{Coincidencias}}
+            &{\bfseries{Todos}}\\
+            \hline
+            \rule{0pt}{14pt}
+            adder\_acum & 100 & 100 & 100 & 100 & 100\\
+            counter & 100 & 100 & 100 & 100 & 100\\
+            dual\_counter & 99 & 98 & 99 & 100 & 100\\
+            fifo & 98 & 98 & 97 & 95 & 99\\
+            fir\_ri (37'78\%) & 29 & 21 & 55 & 30 & 78\\
+            pcm & 82 & 67 & 82 & 73 & 82\\
+            shiftreg & 100 & 100 & 100 & 32 & 100\\
+            simple\_fsm & 100 & 100 & 100 & 100 & 100\\
+            uart (0'87\%) & 97 & 92 & 96 & 84 & 97\\
+            \hline
+        \end{tabular}
+    }
+\end{table}
+\begin{table}[htbp]
+    \ttabbox
+    {\caption{Resultados experimentales. Diagnóstico del FF de inyección con
+    los 4 algoritmos. Dicccionarios incompletos ($\leq5\%$)}
+    \label{tab:ResFF}}
+    {
+        \begin{tabular}{c|c c c c|c}
+            \hline
+            \rule[-8pt]{0pt}{22pt}{\bfseries{Diseños\textbackslash{}Algoritmos}}
+            &{\bfseries{Levenshtein}}
+            &{\bfseries{Ciclos}}
+            &{\bfseries{Hu}}
+            &{\bfseries{Coincidencias}}
+            &{\bfseries{Todos}}\\
+            \hline
+            \rule{0pt}{14pt}
+            adder\_acum & 98 & 37 & 35 & 100 & 100\\
+            counter & 96 & 63 & 72 & 100 & 100\\
+            dual\_counter & 99 & 67 & 74 & 94 & 100\\
+            fifo & 1 & 0 & 0 & 1 & 1\\
+            fir\_ri (37'78\%) & 3 & 4 & 4 & 10 & 16\\
+            pcm & 69 & 52 & 68 & 56 & 69\\
+            shiftreg & 82 & 52 & 53 & 4 & 91\\
+            simple\_fsm & 88 & 88 & 88 & 88 & 88\\
+            uart (0'87\%) & 93 & 74 & 91 & 79 & 93\\
+            \hline
+        \end{tabular}
+    }
+\end{table}
 
 % Explicar, en lineas generales, los resultados que se obtienen al realizar una
 % selección de candidatos ejecutando estos algoritmos por separado
+
+% Son especialmente interesante las filas de la tabla cuya casilla "Todos" es
+% mayor que las demás -> explicar por qué
+
+% Estamos seleccionando un número muy bajo de candidatos, 5, es decir, 20
+% candidatos en condiciones normales, muchos de los cuales serán el mismo
+% seleccionado por diferentes alforitmos.
 
 % Explicar que se probaron otras distancias y que, como a veces seleccionan buenos
 % candidatos que a Lev se le escapan, los algoritmos se han mantenido a modo de
