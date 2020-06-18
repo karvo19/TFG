@@ -1,34 +1,39 @@
 \chapter{Campañas iterativas a partir de los candidatos seleccionados}
 \label{ch:CampanasIterativas}
 
-\lettrine[lraise=-0.1, lines=2, loversize=0.2]{}{}
 % Explicar en qué consiste una campaña iterativa. Comentar que puede ser una buena
 % solucion para cuando el diccionrio es extremadamente pequeño. -> Random sampling
 % y a partir de ahi acotar
+\lettrine[lraise=-0.1, lines=2, loversize=0.2]{}{}
 
 % Reducir enormemente el espacio de inyeccion restringiendo a un rango de ciclos,
 % registros, todos los regs pero en un único ciclo, un solo FF pero un rango de
 % ciclos, etc
 
+% MINIMOS LOCALES
 % Explicar la posibilidad de llegar a un minimo local -> soluciones planteadas
     % El uso de los 4 algoritmos simultaneamente -> 4*n candidatos
     % Posibilidad de incluir además un set de inyecciones aleatorias en la
         % siguiente campaña
 
-\section{Estudio preliminar sobre el porcentaje de acierto de los algotirmos}
-\label{sec:EstudioAcierto}
-% Explicar el estudio realizado para conocer el porcentaje de acierto de los
-% algoritmos y así ver si algunos de ellos es prescindible o no
+% LISTA POSIBLES TIPOS DE CAMPAÑA
+    % Campaña enfocada en ciclos
+    % Campaña enfocada en registros
+    % Campaña enfocada en FF concretos
+    % Combinación de las anteriores.
 
-% Conclusion: Todos son utiles y además pueden servir para evitar minimos locales
+% Comentar con qué formato sale la información para la siguiente campaña, siendo
+% el usuario el que decide qué tipo de campaña realizar.
 
 \section{Obtención de la lista de candidatos}
 \label{sec:Candidatos}
-% Explicar como se calcula la matriz de distancias con sus respectivas inyecciones
+% Mencionar lo ya explicado anteriormente sobre el uso de los 4 algoritmos
+% simultaneamente
 
 % Seleccion de n candidatos de cada algoritmo
 
-% Agrupacion de los candidatos en una sola lista
+% Agrupacion de los candidatos en una sola lista (en el siguiente apartado
+% explicamos cómo se procesa esta información)
 
 \section{Extracción de la información para la siguiente campaña de inyección de
 fallos}
