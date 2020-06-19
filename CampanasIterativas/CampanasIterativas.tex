@@ -179,14 +179,82 @@ hipótesis:
 
 % Hipotesis realizadas para validar de esta forma
 \begin{hypothesis}\label{hyp:ResIter}
-    "Si la primera selección de candidatos contiene información suficiente, el
-    proceso iterativo concluirá con alguna colisión tarde o temprano".
+    "Si el espacio de inyección propuesto por el algoritmo es lo suficientemente
+    pequeño como para realizar en él una campaña exhaustiva, y en en él se
+    encuentra la inyección correcta; la siguiente campaña detectará al menos una
+    colisión".
 \end{hypothesis}
 
-% Comentar la hipótesis. Conocemos la inyeccion real de target run. Explicar que
-% es eso de información suficiente.
+% Comentar la hipótesis. Conocemos la inyeccion real de target run.
+Conociendo de antemano la inyección del \gls{SEU} que se quiere diagnosticar, se 
+puede saber si el proceso iterativo terminará detectando colisiones o no.
+Podemos pues ahorrarnos el proceso de inyección de cara a validar la técnica, ya
+que los experimentos de diagnóstico se están realizando para conmutaciones lógicas
+simuladas, y por tanto conocemos la información de la inyección. Esta información
+nos permite tanto validar la técnica como saber de antemano cuál es la mejor
+campaña que podemos aplicar dada la salida del algoritmo.
 
-% Resultados
+% Cuando diremos que las campañas iterativas serán exitosas.
+Hemos fijado \textit{"n"} a 5. Esto hace un total de 20 candidatos (con un máximo
+de 40) en caso de que no se repita ninguno. Si además tenemos en cuenta que el
+algoritmo nos acota también el espacio de inyección temporalmente, podemos afirmar
+que este es lo suficientemente pequeño como para aplicar una campaña de inyección
+de fallos exhaustiva.
+
+Por supuesto, aún tenemos libertad para decidir a qué ciclos aplicamos la campaña,
+pudiendo ampliarlos o reducirlos, y si la aplicamos a biestables concretos o si 
+por el conrtrario inyecctamos en todos los \gls{FF} de los registros
+seleccionados. Hemos programado un código que analiza la salida del algoritmo, la
+compara con la información de la inyección y predice el resultado que se obtendría
+al realizar realmente las campañas de inyección de fallos. Las posibles salidas de
+este código son:
+\begin{itemize}
+    \item \textit{"Next campaign will fail"}: en caso de que entre los candidatos 
+        no se encuentre ni el \gls{FF}, ni el registro, ni el ciclo correcto.
+    \item \textit{"Will need more than one iteration to hit the target"}: cuando
+        entre los candidatos se encuentra el \gls{FF} correcto, pero el ciclo está
+        fuera del rango. Los nuevos candidatos extraidos del diccionario resultado
+        de la siguiente inyección afinarán la predicción temporal. Una campaña
+        exhaustiva para los \gls{FF} seleccionados no acotada temporalmente solo
+        necesitaría una campaña extra para colisionar.
+    \item "If next campaign is oriented to registers, will hit the target": tanto
+        el registro como el ciclo correcto están en el espacio de inyección
+        acotado, pero el biestable concreto no aparece. Si la campaña la enfocamos
+        a registros, sin concretar en cuáles de sus biestables se inyecta,
+        localizará al target run.
+    \item "Next campaign will hit the target": tanto ciclo, como registro, como
+        biestable están en el espacio de inyección seleccionado. Las campañas
+        iterativas finalizarían en la siguiente iteración.
+    \item "Next campaign will contain only right cycle": sólo una campaña acotada
+        temporalmente aseguraría mejorar el diagnóstico en la siguiente iteración.
+    \item "Will need a register oriented campaign and more than one iteration": ni
+        ciclo ni biestable correcto se encuentran en el espacio de inyección
+        seleccionado. A base de iterar podría mejorar el diagnóstico temporal
+        empleando la información de las nuevas distancias en ciclo, pero sería
+        necesario no enfocar las campañas a biestables concretos.
+\end{itemize}
+
+Evidentemente, en una aplicación real no dispondríamos de la información correcta
+de la inyección, por lo que no se sabría qué tipo de campaña realizar en la
+proxima iteración para mejorar el diagnóstico. La información del número de veces
+que se repite cada biestable entre los candidatos puede orientarnos a la hora de
+saber si realmente el \gls{FF} correcto se encuentra entre ellos o no. Aún
+así, es posible que se necesiten varios intentos de selección de tipo de campaña
+en caso de que, debido al gran tamaño inicial del espacio de inyección, sea
+necesario acotar lo máximo posible.
+
+% Resultados (ver correo, que ahí hago el resumen)
+En líneas generales, los resultados muestran como el candidato que se repide un
+mayor número de veces es el que apunta al biestable correcto si la diferencia
+de repeticiones respecto al resto es notable. A pasar de lo claro
+que sea este resultado, se debe inyectar también en el resto de candidatos, en caso
+de que no se haya detectado colisión, para evitar caer en un mínimo local.
+
+He seleccionado los resultados más significativos de todos los experimentos
+realizados, mostrando algún ejemplo para cada posible caso de los anteiormente
+enumerados.
+
+
 
 % Hablar de cuándo se va perdiendo la capacidad de diagnóstico conforme se va
 % reduciendo la exhaustividad del diciconario

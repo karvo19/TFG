@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  19 JUN 2020 11:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  19 JUN 2020 12:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3538,19 +3538,19 @@ LaTeX Info: Redefining \% on input line 144.
 LaTeX Warning: Command \' invalid in math mode on input line 153.
 
 Missing character: There is no ó in font zptmcm7t!
-)
+LaTeX Info: Redefining \. on input line 220.
+LaTeX Info: Redefining \% on input line 220.
+LaTeX Info: Redefining \. on input line 220.
+LaTeX Info: Redefining \% on input line 220.
+[27])
 LaTeX Info: Redefining \. on input line 197.
 LaTeX Info: Redefining \% on input line 197.
 LaTeX Info: Redefining \. on input line 197.
 LaTeX Info: Redefining \% on input line 197.
- [27]
+ [28]
 \openout2 = `DistanciaFF/DistanciaFF.aux'.
 
- (./DistanciaFF/DistanciaFF.tex [28
-
-
-
-]
+ (./DistanciaFF/DistanciaFF.tex
 chapter 8.
 Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (no accent, loversize=0),
@@ -3561,7 +3561,11 @@ LaTeX Info: Redefining \. on input line 201.
 LaTeX Info: Redefining \% on input line 201.
 LaTeX Info: Redefining \. on input line 201.
 LaTeX Info: Redefining \% on input line 201.
- [29]
+ [29
+
+
+
+]
 \openout2 = `Conclusiones/Conclusiones.aux'.
 
  (./Conclusiones/Conclusiones.tex [30
@@ -3730,7 +3734,7 @@ c.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on TFG.pdf (59 pages, 1018809 bytes).
+Output written on TFG.pdf (59 pages, 1022552 bytes).
 PDF statistics:
  1003 PDF objects out of 1200 (max. 8388607)
  861 compressed objects within 9 object streams
