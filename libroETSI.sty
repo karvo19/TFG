@@ -172,7 +172,7 @@
 	\def\tablename{Tabla}%
 	\def\listfigurename{{\'I}ndice de Figuras}
 	\def\listtablename{{\'I}ndice de Tablas}
-	\def\lstlistlistingname{{\'I}ndice de C{\'o}digos}
+	\def\lstlistlistingname{{\'I}ndice de Salidas}
 	\def\glossaryname{Glosario}%
 	\def\contentsname{{\'I}ndice}%
 	}
@@ -1256,14 +1256,14 @@ breaklines=true
 		\selectlanguage{english}
 		\def\chaptername{Capítulo}
 		\def\figurename{Figura}
-		\def\lstlistingname{Código}
+		\def\lstlistingname{Salida}
 		\spanishplainpercent
 	}
 
 	\AfterEndEnvironment{lstlisting}
 	{%
 		\selectlanguage{spanish}
-		\def\lstlistingname{Código}
+		\def\lstlistingname{Salida}
 		\def\figurename{Figura}
 	}
 

@@ -254,13 +254,287 @@ He seleccionado los resultados más significativos de todos los experimentos
 realizados, mostrando algún ejemplo para cada posible caso de los anteiormente
 enumerados.
 
+\begin{lstlisting}[language=,caption={Adder Acum: diagnóstico de la inyección
+11:/i\_valor\_acum/10 }, breaklines=true, label=s:adder0]
+[-62, 11, 84]  :/	i_valor_acum/	10	x8
+[-77, 11, 99]	:/	i_valor_acum/	15	x2
+[-58, 11, 80]	:/	i_valor_acum/	5	x2
+[11, 11, 11]	:/	i_valor_acum/	9	x1
+[11, 11, 11]	:/	i_valor_acum/	17	x1
+[10, 11, 12]	:/	i_valor_acum/	16	x1
+[9, 11, 13]	:/	i_valor_acum/	8	x2
+[8, 11, 14]	:/	i_valor_acum/	6	x1
+[5, 11, 17]	:/	i_valor_acum/	1	x1
+[5, 11, 17]	:/	i_valor_acum/	0	x1
 
+11	:/	i_valor_acum/	10
+Next campaign will hit the target
+\end{lstlisting}
+
+En la salida \ref{s:adder0} no se produce colisión, pero en la información de 
+salida vemos que todos los ciclos centrales apuntan al ciclo 11 (el correcto) y 
+que 8 de los 20 candidatos apuntan hacia el \gls{FF} correcto.
+Se podría realizar una campaña de una única inyección al (11, i\_valor\_acum/10) 
+para comprobar que efectivamente, esa localización produce el mismo patrón de
+fallos a la salida que el target run, o se podría simplemente lanzar la siguiente
+campaña sugerida al completo.
+
+\begin{lstlisting}[language=,caption={Adder Acum: diagnóstico de la inyección
+63:/i\_valor\_acum/4},breaklines=true, label=s:adder64]
+Iterative campaign its over. Colision founded:
+63	:/	i_valor_acum/	4
+
+To assure the result, this is the sugested campaign:
+
+[35, 63, 91]	:/	i_valor_acum/	4	x8
+[27, 63, 99]	:/	i_valor_acum/	15	x1
+[28, 63, 98]	:/	i_valor_acum/	13	x1
+[63, 63, 63]	:/	i_valor_acum/	0	x1
+[63, 63, 63]	:/	i_valor_acum/	6	x2
+[63, 63, 63]	:/	i_valor_acum/	17	x1
+[62, 63, 64]	:/	i_valor_acum/	8	x2
+[62, 63, 64]	:/	i_valor_acum/	9	x1
+[50, 63, 76]	:/	i_valor_acum/	14	x1
+[59, 63, 67]	:/	i_valor_acum/	10	x1
+
+63	:/	i_valor_acum/	4
+Next campaign will hit the target
+\end{lstlisting}
+
+La salida \ref{s:adder64} ha detectado una colisión, que además sabemos es la
+correcta. La información de la campaña sugerida para afianzar los resultados
+apunta además al ciclo y registro corretos en su mayoría. Este es el mejor
+resultado que se puede conseguir.
+
+\begin{lstlisting}[language=,caption={Dual Counter: diagnóstico de la inyección
+187:/counter1/reg\_i/5},breaklines=true, label=s:dcounter59]
+[26, 187, 348]	:/	counter1/reg_i/	5	x16
+[186, 187, 188]	:/	counter1/reg_i/	4	x2
+[186, 187, 188]	:/	counter1/reg_i/	1	x2
+[182, 187, 192]	:/	counter1/reg_i/	0	x1
+[182, 187, 192]	:/	counter1/reg_i/	2	x1
+[67, 187, 307]	:/	counter1/reg_i/	7	x2
+[73, 187, 301]	:/	counter1/reg_i/	3	x1
+
+187	:/	counter1/reg_i/	5
+Next campaign will hit the target
+\end{lstlisting}
+
+El resultado de la salida \ref{s:dcounter59} es idéntico al resultado
+\ref{s:adder0}, se aciertan ciclo y biestable correctos, con el valor añadido de
+que este circuito tiene más de un registro.
+
+\begin{lstlisting}[language=,caption={Dual Counter: diagnóstico de la inyección
+157:/counter0/reg\_i/4},breaklines=true, label=s:dcounter29]
+Iterative campaign its over. Colision founded:
+27	:/	counter0/reg_i/	4
+121	:/	counter0/reg_i/	4
+159	:/	counter0/reg_i/	4
+161	:/	counter0/reg_i/	4
+223	:/	counter0/reg_i/	4
+231	:/	counter0/reg_i/	4
+251	:/	counter0/reg_i/	4
+
+To assure the result, this is the sugested campaign:
+
+[27, 150, 251]	:/	counter0/reg_i/	4	x16
+[14, 14, 14]	:/	counter0/reg_i/	1	x1
+[39, 39, 39]	:/	counter0/reg_i/	2	x1
+[53, 57, 63]	:/	counter0/reg_i/	5	x6
+[54, 63, 70]	:/	counter0/reg_i/	0	x3
+[68, 68, 68]	:/	counter0/reg_i/	3	x1
+[12, 264, 516]	:/	counter1/reg_i/	0	x5
+[86, 86, 86]	:/	counter0/reg_i/	6	x1
+
+157	:/	counter0/reg_i/	4
+Next campaign will hit the target
+\end{lstlisting}
+
+La salida \ref{s:dcounter29} es un ejemplo de campaña finalizada en múltiples
+colisiones. El diagnóstico termina pero no se sabe con certeza la localización del
+\gls{SEU}. De hecho, todas las colisiones apuntan al biestable correcto pero entre
+ellas no se encuentra la localización real. Una campaña extra, como hemos
+explicado, mejoraría los resultados al encontrar más colisiones, estando ahora sí,
+la localización correcta entre ellas.
+
+\begin{lstlisting}[language=,caption={PCM: diagnóstico de la inyección
+31:/I2S\_IN\_1/DATA\_L/1},breaklines=true, label=s:pcm59]
+Iterative campaign its over. Colision founded:
+9	:/	I2S_IN_1/DATA_L/	1
+10	:/	I2S_IN_1/DATA_L/	1
+11	:/	I2S_IN_1/DATA_L/	1
+12	:/	I2S_IN_1/DATA_L/	1
+13	:/	I2S_IN_1/DATA_L/	1
+14	:/	I2S_IN_1/DATA_L/	1
+15	:/	I2S_IN_1/DATA_L/	1
+16	:/	I2S_IN_1/DATA_L/	1
+17	:/	I2S_IN_1/DATA_L/	1
+18	:/	I2S_IN_1/DATA_L/	1
+
+To assure the result, this is the sugested campaign:
+
+[9, 13, 18]	:/	I2S_IN_1/DATA_L/	1	x36
+[12, 14, 15]	:/	CLK_96k/s_counter_lr/	1	x4
+
+31	:/	I2S_IN_1/DATA_L/	1
+Will need more than one iteration to hit the target
+\end{lstlisting}
+
+En la salida \ref{s:pcm59} volvemos a tener colisión múltiple. Esta vez, la 
+campaña sugerida apunta por mayoría absoluta al FF correcto, pero el ciclo se 
+encuentra fuera del rango. Las distancias temporales de los nuevos candidatos tras
+una inyección extra es posible que nos reorienten el rango de ciclos, pero dado 
+que existen colisiones, en un caso real no realizaríamos el mínimo de dos campañas
+más que se necesitarían para encontrar primero el ciclo correcto y luego
+inyectarlo.
+
+\begin{lstlisting}[language=,caption={FIFO: diagnóstico de la inyección
+3:/Memory\_149\_25},breaklines=true, label=s:fifo13]
+Iterative campaign its over. Colision founded:
+3	:/	Memory_1_6
+3	:/	Memory_1_10
+3	:/	Memory_1_27
+3	:/	Memory_2_12
+3	:/	Memory_2_26
+3	:/	Memory_4_15
+3	:/	Memory_4_28
+3	:/	Memory_5_11
+3	:/	Memory_5_12
+3	:/	Memory_5_20
+
+To assure the result, this is the sugested campaign:
+
+[3, 3, 3]	:/	Memory_1_6	x3
+[3, 3, 3]	:/	Memory_1_10	x3
+[3, 3, 3]	:/	Memory_1_27	x3
+[3, 3, 3]	:/	Memory_2_12	x3
+[3, 3, 3]	:/	Memory_2_26	x3
+[3, 3, 3]	:/	Memory_4_15	x3
+[3, 3, 3]	:/	Memory_4_28	x3
+[3, 3, 3]	:/	Memory_5_11	x3
+[0, 3, 6]	:/	Memory_5_12	x4
+[3, 3, 3]	:/	Memory_5_20	x3
+[0, 3, 6]	:/	Memory_0_2	x1
+[0, 3, 6]	:/	Memory_1_13	x1
+[0, 3, 6]	:/	Memory_2_8	x1
+[0, 3, 6]	:/	Memory_2_22	x1
+[0, 3, 6]	:/	Memory_3_6	x1
+[0, 3, 6]	:/	Memory_3_11	x1
+[0, 3, 6]	:/	Memory_3_16	x1
+[0, 3, 6]	:/	Memory_4_16	x1
+[0, 3, 6]	:/	Memory_6_11	x1
+
+3	:/	Memory_149_25
+Next campaign will contain only right cycle
+\end{lstlisting}
+
+Otra situación extra de colisión múltiple se produce en la salida \ref{s:fifo13}.
+Todos los candidatos de la campaña sugerida están de acuerdo en el ciclo, el cual
+resulta ser el correcto. Se podría realizar una inyección abierta a todo el 
+circuito pero centrada únicamente en ese ciclo con tal de detectar otras posibles
+colisiones que completen aún más el diagnóstico. Notar que son tantas las
+colisiones, que se han seleccionado el máximo impuesto de 40 candidatos y el
+target run no es uno de ellos.
+
+\begin{lstlisting}[language=,caption={UART: diagnóstico de la inyección
+5804:/uart\_i/uart\_rx\_i/rx\_data/7},breaklines=true, label=s:uart5]
+Iterative campaign its over. Colision founded:
+8426	:/	uart_i/uart_rx_i/rx_data/	1
+6131	:/	uart_i/uart_rx_i/rx_data/	6
+6750	:/	uart_i/uart_rx_i/rx_data/	5
+7210	:/	uart_i/uart_rx_i/rx_data/	4
+6407	:/	uart_i/uart_rx_i/rx_data/	6
+9079	:/	uart_i/uart_rx_i/rx_data/	0
+6453	:/	uart_i/uart_rx_i/rx_data/	6
+6864	:/	uart_i/uart_rx_i/rx_data/	5
+8470	:/	uart_i/uart_rx_i/rx_data/	1
+6172	:/	uart_i/uart_rx_i/rx_data/	6
+
+To assure the result, this is the sugested campaign:
+
+[8426, 8444, 8470]	:/	uart_i/uart_rx_i/rx_data/	1	x5
+[6131, 6273, 6453]	:/	uart_i/uart_rx_i/rx_data/	6	x9
+[6750, 6807, 6864]	:/	uart_i/uart_rx_i/rx_data/	5	x4
+[7210, 7210, 7210]	:/	uart_i/uart_rx_i/rx_data/	4	x2
+[9079, 9079, 9079]	:/	uart_i/uart_rx_i/rx_data/	0	x2
+[1146, 5118, 9564]	:/	uart_i/uart_tx_i/tx_bit_count/	1	x13
+[7014, 7782, 8550]	:/	uart_i/uart_rx_i/rx_bit_count/	2	x2
+[4061, 9498, 14969]	:/	uart_i/uart_rx_i/	rx_pstate_FSM_FFd2	x2
+[6483, 6969, 7455]	:/	uart_i/uart_rx_i/rx_bit_count/	1	x1
+
+5804	:/	uart_i/uart_rx_i/rx_data/	7
+\end{lstlisting}
+
+La salida \ref{s:uart5} es previa a que programáramos el código que predice los
+resultados de la siguiente campaña, por eso no se muestra la última línea como es
+habitual. Tras analizar muchas salidas de este tipo de experimentos, este es el 
+peor diagnóstico que he encontrado, y aún así detecta múltiples colisiones, 
+todas apuntando al registro correcto aunque en diferentes biestables, si ser el
+correcto uno de ellos. Entre la información de la campaña sugerida no encontramos 
+el ciclo correcto, ni el \gls{FF} correcto (realmente el cilo correcto sí que se
+encuentra entre los rangos, pero al no ir compañando al registro correcto,
+consideramos que no aparece). El \gls{FF} más votado se encuentra en un registro 
+diferente (mínimo local), pero aún así, el registro correcto es votado 22 veces en
+total frente a las 18 restantes. Adicionalmente, el registro erróneo más votado, 
+está centrado muy aproximadamente alrededor del ciclo correcto. Si no hubieran 
+existido colisiones, incluso en estas condiciones, con un poco de atención
+podríamos haber detectado estas pista y programado una nueva campaña enfocada al
+registro y rango de ciclos correcto.
+
+\begin{lstlisting}[language=,caption={UART: diagnóstico de la inyección
+9179:/uart\_i/uart\_clk\_cnt/2},breaklines=true, label=s:uart6]
+Iterative campaign its over. Colision founded:
+10180	:/	uart_i/uart_clk_cnt/	2
+10153	:/	uart_i/uart_clk_cnt/	2
+10327	:/	uart_i/uart_clk_cnt/	2
+9287	:/	uart_i/uart_clk_cnt/	2
+9954	:/	uart_i/uart_clk_cnt/	2
+10270	:/	uart_i/uart_clk_cnt/	2
+10216	:/	uart_i/uart_clk_cnt/	2
+
+To assure the result, this is the sugested campaign:
+
+[147, 9487, 15662]	:/	uart_i/uart_clk_cnt/	2	x34
+
+9179	:/	uart_i/uart_clk_cnt/	2
+Next campaign will hit the target
+\end{lstlisting}
+
+Por último, la salida \ref{s:uart6} muestra un nuevo caso de colisión múltiple
+entre los candidatos, con la diferencia de que todas apuntan por unanimidad al
+biestable correcto, como el resto de la campaña sugerida. La localización temporal 
+exacta no se encuentra entre los candidatos, pero si en el rango de ciclos
+propuesto. Respecto al rango de ciclos, comentar que, al incluirle un margen de
+seguridad de el doble de la distancia en ciclo máxima para cada sentido, que hacen
+un rango total de cuatro veces la distancia máxima, este abarca prácticamente todo
+el espacio de inyección. Podemos notar que el ciclo central se aproxima mucho al
+ciclo correcto. Una buena campaña para detectar más colisiones podría ser
+inyecctar ese biestable en todos los ciclos de la ejecución.
+
+% Decir que de todos los diccionarios son del 5% o menos, y que de los que
+% originalmente eran ya incompleros, se ha eliminado el target run, siendo
+% imposible que lo detecten a la salida en la primera selección de candidatos.
+Cabe destacar que los diccionarios presentaban una exhaustividad del 5\%, pero
+sobre todo, que de aquellos originalmente no exhaustivos se han eliminado las
+entradas correspondientes a los 100 \gls{SEU} que se estaban diagnosticando,
+explicando que en ninguna de las pruebas se haya detectado a la primera la
+colisión correcta.
 
 % Hablar de cuándo se va perdiendo la capacidad de diagnóstico conforme se va
 % reduciendo la exhaustividad del diciconario
-
 % Decir que no es lo mismo un diccionario del 1% para el counter que uno del 0'87%
 % para la uart porque el núemro de entradas del primer caso es ridículo
+Intentos de reducir aún más tanto los diccionarios completos como los diccionarios 
+originalmente incompletos demostraron que la reducción afecta más a aquellos
+diccionarios que originalmente eran de por sí muy pequeños. Esto se debe a que,
+para el \textit{adder\_acum} por ejemplo, las 2000 entradas del diccionario
+exhaustivo original se traducen en 100 entadas para el diccionario reducido al
+5\%. Reducirlo al 1\% significaría diagnosticar con un diccionario de 20 muestras,
+que lo hace estadísticamente insuficiente.
 
+Sin embargo, en circuitos grandes como la \textit{uart}, el 0'87\% de
+exhaustividad inicial se traduce en un diccionario de 16496 entradas. Reducirlo al
+5\%, resultando en un diccionario exhaustivo al 0'04\%, no elimina completamente
+nuestra capacidad de diagnóstico.
 
 \endinput
