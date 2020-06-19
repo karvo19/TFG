@@ -13,7 +13,7 @@ diccionario completo siempre contendrá por definición al target run.
 Esta técnica se emplea en situaciones en las que el diccionario es extremadamente 
 pequeño pero sin llegar a perder completamente la capacidad de diagnóstico. El
 concepto es sencillo. Se obtiene un diccionario incompleto del circuito mediante
-inyecciones aleatorias (\textit{"Random Samplig"}), a partir de él, realizamos el
+inyecciones aleatorias (\textit{"Random Sampling"}), a partir de él, realizamos el
 primer diagnóstico. Obtenemos una lista preliminar de candidatos a partir de la
 cual extraemos la información necesaria para una siguiente inyección, que ya no 
 será aleatoria, al menos en su mayoría. El proceso de obtención de diccionario,
@@ -43,51 +43,148 @@ podemos realizar nuevas campañas desde distintos enfoques.
         de fallos a realizar podría centrarse en inyectar esas zonas del circuito,
         reduciendo el espacio de inyección al descartar de la campaña el resto de
         registros del \gls{CUT}.
-    \item Campaña enfocada en biestables: del mismo modo, 
-    \item Combinación de las restricciones anteriores:
+    \item Campaña enfocada en biestables: del mismo modo, podríamos inyectar
+        \gls{FF} concretos del \gls{CUT} en todos los ciclos posibles.
+    \item Combinación de las restricciones anteriores: si el circuito es tan
+        grande que toda reducción del espacio de inyección es poca, podemos acotar
+        la siguiente campaña combinando restricciones. Inyectar un registro
+        durante un rango de ciclos, un ciclo pero un conjunto de \gls{FF}, etc.
 \end{itemize}
 
 % Comentar con qué formato sale la información para la siguiente campaña, siendo
 % el usuario el que decide qué tipo de campaña realizar.
+El código que selecciona y procesa los candidatos devuelve una lista de biestables
+concretos, donde cada biestable va acompañado del número de veces que ha sido
+seleccionado y de un rango de ciclos que se calcula en función de la distancia en
+ciclos. También se indica el ciclo central del rango, siendo posible, cuando no
+cabe ninguna duda, de que el rango sea un único ciclo. Por separado, se muestran,
+de existir, las inyecciones del diccionario que producen exactamente el mismo
+patrón de fallos.
+
+Con esta información, es el usuario el que decide cuál de las 4 campañas descritas
+aplicar, siendo una buena opción inyectar tal cual esos biestables en el rango de
+ciclos que los acompañan. En cualquier caso, si la duración de la campaña lo
+permite, realizar una campaña menos acotada evitará malos diagnósticos y mínimos
+locales.
 
 % MINIMOS LOCALES
 % Explicar la posibilidad de llegar a un minimo local -> soluciones planteadas
     % El uso de los 4 algoritmos simultaneamente -> 4*n candidatos
     % Posibilidad de incluir además un set de inyecciones aleatorias en la
         % siguiente campaña
+Alcanzar un mínimo local en este contexto sería como "seguir una pista falsa".
+Corremos el peligro de caer en un mínimo local cuando el candidato que presenta la
+menos de las distancias no apunta a donde debería. Esto es más probable conforme
+reducimos la exhaustividad del diccionario. De esta forma, campaña tras campaña,
+acotaríamos el espacio de inyección en torno a una zona que presenta aparentemente
+menos distancia al taget run, pero en la que nunca detectaremos una colisión. 
+
+Este problema se podría evitar aumentado el número de candidatos que seleccionamos
+(\textit{"n"}) o tratando de acotar más progresivamente. Otra posibilidad es la
+incluir inyecciones aleatoriamente en cada nueva campaña, de forma que se aumenten
+las probabilidades de estimular la zona correcta si previamente esta no estaba
+contenida en el diccionario.
+
+Las características y puntos fuertes de cada técnica en particular también pueden
+propiciar la caída en un mínimo local. Esta es otra razón por la que hemos
+decidido mantener los cuatro algoritmos a la hora de extraer candidatos. El
+objetivo es que, si uno de los algoritmos se ve especialemente influenciado por un
+mínimo local, los otros tres incluyan candidatos en la campaña que pertenezcan a
+otra zona del circuito. Como mencionamos en los resultados del capítulo anterior,
+la distancia en ciclo cumple especialemente bien este objetivo al no tener
+capacidad para diagnosticar espacialmente por si sola.
 
 \section{Obtención de la lista de candidatos}
 \label{sec:Candidatos}
 % Mencionar lo ya explicado anteriormente sobre el uso de los 4 algoritmos
 % simultaneamente
-
 % Seleccion de n candidatos de cada algoritmo
+Primeramente leemos la información tanto de \textit{"dammages.csv"} como de 
+\textit{"injections.csv"} y leemos el patrón de fallos a diagnósticar. En este
+momento calculamos todas las distancias y agrupamos la información de las
+distancias y las inyecciones en una lista. Tal y como hemos explicado para cada
+distancia, realizamos la selección de los \textit{"n"} primeros candidatos con
+cada una (máximo de $2 \times n$ como hemos comentado).
 
 % Agrupacion de los candidatos en una sola lista (en el siguiente apartado
 % explicamos cómo se procesa esta información)
+Agrupamos los $4 \times n$ candidatos en una sola lista, manteniendo aún todas las
+distancias para cada uno de ellos. A parir de este momento comenzamos a preparar
+la información necesaria para la siguiente iteración.
+
 
 \section{Extracción de la información para la siguiente campaña de inyección de
 fallos}
 \label{sec:InfoCampana}
 % En este punto comprobamos si hay colision, es decir, si el diagnóstico ha
 % terminado
+Antes que nada, comprobamos si el diagnóstico
+ha concluido, es decir, si alguno de los candidatos presenta distancia de
+Levenshtein, ciclo y Hu igual a cero. Tanto en caso negativo como en positivo, 
+procedemos a calcular la información de inyección recomendada para la siguiente 
+campaña de inyección de fallos.
+
+Aunque tras detectar candidatos a distancia cero pueda parecer que el diagnóstico
+no puede mejorar, tenemos que tener en cuenta la posibilidad de encontrarnos ante
+una colisión, por lo que la localización correcta del \gls{SEU} no sería esa.
+Realizar una iteración extra y obtener una nueva lista de candidatos puede mejorar
+el diagnóstico en este sentido, ya que podría llegar a localizar más inyecciones
+que generen exactamente el mismo patrón, consiguiendo un diagnóstico más completo.
 
 % Se agrupan los candidatos reg/FF repetidos y se calcula el rango de ciclos
+La información recomendada para la siguiente inyección es de la forma que hemos
+explicado hace un momento, biestables acompañados del número de veces que han sido
+seleccionados y el rango de ciclos en el que podría estar, centrado en un ciclo
+concreto e incluyendo márgenes de error. Para extraer esta información, primero
+separamos las inyecciones de los candidatos en ciclo, registro y \gls{FF}. En este
+punto disponemos de dos posibilidades, agrupar inyecciones por \gls{FF} o por
+registros repetidos, realizando el recuento de cuántas veces se repiten. En 
+nuestro caso, dado el alto porcentage de acierto inicial, hemos decidido agrupar 
+los candidatos repetidos por biestables.
+
+Por último, recorremos de nuevo la lista de candidatos que contiene las
+distancias calculando el rango de ciclos en los que el algoritmo selecciona cada
+uno de ellos y estimando la posición central. Esta se calcula mediante la ecuación
+\ref{eq:CicloCentral}, y el margen de error que compone el rango se ha establecido
+como dos veces la distancia en ciclos para cada sentido a partir del ciclo central.
+
+\begin{equation}
+    \label{eq:CicloCentral}
+    Ciclo\_Central = Ciclo\_de\_inyección - Distancia\_en\_ciclos
+\end{equation}
 
 % Como resultado se obtiene una lista con toda la informacion necesaria para
 % realizar la siguiente campaña recomendada
+Como resultado de este proceso obtenemos una lista con toda la información
+necesaria para realizar la siguiente campaña de inyección de fallos. Esta
+información se muestra con el siguiente formato:
+\begin{center}
+    [ciclo inferior, ciclo central, ciclo superior] \hfill :/ \hfill registro/
+    \hfill \gls{FF} \hfill nº de repeticiones
+\end{center}
 
-% De las posibilidades antes mencionadas, para las pruebas realizadas se ha
-% empleado la opcion de FF y rango de ciclos, siendo a veces el rango de ciclos de
-% un solo ciclo realmente.
+Aunque esta
+información tal cual se correspondería con la próxima campaña recomendada, aún
+podemos decidir manualmente, tras observar los rangos de ciclos y la variedad de
+registros o \gls{FF}, si realizaremos una campaña especialmente enfocada en alguna
+parte del circuito tal y como hemos comentado anteriormente.
 
 
 \section{Resultados experimentales}
 \label{sec:IterResults}
 % Validacion de los resultados sin necesidad de inyectar (porque conocemos de
 % antemano la inyeccion correcta del target run)
+Los experimentos realizados para validar esta técnica se basan en la siguiente
+hipótesis:
 
 % Hipotesis realizadas para validar de esta forma
+\begin{hypothesis}\label{hyp:ResIter}
+    "Si la primera selección de candidatos contiene información suficiente, el
+    proceso iterativo concluirá con alguna colisión tarde o temprano".
+\end{hypothesis}
+
+% Comentar la hipótesis. Conocemos la inyeccion real de target run. Explicar que
+% es eso de información suficiente.
 
 % Resultados
 
