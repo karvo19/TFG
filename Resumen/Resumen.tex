@@ -14,11 +14,11 @@ Es común disponer únicamente de diccionarios de fallos incompletos, ya que, en
 circuitos grandes, el tiempo necesario para obtener un diccinario de fallos
 completo lo hace inviable. Vamos a ver qué técnica usamos para diagnosticar en
 estas situaciones y cuándo se comienza a perder la capacidad de diagnóstico
-conforme la exhaustividad del diccionario de reduce.
+conforme la exhaustividad del diccionario se reduce.
 
 La hipótesis de la que partimos para diseñar las técnicas de diagnóstico es que
-los \gls{SEU} próximos entre si producen patrones similares a la salida. Estos
-pueden ser caracterizados de diferentes formas y usados para estimar la
+los \gls{SEU} próximos entre si producen patrones de error similares a la salida. 
+Estos pueden ser caracterizados de diferentes formas y usados para estimar la
 localización real del \gls{SEU} que queremos localizar.
 
 Combinando la información que obtenemos al aplicar distintas métricas sobre la
@@ -30,14 +30,14 @@ reducido rango de ciclos y a unos registros concretos. A partir de esta primera
 acotación podemos obtener un nuevo diccionario de fallos enfocado en las zonas del
 circuito señaladas por el algoritmo de diagnóstico y repetir con él el proceso,
 mejorando el resultado. El diagnóstico puede darse por finalizado cuando
-encontremos un candidatos que produzca exactamente el mismo patrón de salida que
+encontremos un candidato que produzca exactamente el mismo patrón de salida que
 el \gls{SEU} bajo diagnóstico.
 
 Con este proceso iterativo, si el diccionario de partida es lo suficientemente
 completo para realizar correctamente la primera estimación, llegará un momento en
 el que podamos obtener un diccionario completo de la zona acotada. Si llegados a
 este punto aún no ha terminado el diagnóstico y las iteraciones han seguido el 
-camino correcto, el siguiente diccionario contendrá al menos una entrada cuyo 
+camino correcto, el siguiente diccionario contendrá, al menos, una entrada cuyo 
 patrón de salida coincida con el patrón que produce el \gls{SEU} bajo diagnóstico.
 
 Esta técnica puede ser muy útil en el proceso de diseño de circuitos resistentes a

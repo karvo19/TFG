@@ -168,6 +168,11 @@ Wikipedia, ``Momentos de imagen --- wikipedia{,} la enciclopedia libre,'' 2020,
   \url{https://es.wikipedia.org/w/index.php?title=Momentos_de_imagen&oldid=124767713}
 \BIBentrySTDinterwordspacing
 
+\bibitem{YOSYS}
+C.~Wolf, J.~Glaser, and J.~Kepler, ``Yosys-a free verilog synthesis suite,'' in
+  \emph{Proceedings of the 21st Austrian Workshop on Microelectronics
+  (Austrochip)}, 2013.
+
 \bibitem{AFLS}
 {Zhou Jing}, {Liu Zengrong}, {Chen Lei}, {Wang Shuo}, {Wen Zhiping}, {Chen
   Xun}, and {Qi Chang}, ``An accurate fault location method based on
