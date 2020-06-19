@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  19 JUN 2020 14:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  19 JUN 2020 14:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2601,12 +2601,7 @@ LaTeX Info: Redefining \. on input line 56.
 LaTeX Info: Redefining \% on input line 56.
 LaTeX Info: Redefining \. on input line 57.
 LaTeX Info: Redefining \% on input line 57.
-) (./DistanciaFF/DistanciaFF.aux)
-(./Conclusiones/Conclusiones.aux
-
-LaTeX Warning: Label `ch:FFdist' multiply defined.
-
-))
+) (./Conclusiones/Conclusiones.aux))
 \openout1 = `TFG.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
@@ -3138,7 +3133,7 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 22.29866pt (L) loversize=0.2;
 (lettrine.sty)             reported on input line 4.
-<InyeccionDeFallos/figuras/fig31.pdf, id=427, 556.0775pt x 250.9375pt>
+<InyeccionDeFallos/figuras/fig31.pdf, id=412, 556.0775pt x 250.9375pt>
 File: InyeccionDeFallos/figuras/fig31.pdf Graphic file (type pdf)
 <use InyeccionDeFallos/figuras/fig31.pdf>
 Package pdftex.def Info: InyeccionDeFallos/figuras/fig31.pdf  used on input lin
@@ -3161,7 +3156,7 @@ l.49
 
 
  <./InyeccionDeFallos/figuras/fig31.pdf>]
-<InyeccionDeFallos/figuras/fig32.pdf, id=445, 668.4975pt x 492.84125pt>
+<InyeccionDeFallos/figuras/fig32.pdf, id=429, 668.4975pt x 492.84125pt>
 File: InyeccionDeFallos/figuras/fig32.pdf Graphic file (type pdf)
 <use InyeccionDeFallos/figuras/fig32.pdf>
 Package pdftex.def Info: InyeccionDeFallos/figuras/fig32.pdf  used on input lin
@@ -3200,7 +3195,7 @@ LaTeX Info: Redefining \% on input line 67.
 LaTeX Info: Redefining \. on input line 67.
 LaTeX Info: Redefining \% on input line 67.
 [9]
-<Levenshtein/figuras/fig41.pdf, id=481, 1463.4675pt x 592.2125pt>
+<Levenshtein/figuras/fig41.pdf, id=466, 1463.4675pt x 592.2125pt>
 File: Levenshtein/figuras/fig41.pdf Graphic file (type pdf)
 <use Levenshtein/figuras/fig41.pdf>
 Package pdftex.def Info: Levenshtein/figuras/fig41.pdf  used on input line 97.
@@ -3246,7 +3241,7 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 22.29866pt (L) loversize=0.2;
 (lettrine.sty)             reported on input line 6.
-<Cycle/figuras/fig51.pdf, id=533, 408.52625pt x 88.33pt>
+<Cycle/figuras/fig51.pdf, id=518, 408.52625pt x 88.33pt>
 File: Cycle/figuras/fig51.pdf Graphic file (type pdf)
 <use Cycle/figuras/fig51.pdf>
 Package pdftex.def Info: Cycle/figuras/fig51.pdf  used on input line 51.
@@ -3281,7 +3276,7 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 22.29866pt (A) loversize=0.2;
 (lettrine.sty)             reported on input line 4.
-<TecnicasDeDiagnosticoAuxiliares/figuras/acum40.png, id=572, 24.09pt x 99.37125
+<TecnicasDeDiagnosticoAuxiliares/figuras/acum40.png, id=557, 24.09pt x 99.37125
 pt>
 File: TecnicasDeDiagnosticoAuxiliares/figuras/acum40.png Graphic file (type png
 )
@@ -3309,7 +3304,7 @@ Overfull \hbox (2.09734pt too wide) in paragraph at lines 51--51
 \T1/qtm/m/n/9 (-20) 40.| 
  []
 
-<TecnicasDeDiagnosticoAuxiliares/figuras/acum42.png, id=573, 24.09pt x 99.37125
+<TecnicasDeDiagnosticoAuxiliares/figuras/acum42.png, id=558, 24.09pt x 99.37125
 pt>
 File: TecnicasDeDiagnosticoAuxiliares/figuras/acum42.png Graphic file (type png
 )
@@ -3337,7 +3332,7 @@ Overfull \hbox (2.59004pt too wide) in paragraph at lines 56--56
 \T1/qtm/m/n/9 (-20) 42.| 
  []
 
-<TecnicasDeDiagnosticoAuxiliares/figuras/acum949.png, id=574, 24.09pt x 99.3712
+<TecnicasDeDiagnosticoAuxiliares/figuras/acum949.png, id=559, 24.09pt x 99.3712
 5pt>
 File: TecnicasDeDiagnosticoAuxiliares/figuras/acum949.png Graphic file (type pn
 g)
@@ -3365,7 +3360,7 @@ Overfull \hbox (6.82234pt too wide) in paragraph at lines 61--61
 \T1/qtm/m/n/9 (-20) 949.| 
  []
 
-<TecnicasDeDiagnosticoAuxiliares/figuras/acum1842.png, id=575, 24.09pt x 99.371
+<TecnicasDeDiagnosticoAuxiliares/figuras/acum1842.png, id=560, 24.09pt x 99.371
 25pt>
 File: TecnicasDeDiagnosticoAuxiliares/figuras/acum1842.png Graphic file (type p
 ng)
@@ -3393,7 +3388,7 @@ Overfull \hbox (11.05005pt too wide) in paragraph at lines 66--66
 \T1/qtm/m/n/9 (-20) 1842.| 
  []
 
-<TecnicasDeDiagnosticoAuxiliares/figuras/counter32.png, id=576, 8.03pt x 285.06
+<TecnicasDeDiagnosticoAuxiliares/figuras/counter32.png, id=561, 8.03pt x 285.06
 5pt>
 File: TecnicasDeDiagnosticoAuxiliares/figuras/counter32.png Graphic file (type 
 png)
@@ -3421,7 +3416,7 @@ Overfull \hbox (18.47229pt too wide) in paragraph at lines 76--76
 \T1/qtm/m/n/9 (-20) 32.| 
  []
 
-<TecnicasDeDiagnosticoAuxiliares/figuras/counter35.png, id=577, 8.03pt x 285.06
+<TecnicasDeDiagnosticoAuxiliares/figuras/counter35.png, id=562, 8.03pt x 285.06
 5pt>
 File: TecnicasDeDiagnosticoAuxiliares/figuras/counter35.png Graphic file (type 
 png)
@@ -3449,7 +3444,7 @@ Overfull \hbox (18.965pt too wide) in paragraph at lines 81--81
 \T1/qtm/m/n/9 (-20) 35.| 
  []
 
-<TecnicasDeDiagnosticoAuxiliares/figuras/counter116.png, id=578, 8.03pt x 285.0
+<TecnicasDeDiagnosticoAuxiliares/figuras/counter116.png, id=563, 8.03pt x 285.0
 65pt>
 File: TecnicasDeDiagnosticoAuxiliares/figuras/counter116.png Graphic file (type
  png)
@@ -3477,7 +3472,7 @@ Overfull \hbox (22.20729pt too wide) in paragraph at lines 86--86
 \T1/qtm/m/n/9 (-20) 116.| 
  []
 
-<TecnicasDeDiagnosticoAuxiliares/figuras/counter401.png, id=579, 8.03pt x 285.0
+<TecnicasDeDiagnosticoAuxiliares/figuras/counter401.png, id=564, 8.03pt x 285.0
 65pt>
 File: TecnicasDeDiagnosticoAuxiliares/figuras/counter401.png Graphic file (type
  png)
@@ -3505,7 +3500,7 @@ Overfull \hbox (23.06pt too wide) in paragraph at lines 91--91
 \T1/qtm/m/n/9 (-20) 401.| 
  []
 
-<TecnicasDeDiagnosticoAuxiliares/figuras/counter1185.png, id=580, 8.03pt x 285.
+<TecnicasDeDiagnosticoAuxiliares/figuras/counter1185.png, id=565, 8.03pt x 285.
 065pt>
 File: TecnicasDeDiagnosticoAuxiliares/figuras/counter1185.png Graphic file (typ
 e png)
@@ -3533,7 +3528,7 @@ Overfull \hbox (26.6173pt too wide) in paragraph at lines 96--96
 \T1/qtm/m/n/9 (-20) 1185.| 
  []
 
-<TecnicasDeDiagnosticoAuxiliares/figuras/counter1367.png, id=581, 8.03pt x 285.
+<TecnicasDeDiagnosticoAuxiliares/figuras/counter1367.png, id=566, 8.03pt x 285.
 065pt>
 File: TecnicasDeDiagnosticoAuxiliares/figuras/counter1367.png Graphic file (typ
 e png)
@@ -3585,7 +3580,7 @@ ng (PNG copy)> <./TecnicasDeDiagnosticoAuxiliares/figuras/counter116.png (PNG c
 opy)> <./TecnicasDeDiagnosticoAuxiliares/figuras/counter401.png (PNG copy)> <./
 TecnicasDeDiagnosticoAuxiliares/figuras/counter1185.png (PNG copy)> <./Tecnicas
 DeDiagnosticoAuxiliares/figuras/counter1367.png (PNG copy)>]
-<TecnicasDeDiagnosticoAuxiliares/figuras/fig63.pdf, id=608, 1463.4675pt x 592.2
+<TecnicasDeDiagnosticoAuxiliares/figuras/fig63.pdf, id=593, 1463.4675pt x 592.2
 125pt>
 File: TecnicasDeDiagnosticoAuxiliares/figuras/fig63.pdf Graphic file (type pdf)
 
@@ -3716,38 +3711,20 @@ LaTeX Info: Redefining \. on input line 197.
 LaTeX Info: Redefining \% on input line 197.
 
 [33]
-\openout2 = `DistanciaFF/DistanciaFF.aux'.
+\openout2 = `Conclusiones/Conclusiones.aux'.
 
- (./DistanciaFF/DistanciaFF.tex [34
+ (./Conclusiones/Conclusiones.tex [34
 
 
 
 ]
 chapter 8.
-Package lettrine.sty Info: Targeted height = 18.58224pt
-(lettrine.sty)             (no accent, loversize=0),
-(lettrine.sty)             Lettrine height = 0.0pt () loversize=0.2;
-(lettrine.sty)             reported on input line 4.
-)
-LaTeX Info: Redefining \. on input line 201.
-LaTeX Info: Redefining \% on input line 201.
-LaTeX Info: Redefining \. on input line 201.
-LaTeX Info: Redefining \% on input line 201.
- [35]
-\openout2 = `Conclusiones/Conclusiones.aux'.
-
- (./Conclusiones/Conclusiones.tex [36
-
-
-
-]
-chapter 9.
 )
 LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
 LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
- [37] [38
+ [35] [36
 
 
 
@@ -3799,10 +3776,10 @@ LaTeX Info: Redefining \. on input line 238.
 LaTeX Info: Redefining \% on input line 238.
 LaTeX Info: Redefining \. on input line 238.
 LaTeX Info: Redefining \% on input line 238.
- [39
+ [37
 
 
-] [40
+] [38
 
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 24
@@ -3852,9 +3829,9 @@ LaTeX Info: Redefining \. on input line 245.
 LaTeX Info: Redefining \% on input line 245.
 LaTeX Info: Redefining \. on input line 245.
 LaTeX Info: Redefining \% on input line 245.
- [41
+ [39
 
-] [42
+] [40
 
 ]
 Package tocbasic Info: character protrusion at lol deactivated on input line 24
@@ -3904,29 +3881,29 @@ LaTeX Info: Redefining \. on input line 254.
 LaTeX Info: Redefining \% on input line 254.
 LaTeX Info: Redefining \. on input line 254.
 LaTeX Info: Redefining \% on input line 254.
- [43
+ [41
 
 ]
-[44
+[42
 
 ] (./TFG.bbl
 LaTeX Info: Redefining \. on input line 94.
 LaTeX Info: Redefining \% on input line 94.
 LaTeX Info: Redefining \. on input line 94.
 LaTeX Info: Redefining \% on input line 94.
- [45
+ [43
 
 ]
 LaTeX Info: Redefining \. on input line 175.
 LaTeX Info: Redefining \% on input line 175.
 LaTeX Info: Redefining \. on input line 175.
 LaTeX Info: Redefining \% on input line 175.
- [46])
+ [44])
 LaTeX Info: Redefining \. on input line 270.
 LaTeX Info: Redefining \% on input line 270.
 LaTeX Info: Redefining \. on input line 270.
 LaTeX Info: Redefining \% on input line 270.
- [47] [48
+ [45] [46
 
 ]
 No file TFG.ind.
@@ -3936,7 +3913,7 @@ LaTeX Info: Redefining \. on input line 285.
 LaTeX Info: Redefining \% on input line 285.
 LaTeX Info: Redefining \. on input line 285.
 LaTeX Info: Redefining \% on input line 285.
-[49
+[47
 
 
 
@@ -3995,21 +3972,16 @@ LaTeX Info: Redefining \. on input line 56.
 LaTeX Info: Redefining \% on input line 56.
 LaTeX Info: Redefining \. on input line 57.
 LaTeX Info: Redefining \% on input line 57.
-) (./DistanciaFF/DistanciaFF.aux)
-(./Conclusiones/Conclusiones.aux))
+) (./Conclusiones/Conclusiones.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 285.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 285.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
  )
 (\end occurred when \iftrue on line 457 was incomplete) 
 Here is how much of TeX's memory you used:
- 71679 strings out of 492609
- 1574897 string characters out of 6131463
- 2145226 words of memory out of 5000000
- 73684 multiletter control sequences out of 15000+600000
+ 71659 strings out of 492609
+ 1574551 string characters out of 6131463
+ 2143389 words of memory out of 5000000
+ 73677 multiletter control sequences out of 15000+600000
  642726 words of font info for 183 fonts, out of 8000000 for 9000
  1162 hyphenation exceptions out of 8191
  87i,13n,142p,9082b,2278s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4029,10 +4001,10 @@ mf-dist/fonts/type1/urw/helvetic/uhvr8ac.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/helvetic/uhvro8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TFG.pdf (65 pages, 1074113 bytes).
+Output written on TFG.pdf (63 pages, 1072968 bytes).
 PDF statistics:
- 1262 PDF objects out of 1440 (max. 8388607)
- 1110 compressed objects within 12 object streams
- 342 named destinations out of 1000 (max. 500000)
- 29223 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1229 PDF objects out of 1440 (max. 8388607)
+ 1080 compressed objects within 11 object streams
+ 337 named destinations out of 1000 (max. 500000)
+ 29199 words of extra memory for PDF output out of 29859 (max. 10000000)
 

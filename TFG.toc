@@ -52,18 +52,15 @@
 \babel@toc {english}{}
 \babel@toc {spanish}{}
 \babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {8}Distancia en flip-flops. Mejora de la distancia temporal}{35}{chapter.8}% 
-\contentsline {section}{\numberline {8.1}Inclusi\IeC {\'o}n de la distancia en flip-flops en el algoritmo}{35}{section.8.1}% 
-\contentsline {section}{\numberline {8.2}Resultados experimentales}{35}{section.8.2}% 
-\contentsline {subsection}{\numberline {8.2.1}Diccionarios exhaustivos}{35}{subsection.8.2.1}% 
-\contentsline {subsection}{\numberline {8.2.2}Diccionarios no exhaustivos}{35}{subsection.8.2.2}% 
-\contentsline {chapter}{\numberline {9}Conclusiones y trabajos futuros}{37}{chapter.9}% 
-\contentsline {section}{\numberline {9.1}Conclusiones}{37}{section.9.1}% 
-\contentsline {section}{\numberline {9.2}Trabajos futuros}{37}{section.9.2}% 
+\contentsline {chapter}{\numberline {8}Conclusiones y trabajos futuros}{35}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}Conclusiones}{35}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}Trabajos futuros}{35}{section.8.2}% 
+\contentsline {subsection}{\numberline {8.2.1}Otras t\IeC {\'e}cnicas de tratamiento de im\IeC {\'a}genes}{35}{subsection.8.2.1}% 
+\contentsline {subsection}{\numberline {8.2.2}Distancia en flip-flops. Mejora de la distancia temporal}{35}{subsection.8.2.2}% 
 \mbox {}\hspace *{0pt}\par 
-\contentsline {listasb}{{\'I}ndice de Figuras}{39}{section*.22}% 
-\contentsline {listasb}{{\'I}ndice de Tablas}{41}{section*.24}% 
-\contentsline {listasb}{{\'I}ndice de Salidas}{43}{section*.26}% 
-\contentsline {listasb}{Bibliograf\'{\i }a}{45}{section*.28}% 
-\contentsline {listasb}{\'{I}ndice alfab\'{e}tico}{49}{section*.30}% 
-\contentsline {listasb}{Glosario}{49}{section*.31}% 
+\contentsline {listasb}{{\'I}ndice de Figuras}{37}{section*.22}% 
+\contentsline {listasb}{{\'I}ndice de Tablas}{39}{section*.24}% 
+\contentsline {listasb}{{\'I}ndice de Salidas}{41}{section*.26}% 
+\contentsline {listasb}{Bibliograf\'{\i }a}{43}{section*.28}% 
+\contentsline {listasb}{\'{I}ndice alfab\'{e}tico}{47}{section*.30}% 
+\contentsline {listasb}{Glosario}{47}{section*.31}% 

@@ -10,7 +10,6 @@ A level-1 auxiliary file: Levenshtein/Levenshtein.aux
 A level-1 auxiliary file: Cycle/Cycle.aux
 A level-1 auxiliary file: TecnicasDeDiagnosticoAuxiliares/TecnicasDeDiagnosticoAuxiliares.aux
 A level-1 auxiliary file: CampanasIterativas/CampanasIterativas.aux
-A level-1 auxiliary file: DistanciaFF/DistanciaFF.aux
 A level-1 auxiliary file: Conclusiones/Conclusiones.aux
 The style file: IEEEtran.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -26,7 +25,7 @@ Database file #1: bibliografia.bib
 Done.
 You've used 30 entries,
             4087 wiz_defined-function locations,
-            1015 strings with 13110 characters,
+            1014 strings with 13083 characters,
 and the built_in function-call counts, 21166 in all, are:
 = -- 1684
 > -- 434
