@@ -11,14 +11,14 @@ ciclo en que la inyección se manifiesta a la salida, a partir de ahora
 \textit{"first cycle"}. La distancia de ciclos se calcula como la diferencia 
 entre el \textit{first cycle} del target run y el \textit{first cycle} de cada 
 entrada del diccionario, pudiendo ser positiva, negativa o cero si el fallo del 
-target run se manifiesta antes, despues o en el mismo ciclo que el de las 
+target run se manifiesta antes, después o en el mismo ciclo que el de las 
 entradas del diccionario.
 
 % Decir las hipótesis realizadas para diagnosticar en base a la distancia de Cycle
     % Esta distancia no es nada sin la de levenshtein. Lev = 0 es que hemos i
     % terminado, cycle = 0 no implica Lev = 0
 La hipótesis que realizamos basándonos en las observaciones y la cual aplicamos
-para mejorar el diangóstico sería la siguiente:
+para mejorar el diagnóstico sería la siguiente:
 \begin{hypothesis}\label{hyp:cycle}
     "La distancia temporal, definida como la diferencia entre los primeros ciclos
     en que se manifiestan dos inyecciones, guarda relación directa con la
@@ -37,7 +37,7 @@ la misma inyección. Se cumple que:
 % dist = first_cycle[i] - target_first_cycle
 Para generar la lista de distancias de ciclo entre el target run y el resto del
 diccionario primero leemos la información de ambos archivos tal y como
-explicabamos en la sección \ref{sec:LevenDist}. Despues identificamos el primer
+explicábamos en la sección \ref{sec:LevenDist}. Después identificamos el primer
 ciclo en que se manifiestan las inyecciones para cada entrada del diccionario.
 Hacemos lo propio con el \gls{SEU} que estamos diagnosticando. La distancia de
 ciclos se calcula como primer ciclo de la entrada menos primer ciclo del target
@@ -79,7 +79,7 @@ inyecciones que se han producido durante un reset del circuito y las que  se han
 producido muy próxima al fin de su ejecución, no teniendo tiempo de manifestarse.
 
 Aunque podríamos aproximar estos dos casos a primer ciclo cero y último
-respectvamente, al final decidimos que lo mejor era descartar directamente los
+respectivamente, al final decidimos que lo mejor era descartar directamente los
 runs vacíos como candidatos, ya que el target run siempre presenta fallos a la
 salida y por tanto, en ningún caso puede corresponderse con una entrada del
 diccionario vacía.
@@ -129,19 +129,19 @@ Levenshtein y seleccionar los \textit{"n"} primeros.
 Llegados a este punto, el algoritmo mostraba por pantalla, para cada candidato
 seleccionado, su distancia de Levenshtein, su distancia de ciclo y la información
 de su inyección. Además, dado que para nosotros esa información era conocida,
-mostrabamos la localización correcta del \gls{SEU} a diagnosticar. Podíamos
+mostrábamos la localización correcta del \gls{SEU} a diagnosticar. Podíamos
 comprobar cómo efectivamente, la inyección de los candidatos obtenido con la
 distancia de Levenshtein podía ser corregida con la distancia temporal.
 
-Más adelante, para la vesión final de la técnica, contenida en el capítulo
+Más adelante, para la versión final de la técnica, contenida en el capítulo
 \ref{ch:CampanasIterativas}, veremos cómo hemos integrado el cómputo del ciclo de
 inyección completamente en el algoritmo.
 
 \section{Resultados experimentales}
 \label{sec:CycleResults}
-Dado que la distancia temporal no está lo suficientemente básada en la salida 
+Dado que la distancia temporal no está lo suficientemente basada en la salida 
 como para realizar un diagnóstico completo únicamente a partir de ella, es difícil
-mostrar unos resultados experiementales de este algortimo aislado. Además, no fue
+mostrar unos resultados experimentales de este algoritmo aislado. Además, no fue
 hasta más adelante, con la inclusión de dos aproximaciones más que aún faltan por
 explicar, que empezamos a registrar resultados donde la distancia temporal 
 intervenía.
@@ -153,8 +153,8 @@ a la fusión de las dos distancias.
 \label{subsec:CycDicNoExhaust}
 Dado que el diagnóstico con diccionarios exhaustivos se resuelve únicamente con la
 distancia de Levenshtein, y esta investigación trata de desarrollar técnicas de
-diagnóstico de \gls{SEU} con diccionarios incompletos, vamos a centarnos
-únicamenrte en los resultados que se obtienen con estos últimos.
+diagnóstico de \gls{SEU} con diccionarios incompletos, vamos a centrarnos
+únicamente en los resultados que se obtienen con estos últimos.
 
 % Tabla de resultados solo con leven. 5 cands, 5% o menos, reg
 \begin{table}[htbp]
@@ -190,11 +190,11 @@ candidatos.
 
 Observamos cómo efectivamente se tiene menos capacidad de diagnóstico para 
 \gls{FF} con la distancia de ciclo. Parece que además el porcentaje de acierto
-ronda en torno al 50\%, lo cual encaja con la hipótesis de que la ditancia
+ronda en torno al 50\%, lo cual encaja con la hipótesis de que la distancia
 temporal no sirve más que para localizar el \gls{SEU} temporalmente, obteniendo
 este nivel de acierto fruto del azar, aunque con excepciones.
 
-Para el \textit{fifo} y el \textit{fir\_ri} el bajo nivel de acieto se explica
+Para el \textit{fifo} y el \textit{fir\_ri} el bajo nivel de acierto se explica
 debido a una cantidad muy alta de colisiones. Además de los \textit{"n"} 
 candidatos seleccionados hay muchos otros que son equidistantes a ellos y que no
 se seleccionan, quedando atrás las inyecciones correctas a causa de las
@@ -204,8 +204,8 @@ Por el contrario, si que observamos circuitos donde se supera claramente la mita
 de aciertos. El caso de la máquina finita de estados se explica porque existen muy
 pocos \gls{FF} donde seleccionar, por lo que es muy probable que uno de los
 correctos se encuentre entre los candidatos. La \gls{UART} no tiene una
-explicación tán sencilla. Puede deberse a la propia ejecución que está ejecutando.
-Las zonas del circuito podrían estar activandose alternadamente por periodos, con
+explicación tan sencilla. Puede deberse a la propia ejecución que está ejecutando.
+Las zonas del circuito podrían estar activándose alternadamente por periodos, con
 lo que al detectar los más próximos temporalmente, estaríamos seleccionando además
 inyecciones a los mismos registros o incluso biestables.
 

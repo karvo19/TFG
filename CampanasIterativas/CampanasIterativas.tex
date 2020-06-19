@@ -7,7 +7,7 @@
 \lettrine[lraise=-0.1, lines=2, loversize=0.2]{L}{as} campañas iterativas serían
 el recurso propuesto para diagnósticos que no encuentran candidatos a distancias
 cero, es decir, cuando el diccionario no contiene al \gls{SEU} que queremos
-diagnósticar. Esta tećnica aplica para diccionarios incompletos, ya que un
+diagnosticar. Esta técnica aplica para diccionarios incompletos, ya que un
 diccionario completo siempre contendrá por definición al target run.
 
 Esta técnica se emplea en situaciones en las que el diccionario es extremadamente 
@@ -88,10 +88,10 @@ contenida en el diccionario.
 Las características y puntos fuertes de cada técnica en particular también pueden
 propiciar la caída en un mínimo local. Esta es otra razón por la que hemos
 decidido mantener los cuatro algoritmos a la hora de extraer candidatos. El
-objetivo es que, si uno de los algoritmos se ve especialemente influenciado por un
+objetivo es que, si uno de los algoritmos se ve especialmente influenciado por un
 mínimo local, los otros tres incluyan candidatos en la campaña que pertenezcan a
 otra zona del circuito. Como mencionamos en los resultados del capítulo anterior,
-la distancia en ciclo cumple especialemente bien este objetivo al no tener
+la distancia en ciclo cumple especialmente bien este objetivo al no tener
 capacidad para diagnosticar espacialmente por si sola.
 
 \section{Obtención de la lista de candidatos}
@@ -100,7 +100,7 @@ capacidad para diagnosticar espacialmente por si sola.
 % simultaneamente
 % Seleccion de n candidatos de cada algoritmo
 Primeramente leemos la información tanto de \textit{"dammages.csv"} como de 
-\textit{"injections.csv"} y leemos el patrón de fallos a diagnósticar. En este
+\textit{"injections.csv"} y leemos el patrón de fallos a diagnosticar. En este
 momento calculamos todas las distancias y agrupamos la información de las
 distancias y las inyecciones en una lista. Tal y como hemos explicado para cada
 distancia, realizamos la selección de los \textit{"n"} primeros candidatos con
@@ -139,7 +139,7 @@ concreto e incluyendo márgenes de error. Para extraer esta información, primer
 separamos las inyecciones de los candidatos en ciclo, registro y \gls{FF}. En este
 punto disponemos de dos posibilidades, agrupar inyecciones por \gls{FF} o por
 registros repetidos, realizando el recuento de cuántas veces se repiten. En 
-nuestro caso, dado el alto porcentage de acierto inicial, hemos decidido agrupar 
+nuestro caso, dado el alto porcentaje de acierto inicial, hemos decidido agrupar 
 los candidatos repetidos por biestables.
 
 Por último, recorremos de nuevo la lista de candidatos que contiene las
@@ -203,7 +203,7 @@ de fallos exhaustiva.
 
 Por supuesto, aún tenemos libertad para decidir a qué ciclos aplicamos la campaña,
 pudiendo ampliarlos o reducirlos, y si la aplicamos a biestables concretos o si 
-por el conrtrario inyecctamos en todos los \gls{FF} de los registros
+por el contrario inyectamos en todos los \gls{FF} de los registros
 seleccionados. Hemos programado un código que analiza la salida del algoritmo, la
 compara con la información de la inyección y predice el resultado que se obtendría
 al realizar realmente las campañas de inyección de fallos. Las posibles salidas de
@@ -236,7 +236,7 @@ este código son:
 
 Evidentemente, en una aplicación real no dispondríamos de la información correcta
 de la inyección, por lo que no se sabría qué tipo de campaña realizar en la
-proxima iteración para mejorar el diagnóstico. La información del número de veces
+próxima iteración para mejorar el diagnóstico. La información del número de veces
 que se repite cada biestable entre los candidatos puede orientarnos a la hora de
 saber si realmente el \gls{FF} correcto se encuentra entre ellos o no. Aún
 así, es posible que se necesiten varios intentos de selección de tipo de campaña
@@ -244,14 +244,14 @@ en caso de que, debido al gran tamaño inicial del espacio de inyección, sea
 necesario acotar lo máximo posible.
 
 % Resultados (ver correo, que ahí hago el resumen)
-En líneas generales, los resultados muestran como el candidato que se repide un
+En líneas generales, los resultados muestran como el candidato que se repite un
 mayor número de veces es el que apunta al biestable correcto si la diferencia
 de repeticiones respecto al resto es notable. A pasar de lo claro
 que sea este resultado, se debe inyectar también en el resto de candidatos, en caso
 de que no se haya detectado colisión, para evitar caer en un mínimo local.
 
 He seleccionado los resultados más significativos de todos los experimentos
-realizados, mostrando algún ejemplo para cada posible caso de los anteiormente
+realizados, mostrando algún ejemplo para cada posible caso de los anteriormente
 enumerados.
 
 \begin{lstlisting}[language=,caption={Adder Acum: diagnóstico de la inyección
@@ -303,7 +303,7 @@ Next campaign will hit the target
 
 La salida \ref{s:adder64} ha detectado una colisión, que además sabemos es la
 correcta. La información de la campaña sugerida para afianzar los resultados
-apunta además al ciclo y registro corretos en su mayoría. Este es el mejor
+apunta además al ciclo y registro correctos en su mayoría. Este es el mejor
 resultado que se puede conseguir.
 
 \begin{lstlisting}[language=,caption={Dual Counter: diagnóstico de la inyección
@@ -471,8 +471,8 @@ habitual. Tras analizar muchas salidas de este tipo de experimentos, este es el
 peor diagnóstico que he encontrado, y aún así detecta múltiples colisiones, 
 todas apuntando al registro correcto aunque en diferentes biestables, si ser el
 correcto uno de ellos. Entre la información de la campaña sugerida no encontramos 
-el ciclo correcto, ni el \gls{FF} correcto (realmente el cilo correcto sí que se
-encuentra entre los rangos, pero al no ir compañando al registro correcto,
+el ciclo correcto, ni el \gls{FF} correcto (realmente el ciclo correcto sí que se
+encuentra entre los rangos, pero al no ir acompañando al registro correcto,
 consideramos que no aparece). El \gls{FF} más votado se encuentra en un registro 
 diferente (mínimo local), pero aún así, el registro correcto es votado 22 veces en
 total frente a las 18 restantes. Adicionalmente, el registro erróneo más votado, 
@@ -509,7 +509,7 @@ seguridad de el doble de la distancia en ciclo máxima para cada sentido, que ha
 un rango total de cuatro veces la distancia máxima, este abarca prácticamente todo
 el espacio de inyección. Podemos notar que el ciclo central se aproxima mucho al
 ciclo correcto. Una buena campaña para detectar más colisiones podría ser
-inyecctar ese biestable en todos los ciclos de la ejecución.
+inyectar ese biestable en todos los ciclos de la ejecución.
 
 % Decir que de todos los diccionarios son del 5% o menos, y que de los que
 % originalmente eran ya incompleros, se ha eliminado el target run, siendo

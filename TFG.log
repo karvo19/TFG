@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  19 JUN 2020 18:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  19 JUN 2020 18:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3985,11 +3985,11 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 285.
  )
 (\end occurred when \iftrue on line 457 was incomplete) 
 Here is how much of TeX's memory you used:
- 71661 strings out of 492609
- 1574557 string characters out of 6131463
- 2143417 words of memory out of 5000000
+ 71663 strings out of 492609
+ 1574577 string characters out of 6131463
+ 2143415 words of memory out of 5000000
  73676 multiletter control sequences out of 15000+600000
- 642855 words of font info for 184 fonts, out of 8000000 for 9000
+ 642984 words of font info for 185 fonts, out of 8000000 for 9000
  1162 hyphenation exceptions out of 8191
  87i,13n,142p,9082b,2278s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texm
@@ -4008,7 +4008,7 @@ mf-dist/fonts/type1/urw/helvetic/uhvr8ac.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/helvetic/uhvro8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TFG.pdf (63 pages, 1078168 bytes).
+Output written on TFG.pdf (63 pages, 1078146 bytes).
 PDF statistics:
  1233 PDF objects out of 1440 (max. 8388607)
  1084 compressed objects within 11 object streams

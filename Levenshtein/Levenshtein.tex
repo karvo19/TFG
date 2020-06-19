@@ -29,7 +29,7 @@ Existe una operación lógica ya mencionada anteriormente que permite comparar d
 salidas obteniendo como resultado ceros para aquellos bits en los que son iguales
 y unos en los diferentes. La operación \textit{XOR} bit a bit permite obtener
 tantos unos como diferencias existen entre las dos salidas. La distancia de
-levenshtein entre dos salidas de una campaña es el sumatorio de todos estos bits 
+Levenshtein entre dos salidas de una campaña es el sumatorio de todos estos bits 
 con valor lógico alto.
 
 % Comentar la hipótesis realizada para diagnosticar en base a esto
@@ -84,7 +84,7 @@ Ahora que conocemos cómo está contenida la información en el diccionario de
 fallos, podemos proceder al cálculo de las distancias. El primer paso es leer la
 información de ambos archivos y cargarlos en memoria, rellenando los ciclos sin
 fallos con ceros. Hemos decidido almacenar la información en forma de enteros 
-en base 10, aunque estos sean tratados como binario. A contiuación se realiza, bit
+en base 10, aunque estos sean tratados como binario. A continuación se realiza, bit
 a bit, la \textit{XOR} de cada run con el resto. Como último paso en el cálculo de
 las distancias de Levenshtein, se toman los resultados de la operación lógica y se
 suman los bits con valor lógico alto. El resultado de esta suma es la distancia
@@ -121,14 +121,14 @@ típicas de una distancia:
 % y por qué se selecciona de esa manera y no de otra. En one note hay apuntes de
 % esto
 Una vez hayamos calculado las distancias de Levenshtein entre el \textit{target
-run} y todas las entradas del dicionario y hayamos elaborado las dos listas
+run} y todas las entradas del diccionario y hayamos elaborado las dos listas
 mencionadas tendremos todo lo necesario para llevar a cabo el diagnóstico con esta
 primera versión de la técnica. 
 
 Tal y como hemos explicado en el último párrafo del apartado \ref{ch:Levenshtein},
 las entradas del diccionario cuyas inyecciones se encuentren más próximas a la
-que habría probocado al \textit{target run} presentarán las menores distancias
-hasta el mismo. Diagnósticar consiste en seleccionar estas entradas, las cuales
+que habría provocado al \textit{target run} presentarán las menores distancias
+hasta el mismo. Diagnosticar consiste en seleccionar estas entradas, las cuales
 pasarán a llamarse \textit{"Candidatos"}.
 
 Originalmente, el proceso que seguíamos para seleccionar candidatos consistía en
@@ -146,12 +146,12 @@ esta forma, todos aquellos runs cuyas distancias cumplían la ecuación
 \ref{eq:SeleccionPorcentaje} pasaban a ser candidatos.
 
 % Problemas detectados con este sistema de selección.
-El problema de este sistema es que no controlabamos cuántos candidatos
-seleccionabamos en cada ocasión. Para valores de tolerancia de 1 a 5, se obtenían
+El problema de este sistema es que no controlábamos cuántos candidatos
+seleccionábamos en cada ocasión. Para valores de tolerancia de 1 a 5, se obtenían
 cantidades de candidatos bastante dispares en los diseños de circuitos en que se
 probó. Los causantes son valores de distancias aislados y alejados del resto, es
 decir, un mínimo o un máximo aislado mucho menor o mayor que el resto
-respectivamente. Esto proboca que el rango de distancias se alargue y se
+respectivamente. Esto provoca que el rango de distancias se alargue y se
 concentren todas muy próximas al extremo, seleccionando bien muy pocos o bien
 demasiados candidatos respectivamente.
 
@@ -171,14 +171,14 @@ correspondientes a la versión última de este algoritmo.
 
 Para probar la técnica disponíamos de una serie de circuitos con sus respectivos
 diccionarios de fallos. Algunos de estos eran exhaustivos, mientras que de otros,
-debido al tamaño del circuito, solo diaponíamos de uno incompleto fruto de una
+debido al tamaño del circuito, solo disponíamos de uno incompleto fruto de una
 campaña de inyección de fallos aleatoria. Concretamente disponíamos de un
 diccionario del 0'005\% de exhaustividad para el diseño de la \textit{FFT}, 0'87\%
 para la \textit{UART} y 37'78\% para el \textit{FIR\_RI}.
 
 En total, hemos probado el algoritmo en 10 diseños distintos:
 \begin{itemize}
-    \item Sumador (\textit{adder\_acum}): suma acumuladamente los 8 bits de 
+    \item Sumador (\textit{adder\_acum}): suma de forma acumulativa los 8 bits de 
         entrada en un registro de 20 bits.
     \item Contador (\textit{counter}): contador de 8 bits.
     \item Doble contador (\textit{dual\_counter}): dos contadores de 8 bits
@@ -209,7 +209,7 @@ han sido inyectadas, y por tanto, el target run también.
 Como el algoritmo de selección obtiene \textit{"n"} candidatos, también es posible
 que obtengamos candidatos a distancia mayor que cero. Como el algoritmo nos
 muestra a la salida la distancia de Levenshtein que tiene cada candidato al target
-run, podemos descartar manualmente los candidatos que no esten a distancia cero
+run, podemos descartar manualmente los candidatos que no estén a distancia cero
 cuando existan otros que si lo estén como es el caso.
 
 En algunos circuitos obtenemos de hecho varios candidatos a distancia nula. Esto
@@ -220,7 +220,7 @@ run realmente.
 \label{subsec:LevDicNoExhaust}
 Para simular diccionarios no exhaustivos en todos los circuitos, realizamos un
 pequeño script que eliminaba aleatoriamente entradas del diccionario con una
-probabilidad concreta en función del porcentaje de exhaustividad que deseasemos.
+probabilidad concreta en función del porcentaje de exhaustividad que deseásemos.
 La mayor parte de los experimentos se ha realizado con diccionarios del 5\% de
 exhaustividad, siendo inferior en aquellos diccionarios que ya lo eran.
 
