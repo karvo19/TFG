@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  19 JUN 2020 14:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.3)  19 JUN 2020 16:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3719,16 +3719,20 @@ LaTeX Info: Redefining \% on input line 197.
 
 ]
 chapter 8.
-)
+
+Underfull \vbox (badness 1137) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 69.
+LaTeX Info: Redefining \% on input line 69.
+LaTeX Info: Redefining \. on input line 69.
+LaTeX Info: Redefining \% on input line 69.
+ [35])
 LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
 LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
- [35] [36
 
-
-
-]
+[36]
 Package tocbasic Info: character protrusion at lof deactivated on input line 23
 5.
  (./TFG.lof
@@ -3777,6 +3781,9 @@ LaTeX Info: Redefining \% on input line 238.
 LaTeX Info: Redefining \. on input line 238.
 LaTeX Info: Redefining \% on input line 238.
  [37
+
+
+
 
 
 ] [38
@@ -3883,10 +3890,10 @@ LaTeX Info: Redefining \. on input line 254.
 LaTeX Info: Redefining \% on input line 254.
  [41
 
-]
-[42
+] [42
 
-] (./TFG.bbl
+]
+(./TFG.bbl
 LaTeX Info: Redefining \. on input line 94.
 LaTeX Info: Redefining \% on input line 94.
 LaTeX Info: Redefining \. on input line 94.
@@ -4001,10 +4008,10 @@ mf-dist/fonts/type1/urw/helvetic/uhvr8ac.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/helvetic/uhvro8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TFG.pdf (63 pages, 1072968 bytes).
+Output written on TFG.pdf (63 pages, 1078800 bytes).
 PDF statistics:
- 1229 PDF objects out of 1440 (max. 8388607)
- 1080 compressed objects within 11 object streams
+ 1231 PDF objects out of 1440 (max. 8388607)
+ 1082 compressed objects within 11 object streams
  337 named destinations out of 1000 (max. 500000)
  29199 words of extra memory for PDF output out of 29859 (max. 10000000)
 
