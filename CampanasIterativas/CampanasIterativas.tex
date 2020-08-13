@@ -92,7 +92,7 @@ objetivo es que, si uno de los algoritmos se ve especialmente influenciado por u
 mínimo local, los otros tres incluyan candidatos en la campaña que pertenezcan a
 otra zona del circuito. Como mencionamos en los resultados del capítulo anterior,
 la distancia en ciclo cumple especialmente bien este objetivo al no tener
-capacidad para diagnosticar espacialmente por si sola.
+capacidad para diagnosticar espacialmente por sí sola.
 
 \section{Obtención de la lista de candidatos}
 \label{sec:Candidatos}
@@ -469,7 +469,7 @@ La salida \ref{s:uart5} es previa a que programáramos el código que predice lo
 resultados de la siguiente campaña, por eso no se muestra la última línea como es
 habitual. Tras analizar muchas salidas de este tipo de experimentos, este es el 
 peor diagnóstico que he encontrado, y aún así detecta múltiples colisiones, 
-todas apuntando al registro correcto aunque en diferentes biestables, si ser el
+todas apuntando al registro correcto aunque en diferentes biestables, sin ser el
 correcto uno de ellos. Entre la información de la campaña sugerida no encontramos 
 el ciclo correcto, ni el \gls{FF} correcto (realmente el ciclo correcto sí que se
 encuentra entre los rangos, pero al no ir acompañando al registro correcto,
@@ -478,7 +478,7 @@ diferente (mínimo local), pero aún así, el registro correcto es votado 22 vec
 total frente a las 18 restantes. Adicionalmente, el registro erróneo más votado, 
 está centrado muy aproximadamente alrededor del ciclo correcto. Si no hubieran 
 existido colisiones, incluso en estas condiciones, con un poco de atención
-podríamos haber detectado estas pista y programado una nueva campaña enfocada al
+podríamos haber detectado estas pistas y programado una nueva campaña enfocada al
 registro y rango de ciclos correcto.
 
 \begin{lstlisting}[language=,caption={UART: diagnóstico de la inyección

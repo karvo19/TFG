@@ -5,8 +5,8 @@
 \addcontentsline{toc}{listasf}{Resumen}
 
 \lettrine[lraise=-0.1, lines=2, loversize=0.2]{E}{l} diagnóstico de
-\textit{Conmutaciones por evento único o \gls{SEU}} es un problema abierto sobre 
-el que apenas se han realizado investigaciones previas. En este trabajo 
+\textit{Conmutaciones por evento singular o \gls{SEU}} es un problema abierto 
+sobre el que apenas se han realizado investigaciones previas. En este trabajo 
 perseguimos diseñar una nueva técnica de diagnóstico que permita localizar un 
 \gls{SEU} a partir de la información de la que se disponga.
 
@@ -17,7 +17,7 @@ estas situaciones y cuándo se comienza a perder la capacidad de diagnóstico
 conforme la exhaustividad del diccionario se reduce.
 
 La hipótesis de la que partimos para diseñar las técnicas de diagnóstico es que
-los \gls{SEU} próximos entre si producen patrones de error similares a la salida. 
+los \gls{SEU} próximos entre sí producen patrones de error similares a la salida. 
 Estos pueden ser caracterizados de diferentes formas y usados para estimar la
 localización real del \gls{SEU} que queremos localizar.
 
@@ -25,8 +25,8 @@ Combinando la información que obtenemos al aplicar distintas métricas sobre la
 información disponible, hemos conseguido unos resultados bastante buenos sobre los
 diseños en los que se ha probado la técnica. Incluso para aquellos circuitos en
 los que no se consigue acertar el biestable y ciclo exactos, la técnica, tras la
-primera iteración, acota la localización del \gls{SEU} en un relativamente 
-reducido rango de ciclos y a unos registros concretos. A partir de esta primera
+primera iteración, acota la localización del \gls{SEU} en un rango relativamente 
+reducido de ciclos y a unos registros concretos. A partir de esta primera
 acotación podemos obtener un nuevo diccionario de fallos enfocado en las zonas del
 circuito señaladas por el algoritmo de diagnóstico y repetir con él el proceso,
 mejorando el resultado. El diagnóstico puede darse por finalizado cuando
